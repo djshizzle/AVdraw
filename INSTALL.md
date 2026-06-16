@@ -3,6 +3,12 @@
 AI-powered AV signal flow schematic toolkit.
 BOM → draw.io → EasySchematic → AutoCAD DXF, with live Cisco/Webex integration.
 
+**🔒 Local-first:** Everything runs on your machine by default. No cloud
+account needed. Cloud features (Anthropic AI review, Webex cloud xAPI)
+only activate when you set their API key. See
+[docs/LOCAL_FIRST.md](docs/LOCAL_FIRST.md) for the full data-sovereignty
+breakdown.
+
 ---
 
 ## Requirements

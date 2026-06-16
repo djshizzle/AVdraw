@@ -2,6 +2,10 @@
 
 A workflow toolkit that bridges **draw.io** (drafting) and **EasySchematic** (engineering deliverables).
 
+**🔒 Local-first by design** — runs 100% on your computer. No cloud account
+required. Optional AI/Webex integrations are strictly opt-in. See
+[docs/LOCAL_FIRST.md](docs/LOCAL_FIRST.md) for the full data-handling story.
+
 ```
 BOM / xStatus
      ↓
