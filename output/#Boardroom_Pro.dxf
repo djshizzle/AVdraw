@@ -1,0 +1,23444 @@
+999
+dxfrw 0.6.3
+  0
+SECTION
+  2
+HEADER
+  9
+$ACADVER
+  1
+AC1021
+  9
+$DWGCODEPAGE
+  3
+ANSI_1252
+  9
+$INSBASE
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$EXTMIN
+ 10
+-55.61578892085336
+ 20
+10
+ 30
+0
+  9
+$EXTMAX
+ 10
+759.128
+ 20
+641.7004000000001
+ 30
+0
+  9
+$LIMMIN
+ 10
+0
+ 20
+0
+  9
+$LIMMAX
+ 10
+420
+ 20
+297
+  9
+$ORTHOMODE
+ 70
+    0
+  9
+$REGENMODE
+ 70
+    1
+  9
+$FILLMODE
+ 70
+    1
+  9
+$QTEXTMODE
+ 70
+    0
+  9
+$MIRRTEXT
+ 70
+    1
+  9
+$LTSCALE
+ 40
+1
+  9
+$ATTMODE
+ 70
+    1
+  9
+$TEXTSIZE
+ 40
+2.5
+  9
+$TRACEWID
+ 40
+1
+  9
+$TEXTSTYLE
+  7
+Standard
+  9
+$CLAYER
+  8
+0
+  9
+$CELTYPE
+  6
+ByLayer
+  9
+$CECOLOR
+ 62
+  256
+  9
+$CELTSCALE
+ 40
+1
+  9
+$DISPSILH
+ 70
+    0
+  9
+$DIMSCALE
+ 40
+1
+  9
+$DIMASZ
+ 40
+2.5
+  9
+$DIMEXO
+ 40
+0.625
+  9
+$DIMDLI
+ 40
+3.75
+  9
+$DIMRND
+ 40
+0
+  9
+$DIMDLE
+ 40
+0
+  9
+$DIMEXE
+ 40
+1.25
+  9
+$DIMTP
+ 40
+0
+  9
+$DIMTM
+ 40
+0
+  9
+$DIMTXT
+ 40
+2.5
+  9
+$DIMCEN
+ 40
+2.5
+  9
+$DIMTSZ
+ 40
+0
+  9
+$DIMTOL
+ 70
+    0
+  9
+$DIMLIM
+ 70
+    0
+  9
+$DIMTIH
+ 70
+    0
+  9
+$DIMTOH
+ 70
+    0
+  9
+$DIMSE1
+ 70
+    0
+  9
+$DIMSE2
+ 70
+    0
+  9
+$DIMTAD
+ 70
+    1
+  9
+$DIMZIN
+ 70
+    8
+  9
+$DIMBLK
+  1
+
+  9
+$DIMASO
+ 70
+    1
+  9
+$DIMSHO
+ 70
+    1
+  9
+$DIMPOST
+  1
+
+  9
+$DIMAPOST
+  1
+
+  9
+$DIMALT
+ 70
+    0
+  9
+$DIMALTD
+ 70
+    3
+  9
+$DIMALTF
+ 40
+0.03937007874
+  9
+$DIMLFAC
+ 40
+1
+  9
+$DIMTOFL
+ 70
+    1
+  9
+$DIMTVP
+ 40
+0
+  9
+$DIMTIX
+ 70
+    0
+  9
+$DIMSOXD
+ 70
+    0
+  9
+$DIMSAH
+ 70
+    0
+  9
+$DIMBLK1
+  1
+
+  9
+$DIMBLK2
+  1
+
+  9
+$DIMSTYLE
+  2
+ISO-25
+  9
+$DIMCLRD
+ 70
+    0
+  9
+$DIMCLRE
+ 70
+    0
+  9
+$DIMCLRT
+ 70
+    0
+  9
+$DIMTFAC
+ 40
+1
+  9
+$DIMGAP
+ 40
+0.625
+  9
+$DIMJUST
+ 70
+    0
+  9
+$DIMSD1
+ 70
+    0
+  9
+$DIMSD2
+ 70
+    0
+  9
+$DIMTOLJ
+ 70
+    0
+  9
+$DIMTZIN
+ 70
+    8
+  9
+$DIMALTZ
+ 70
+    0
+  9
+$DIMALTTZ
+ 70
+    0
+  9
+$DIMUPT
+ 70
+    0
+  9
+$DIMDEC
+ 70
+    2
+  9
+$DIMTDEC
+ 70
+    2
+  9
+$DIMALTU
+ 70
+    2
+  9
+$DIMALTTD
+ 70
+    3
+  9
+$DIMTXSTY
+  7
+Standard
+  9
+$DIMAUNIT
+ 70
+    0
+  9
+$DIMADEC
+ 70
+    0
+  9
+$DIMALTRND
+ 40
+0
+  9
+$DIMAZIN
+ 70
+    0
+  9
+$DIMDSEP
+ 70
+   44
+  9
+$DIMATFIT
+ 70
+    3
+  9
+$DIMFRAC
+ 70
+    0
+  9
+$DIMLDRBLK
+  1
+
+  9
+$DIMLUNIT
+ 70
+    2
+  9
+$DIMLWD
+ 70
+   -2
+  9
+$DIMLWE
+ 70
+   -2
+  9
+$DIMTMOVE
+ 70
+    0
+  9
+$DIMFXL
+ 40
+1
+  9
+$DIMFXLON
+ 70
+    0
+  9
+$DIMJOGANG
+ 40
+0.785398163397
+  9
+$DIMTFILL
+ 70
+    0
+  9
+$DIMTFILLCLR
+ 70
+    0
+  9
+$DIMARCSYM
+ 70
+    0
+  9
+$DIMLTYPE
+  6
+
+  9
+$DIMLTEX1
+  6
+
+  9
+$DIMLTEX2
+  6
+
+  9
+$LUNITS
+ 70
+    2
+  9
+$LUPREC
+ 70
+    4
+  9
+$SKETCHINC
+ 40
+1
+  9
+$FILLETRAD
+ 40
+10
+  9
+$AUNITS
+ 70
+    0
+  9
+$AUPREC
+ 70
+    2
+  9
+$MENU
+  1
+.
+  9
+$ELEVATION
+ 40
+0
+  9
+$PELEVATION
+ 40
+0
+  9
+$THICKNESS
+ 40
+0
+  9
+$LIMCHECK
+ 70
+    0
+  9
+$CHAMFERA
+ 40
+0
+  9
+$CHAMFERB
+ 40
+0
+  9
+$CHAMFERC
+ 40
+0
+  9
+$CHAMFERD
+ 40
+0
+  9
+$SKPOLY
+ 70
+    0
+  9
+$USRTIMER
+ 70
+    1
+  9
+$ANGBASE
+ 50
+0
+  9
+$ANGDIR
+ 70
+    0
+  9
+$PDMODE
+ 70
+    0
+  9
+$PDSIZE
+ 40
+0
+  9
+$PLINEWID
+ 40
+0
+  9
+$SPLFRAME
+ 70
+    0
+  9
+$SPLINETYPE
+ 70
+    6
+  9
+$SPLINESEGS
+ 70
+    8
+  9
+$HANDSEED
+  5
+20000
+  9
+$SURFTAB1
+ 70
+    6
+  9
+$SURFTAB2
+ 70
+    6
+  9
+$SURFTYPE
+ 70
+    6
+  9
+$SURFU
+ 70
+    6
+  9
+$SURFV
+ 70
+    6
+  9
+$UCSBASE
+  2
+
+  9
+$UCSNAME
+  2
+
+  9
+$UCSORG
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$UCSXDIR
+ 10
+1
+ 20
+0
+ 30
+0
+  9
+$UCSYDIR
+ 10
+0
+ 20
+1
+ 30
+0
+  9
+$UCSORTHOREF
+  2
+
+  9
+$UCSORTHOVIEW
+ 70
+    0
+  9
+$UCSORGTOP
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$UCSORGBOTTOM
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$UCSORGLEFT
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$UCSORGRIGHT
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$UCSORGFRONT
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$UCSORGBACK
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$PUCSBASE
+  2
+
+  9
+$PUCSNAME
+  2
+
+  9
+$PUCSORG
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$PUCSXDIR
+ 10
+1
+ 20
+0
+ 30
+0
+  9
+$PUCSYDIR
+ 10
+0
+ 20
+1
+ 30
+0
+  9
+$PUCSORTHOREF
+  2
+
+  9
+$PUCSORTHOVIEW
+ 70
+    0
+  9
+$PUCSORGTOP
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$PUCSORGBOTTOM
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$PUCSORGLEFT
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$PUCSORGRIGHT
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$PUCSORGFRONT
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$PUCSORGBACK
+ 10
+0
+ 20
+0
+ 30
+0
+  9
+$USERI1
+ 70
+    0
+  9
+$USERI2
+ 70
+    0
+  9
+$USERI3
+ 70
+    0
+  9
+$USERI4
+ 70
+    0
+  9
+$USERI5
+ 70
+    0
+  9
+$USERR1
+ 40
+0
+  9
+$USERR2
+ 40
+0
+  9
+$USERR3
+ 40
+0
+  9
+$USERR4
+ 40
+0
+  9
+$USERR5
+ 40
+0
+  9
+$WORLDVIEW
+ 70
+    1
+  9
+$SHADEDGE
+ 70
+    3
+  9
+$SHADEDIF
+ 70
+   70
+  9
+$TILEMODE
+ 70
+    1
+  9
+$MAXACTVP
+ 70
+   64
+  9
+$PINSBASE
+ 10
+44.61849423357455
+ 20
+-4.701595883111677
+ 30
+0
+  9
+$PLIMCHECK
+ 70
+    0
+  9
+$PEXTMIN
+ 10
+1e+20
+ 20
+1e+20
+ 30
+1e+20
+  9
+$PEXTMAX
+ 10
+-1e+20
+ 20
+-1e+20
+ 30
+-1e+20
+  9
+$GRIDMODE
+ 70
+    0
+  9
+$SNAPSTYLE
+ 70
+    0
+  9
+$PLIMMIN
+ 10
+0
+ 20
+0
+  9
+$PLIMMAX
+ 10
+420
+ 20
+297
+  9
+$UNITMODE
+ 70
+    0
+  9
+$VISRETAIN
+ 70
+    1
+  9
+$PLINEGEN
+ 70
+    0
+  9
+$PSLTSCALE
+ 70
+    1
+  9
+$TREEDEPTH
+ 70
+ 3020
+  9
+$CMLSTYLE
+  2
+Standard
+  9
+$CMLJUST
+ 70
+    0
+  9
+$CMLSCALE
+ 40
+20
+  9
+$PROXYGRAPHICS
+ 70
+    1
+  9
+$MEASUREMENT
+ 70
+    1
+  9
+$CELWEIGHT
+370
+   -1
+  9
+$ENDCAPS
+280
+    0
+  9
+$JOINSTYLE
+280
+    0
+  9
+$LWDISPLAY
+290
+    0
+  9
+$INSUNITS
+ 70
+    6
+  9
+$HYPERLINKBASE
+  1
+
+  9
+$STYLESHEET
+  1
+
+  9
+$XEDIT
+290
+    1
+  9
+$CEPSNTYPE
+380
+    0
+  9
+$PSTYLEMODE
+290
+    1
+  9
+$EXTNAMES
+290
+    1
+  9
+$PSVPSCALE
+ 40
+0.4701595883111677
+  9
+$OLESTARTUP
+290
+    0
+  9
+$SORTENTS
+280
+  127
+  9
+$INDEXCTL
+280
+    0
+  9
+$HIDETEXT
+280
+    1
+  9
+$XCLIPFRAME
+290
+    1
+  9
+$HALOGAP
+280
+    0
+  9
+$OBSCOLOR
+ 70
+  257
+  9
+$OBSLTYPE
+280
+    0
+  9
+$INTERSECTIONDISPLAY
+280
+    0
+  9
+$INTERSECTIONCOLOR
+ 70
+  257
+  9
+$DIMASSOC
+280
+    2
+  9
+$PROJECTNAME
+  1
+
+  9
+$CAMERADISPLAY
+290
+    0
+  9
+$LENSLENGTH
+ 40
+50
+  9
+$CAMERAHEIGHT
+ 40
+0
+  9
+$STEPSPERSEC
+ 40
+24
+  9
+$STEPSIZE
+ 40
+100
+  9
+$3DDWFPREC
+ 40
+2
+  9
+$PSOLWIDTH
+ 40
+0.005
+  9
+$PSOLHEIGHT
+ 40
+0.08
+  9
+$LOFTANG1
+ 40
+1.570796326795
+  9
+$LOFTANG2
+ 40
+1.570796326795
+  9
+$LOFTMAG1
+ 40
+0
+  9
+$LOFTMAG2
+ 40
+0
+  9
+$LOFTPARAM
+ 70
+    7
+  9
+$LOFTNORMALS
+280
+    1
+  9
+$LATITUDE
+ 40
+37.795
+  9
+$LONGITUDE
+ 40
+-122.394
+  9
+$NORTHDIRECTION
+ 40
+0
+  9
+$TIMEZONE
+ 70
+-8000
+  9
+$LIGHTGLYPHDISPLAY
+280
+    1
+  9
+$TILEMODELIGHTSYNCH
+280
+    1
+  9
+$SOLIDHIST
+280
+    0
+  9
+$SHOWHIST
+280
+    1
+  9
+$DWFFRAME
+280
+    2
+  9
+$DGNFRAME
+280
+    2
+  9
+$REALWORLDSCALE
+290
+    1
+  9
+$INTERFERECOLOR
+ 62
+  256
+  9
+$CSHADOW
+280
+    0
+  9
+$SHADOWPLANELOCATION
+ 40
+0
+  0
+ENDSEC
+  0
+SECTION
+  2
+CLASSES
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+VPORT
+  5
+8
+330
+0
+100
+AcDbSymbolTable
+ 70
+    1
+  0
+VPORT
+  5
+31
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbViewportTableRecord
+  2
+*ACTIVE
+ 70
+    0
+ 10
+0
+ 20
+0
+ 11
+1
+ 21
+1
+ 12
+493.8131083870968
+ 22
+324.0011729032258
+ 13
+0
+ 23
+0
+ 14
+10
+ 24
+10
+ 15
+10
+ 25
+10
+ 16
+0
+ 26
+0
+ 36
+1
+ 17
+0
+ 27
+0
+ 37
+0
+ 40
+645.2853548387097
+ 41
+1.970526315789474
+ 42
+50
+ 43
+0
+ 44
+0
+ 50
+0
+ 51
+0
+ 71
+    0
+ 72
+  100
+ 73
+    1
+ 74
+    3
+ 75
+    0
+ 76
+    0
+ 77
+    0
+ 78
+    0
+281
+    0
+ 65
+    1
+110
+0
+120
+0
+130
+0
+111
+1
+121
+0
+131
+0
+112
+0
+122
+1
+132
+0
+ 79
+    0
+146
+0
+348
+10020
+ 60
+    7
+ 61
+    5
+292
+1
+282
+    1
+141
+0
+142
+0
+ 63
+  250
+421
+3358443
+  0
+ENDTAB
+  0
+TABLE
+  2
+LTYPE
+  5
+5
+330
+0
+100
+AcDbSymbolTable
+ 70
+    4
+  0
+LTYPE
+  5
+14
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+ByBlock
+ 70
+    0
+  3
+
+ 72
+   65
+ 73
+    0
+ 40
+0
+  0
+LTYPE
+  5
+15
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+ByLayer
+ 70
+    0
+  3
+
+ 72
+   65
+ 73
+    0
+ 40
+0
+  0
+LTYPE
+  5
+16
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+Continuous
+ 70
+    0
+  3
+Solid line
+ 72
+   65
+ 73
+    0
+ 40
+0
+  0
+LTYPE
+  5
+32
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DOT
+ 70
+    0
+  3
+Dot . . . . . . . . . . . . . . . . . . . . . .
+ 72
+   65
+ 73
+    2
+ 40
+6.35
+ 49
+0
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+  0
+LTYPE
+  5
+33
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DOTTINY
+ 70
+    0
+  3
+Dot (.15x) .....................................
+ 72
+   65
+ 73
+    2
+ 40
+0.9525
+ 49
+0
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+  0
+LTYPE
+  5
+34
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DOT2
+ 70
+    0
+  3
+Dot (.5x) .....................................
+ 72
+   65
+ 73
+    2
+ 40
+3.175
+ 49
+0
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+  0
+LTYPE
+  5
+35
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DOTX2
+ 70
+    0
+  3
+Dot (2x) .  .  .  .  .  .  .  .  .  .  .  .  .
+ 72
+   65
+ 73
+    2
+ 40
+12.7
+ 49
+0
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+  0
+LTYPE
+  5
+36
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHED
+ 70
+    0
+  3
+Dashed _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+ 72
+   65
+ 73
+    2
+ 40
+19.05
+ 49
+12.7
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+  0
+LTYPE
+  5
+37
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHEDTINY
+ 70
+    0
+  3
+Dashed (.15x) _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+ 72
+   65
+ 73
+    2
+ 40
+2.8575
+ 49
+1.905
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+  0
+LTYPE
+  5
+38
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHED2
+ 70
+    0
+  3
+Dashed (.5x) _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+ 72
+   65
+ 73
+    2
+ 40
+9.524999999999999
+ 49
+6.35
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+  0
+LTYPE
+  5
+39
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHEDX2
+ 70
+    0
+  3
+Dashed (2x) ____  ____  ____  ____  ____  ___
+ 72
+   65
+ 73
+    2
+ 40
+38.09999999999999
+ 49
+25.4
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+  0
+LTYPE
+  5
+3A
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHDOT
+ 70
+    0
+  3
+Dash dot __ . __ . __ . __ . __ . __ . __ . __
+ 72
+   65
+ 73
+    4
+ 40
+25.4
+ 49
+12.7
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+  0
+LTYPE
+  5
+3B
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHDOTTINY
+ 70
+    0
+  3
+Dash dot (.15x) _._._._._._._._._._._._._._._.
+ 72
+   65
+ 73
+    4
+ 40
+3.81
+ 49
+1.905
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+  0
+LTYPE
+  5
+3C
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHDOT2
+ 70
+    0
+  3
+Dash dot (.5x) _._._._._._._._._._._._._._._.
+ 72
+   65
+ 73
+    4
+ 40
+12.7
+ 49
+6.35
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+  0
+LTYPE
+  5
+3D
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHDOTX2
+ 70
+    0
+  3
+Dash dot (2x) ____  .  ____  .  ____  .  ___
+ 72
+   65
+ 73
+    4
+ 40
+50.8
+ 49
+25.4
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+  0
+LTYPE
+  5
+3E
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DIVIDE
+ 70
+    0
+  3
+Divide ____ . . ____ . . ____ . . ____ . . ____
+ 72
+   65
+ 73
+    6
+ 40
+31.75
+ 49
+12.7
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+  0
+LTYPE
+  5
+3F
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DIVIDETINY
+ 70
+    0
+  3
+Divide (.15x) __..__..__..__..__..__..__..__.._
+ 72
+   65
+ 73
+    6
+ 40
+4.7625
+ 49
+1.905
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+  0
+LTYPE
+  5
+40
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DIVIDE2
+ 70
+    0
+  3
+Divide (.5x) __..__..__..__..__..__..__..__.._
+ 72
+   65
+ 73
+    6
+ 40
+15.875
+ 49
+6.35
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+  0
+LTYPE
+  5
+41
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DIVIDEX2
+ 70
+    0
+  3
+Divide (2x) ________  .  .  ________  .  .  _
+ 72
+   65
+ 73
+    6
+ 40
+63.5
+ 49
+25.4
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+  0
+LTYPE
+  5
+42
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+BORDER
+ 70
+    0
+  3
+Border __ __ . __ __ . __ __ . __ __ . __ __ .
+ 72
+   65
+ 73
+    6
+ 40
+44.45
+ 49
+12.7
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+ 49
+12.7
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+  0
+LTYPE
+  5
+43
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+BORDERTINY
+ 70
+    0
+  3
+Border (.15x) __.__.__.__.__.__.__.__.__.__.__.
+ 72
+   65
+ 73
+    6
+ 40
+6.6675
+ 49
+1.905
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+ 49
+1.905
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+  0
+LTYPE
+  5
+44
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+BORDER2
+ 70
+    0
+  3
+Border (.5x) __.__.__.__.__.__.__.__.__.__.__.
+ 72
+   65
+ 73
+    6
+ 40
+22.225
+ 49
+6.35
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+ 49
+6.35
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+  0
+LTYPE
+  5
+45
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+BORDERX2
+ 70
+    0
+  3
+Border (2x) ____  ____  .  ____  ____  .  ___
+ 72
+   65
+ 73
+    6
+ 40
+88.89999999999999
+ 49
+25.4
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+ 49
+25.4
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+ 49
+0
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+  0
+LTYPE
+  5
+46
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+CENTER
+ 70
+    0
+  3
+Center ____ _ ____ _ ____ _ ____ _ ____ _ ____
+ 72
+   65
+ 73
+    4
+ 40
+50.8
+ 49
+31.75
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+ 49
+6.35
+ 74
+    0
+ 49
+-6.35
+ 74
+    0
+  0
+LTYPE
+  5
+47
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+CENTERTINY
+ 70
+    0
+  3
+Center (.15x) ___ _ ___ _ ___ _ ___ _ ___ _ ___
+ 72
+   65
+ 73
+    4
+ 40
+7.619999999999999
+ 49
+4.7625
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+ 49
+0.9525
+ 74
+    0
+ 49
+-0.9525
+ 74
+    0
+  0
+LTYPE
+  5
+48
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+CENTER2
+ 70
+    0
+  3
+Center (.5x) ___ _ ___ _ ___ _ ___ _ ___ _ ___
+ 72
+   65
+ 73
+    4
+ 40
+28.575
+ 49
+19.05
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+ 49
+3.175
+ 74
+    0
+ 49
+-3.175
+ 74
+    0
+  0
+LTYPE
+  5
+49
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+CENTERX2
+ 70
+    0
+  3
+Center (2x) ________  __  ________  __  _____
+ 72
+   65
+ 73
+    4
+ 40
+101.6
+ 49
+63.5
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+ 49
+12.7
+ 74
+    0
+ 49
+-12.7
+ 74
+    0
+  0
+ENDTAB
+  0
+TABLE
+  2
+LAYER
+  5
+2
+330
+0
+100
+AcDbSymbolTable
+ 70
+    1
+  0
+LAYER
+  5
+10
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+0
+ 70
+    0
+ 62
+  253
+420
+10526884
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+4A
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+ANALOG_AUDIO
+ 70
+    0
+ 62
+   30
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+4B
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+BORDER
+ 70
+    0
+ 62
+    7
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+4C
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+DANTE
+ 70
+    0
+ 62
+  191
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+4D
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+DEVICES
+ 70
+    0
+ 62
+    7
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+4E
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+DEVICE_TEXT
+ 70
+    0
+ 62
+    7
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+4F
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+DISPLAYPORT
+ 70
+    0
+ 62
+   84
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+50
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Defpoints
+ 70
+    0
+ 62
+    7
+  6
+CONTINUOUS
+290
+0
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+51
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+ETHERNET
+ 70
+    0
+ 62
+   84
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+52
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+FIBER
+ 70
+    0
+ 62
+    4
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+53
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+GPIO
+ 70
+    0
+ 62
+    2
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+54
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+HDBASET
+ 70
+    0
+ 62
+   92
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+55
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+HDMI
+ 70
+    0
+ 62
+   40
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+56
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+NDI
+ 70
+    0
+ 62
+   30
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+57
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+NOTES
+ 70
+    0
+ 62
+    8
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+58
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+RF
+ 70
+    0
+ 62
+    8
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+59
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+RS422
+ 70
+    0
+ 62
+    2
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+5A
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+SDI
+ 70
+    0
+ 62
+   94
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+5B
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+SPEAKER_LEVEL
+ 70
+    0
+ 62
+    1
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+5C
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+TITLE
+ 70
+    0
+ 62
+    7
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+LAYER
+  5
+5D
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+USB
+ 70
+    0
+ 62
+   84
+  6
+CONTINUOUS
+370
+   -3
+390
+F
+  0
+ENDTAB
+  0
+TABLE
+  2
+STYLE
+  5
+3
+330
+0
+100
+AcDbSymbolTable
+ 70
+    3
+  0
+STYLE
+  5
+5E
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+STANDARD
+ 70
+    0
+ 40
+0
+ 41
+1
+ 50
+0
+ 71
+    0
+ 42
+1
+  3
+STANDARD
+  4
+
+  0
+ENDTAB
+  0
+TABLE
+  2
+VIEW
+  5
+6
+330
+0
+100
+AcDbSymbolTable
+ 70
+    0
+  0
+ENDTAB
+  0
+TABLE
+  2
+UCS
+  5
+7
+330
+0
+100
+AcDbSymbolTable
+ 70
+    0
+  0
+ENDTAB
+  0
+TABLE
+  2
+APPID
+  5
+9
+330
+0
+100
+AcDbSymbolTable
+ 70
+    1
+  0
+APPID
+  5
+12
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD
+ 70
+    0
+  0
+APPID
+  5
+5F
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+LibreCad
+ 70
+    0
+  0
+ENDTAB
+  0
+TABLE
+  2
+DIMSTYLE
+  5
+A
+330
+0
+100
+AcDbSymbolTable
+ 70
+    1
+100
+AcDbDimStyleTable
+ 71
+    1
+  0
+DIMSTYLE
+105
+60
+330
+A
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+Standard
+ 70
+    0
+ 40
+1
+ 41
+2.5
+ 42
+0.625
+ 43
+0.38
+ 44
+1.25
+ 45
+0
+ 46
+0
+ 47
+0
+ 48
+0
+ 49
+1
+140
+2.5
+141
+0.09
+142
+0
+143
+25.4
+144
+1
+145
+0
+146
+1
+147
+0.625
+148
+0
+ 71
+    0
+ 72
+    0
+ 73
+    0
+ 74
+    1
+ 75
+    0
+ 76
+    0
+ 77
+    0
+ 78
+    8
+ 79
+    0
+170
+    0
+171
+    2
+172
+    0
+173
+    0
+174
+    0
+175
+    0
+176
+    0
+177
+    0
+178
+    0
+179
+    0
+271
+    2
+272
+    4
+273
+    2
+274
+    2
+275
+    0
+276
+    0
+277
+    2
+278
+   44
+279
+    0
+280
+    0
+281
+    0
+282
+    0
+283
+    1
+284
+    0
+285
+    0
+286
+    0
+288
+    0
+289
+    3
+340
+5E
+  0
+ENDTAB
+  0
+TABLE
+  2
+BLOCK_RECORD
+  5
+1
+330
+0
+100
+AcDbSymbolTable
+ 70
+    2
+  0
+BLOCK_RECORD
+  5
+1F
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*Model_Space
+ 70
+    0
+280
+    1
+281
+    0
+  0
+BLOCK_RECORD
+  5
+1E
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*Paper_Space
+ 70
+    0
+280
+    1
+281
+    0
+  0
+ENDTAB
+  0
+ENDSEC
+  0
+SECTION
+  2
+BLOCKS
+  0
+BLOCK
+  5
+20
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*Model_Space
+ 70
+    0
+ 10
+0
+ 20
+0
+ 30
+0
+  3
+*Model_Space
+  1
+
+  0
+ENDBLK
+  5
+21
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+1C
+330
+1B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*Paper_Space
+ 70
+    0
+ 10
+0
+ 20
+0
+ 30
+0
+  3
+*Paper_Space
+  1
+
+  0
+ENDBLK
+  5
+1D
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+LWPOLYLINE
+  5
+61
+100
+AcDbEntity
+  8
+BORDER
+  6
+ByLayer
+ 62
+  256
+370
+   50
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+10
+ 20
+10
+ 10
+410
+ 20
+10
+ 10
+410
+ 20
+287
+ 10
+10
+ 20
+287
+ 10
+10
+ 20
+10
+  0
+LWPOLYLINE
+  5
+62
+100
+AcDbEntity
+  8
+TITLE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+290
+ 20
+10
+ 10
+410
+ 20
+10
+ 10
+410
+ 20
+35
+ 10
+290
+ 20
+35
+ 10
+290
+ 20
+10
+  0
+TEXT
+  5
+63
+100
+AcDbEntity
+  8
+TITLE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+292
+ 20
+29
+ 30
+0
+ 40
+2.5
+  1
+Boardroom Pro
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+TEXT
+  5
+64
+100
+AcDbEntity
+  8
+TITLE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+292
+ 20
+24
+ 30
+0
+ 40
+1.8
+  1
+AV Signal Flow Diagram
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+TEXT
+  5
+65
+100
+AcDbEntity
+  8
+TITLE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+292
+ 20
+14
+ 30
+0
+ 40
+1.8
+  1
+Date: 2026-06-16
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+TEXT
+  5
+66
+100
+AcDbEntity
+  8
+TITLE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+350
+ 20
+14
+ 30
+0
+ 40
+1.8
+  1
+Scale: 1:1  Units: mm
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+TEXT
+  5
+67
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+12
+ 20
+282
+ 30
+0
+ 40
+1.8
+  1
+SIGNAL LEGEND
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+68
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbLine
+ 10
+12
+ 20
+278
+ 11
+20
+ 21
+278
+  0
+TEXT
+  5
+69
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+22
+ 20
+277
+ 30
+0
+ 40
+1.8
+  1
+HDMI
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+6A
+100
+AcDbEntity
+  8
+SDI
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbLine
+ 10
+12
+ 20
+273
+ 11
+20
+ 21
+273
+  0
+TEXT
+  5
+6B
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+22
+ 20
+272
+ 30
+0
+ 40
+1.8
+  1
+SDI
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+6C
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbLine
+ 10
+12
+ 20
+268
+ 11
+20
+ 21
+268
+  0
+TEXT
+  5
+6D
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+22
+ 20
+267
+ 30
+0
+ 40
+1.8
+  1
+Dante
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+6E
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbLine
+ 10
+12
+ 20
+263
+ 11
+20
+ 21
+263
+  0
+TEXT
+  5
+6F
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+22
+ 20
+262
+ 30
+0
+ 40
+1.8
+  1
+Ethernet/RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+70
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbLine
+ 10
+12
+ 20
+258
+ 11
+20
+ 21
+258
+  0
+TEXT
+  5
+71
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+22
+ 20
+257
+ 30
+0
+ 40
+1.8
+  1
+USB
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+72
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbLine
+ 10
+12
+ 20
+253
+ 11
+20
+ 21
+253
+  0
+TEXT
+  5
+73
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+22
+ 20
+252
+ 30
+0
+ 40
+1.8
+  1
+Speaker Level
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+74
+100
+AcDbEntity
+  8
+ANALOG_AUDIO
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbLine
+ 10
+12
+ 20
+248
+ 11
+20
+ 21
+248
+  0
+TEXT
+  5
+75
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+22
+ 20
+247
+ 30
+0
+ 40
+1.8
+  1
+Analog Audio
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+76
+100
+AcDbEntity
+  8
+NDI
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbLine
+ 10
+12
+ 20
+243
+ 11
+20
+ 21
+243
+  0
+TEXT
+  5
+77
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+22
+ 20
+242
+ 30
+0
+ 40
+1.8
+  1
+NDI
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+78
+100
+AcDbEntity
+  8
+HDBASET
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbLine
+ 10
+12
+ 20
+238
+ 11
+20
+ 21
+238
+  0
+TEXT
+  5
+79
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+22
+ 20
+237
+ 30
+0
+ 40
+1.8
+  1
+HDBaseT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+7A
+100
+AcDbEntity
+  8
+FIBER
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbLine
+ 10
+12
+ 20
+233
+ 11
+20
+ 21
+233
+  0
+TEXT
+  5
+7B
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+22
+ 20
+232
+ 30
+0
+ 40
+1.8
+  1
+Fiber
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+7C
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+229.928
+ 20
+596.7184000000001
+ 10
+272.264
+ 20
+596.7184000000001
+ 10
+272.264
+ 20
+641.7004000000001
+ 10
+229.928
+ 20
+641.7004000000001
+ 10
+229.928
+ 20
+596.7184000000001
+  0
+LWPOLYLINE
+  5
+7D
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+229.928
+ 20
+631.1164000000001
+ 10
+272.264
+ 20
+631.1164000000001
+  0
+TEXT
+  5
+7E
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+633.6164000000001
+ 30
+0
+ 40
+2.5
+  1
+Cisco PTZ 4K Camera 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+7F
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+631.1164000000001
+ 11
+272.264
+ 21
+631.1164000000001
+  0
+TEXT
+  5
+80
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+625.2368000000001
+ 30
+0
+ 40
+1.8
+  1
+CTS-CAM-P60-K9
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+81
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+627.6766000000001
+ 11
+230.928
+ 21
+627.6766000000001
+  0
+LINE
+  5
+82
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+626.6766000000001
+ 11
+229.928
+ 21
+628.6766000000001
+  0
+LINE
+  5
+83
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+624.2368000000001
+ 11
+272.264
+ 21
+624.2368000000001
+  0
+TEXT
+  5
+84
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+618.3572000000001
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+85
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+620.7970000000001
+ 11
+230.928
+ 21
+620.7970000000001
+  0
+LINE
+  5
+86
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+619.7970000000001
+ 11
+229.928
+ 21
+621.7970000000001
+  0
+LINE
+  5
+87
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+229.928
+ 20
+617.3572000000001
+ 11
+272.264
+ 21
+617.3572000000001
+  0
+TEXT
+  5
+88
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+617.8572000000001
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+89
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+610.4776000000002
+ 11
+272.264
+ 21
+610.4776000000002
+  0
+TEXT
+  5
+8A
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+604.5980000000002
+ 30
+0
+ 40
+1.8
+  1
+HDMI Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+8B
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+607.0378000000002
+ 11
+273.264
+ 21
+607.0378000000002
+  0
+LINE
+  5
+8C
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+606.0378000000002
+ 11
+272.264
+ 21
+608.0378000000002
+  0
+LINE
+  5
+8D
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+603.5980000000002
+ 11
+272.264
+ 21
+603.5980000000002
+  0
+TEXT
+  5
+8E
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+597.7184000000002
+ 30
+0
+ 40
+1.8
+  1
+USB Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+8F
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+600.1582000000002
+ 11
+273.264
+ 21
+600.1582000000002
+  0
+LINE
+  5
+90
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+599.1582000000002
+ 11
+272.264
+ 21
+601.1582000000002
+  0
+TEXT
+  5
+91
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+597.7184000000001
+ 30
+0
+ 40
+1.8
+  1
+S/N: CAM-P60-02
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+92
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+277.556
+ 20
+87.0988000000001
+ 10
+319.892
+ 20
+87.0988000000001
+ 10
+319.892
+ 20
+132.0808000000001
+ 10
+277.556
+ 20
+132.0808000000001
+ 10
+277.556
+ 20
+87.0988000000001
+  0
+LWPOLYLINE
+  5
+93
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+277.556
+ 20
+121.4968000000001
+ 10
+319.892
+ 20
+121.4968000000001
+  0
+TEXT
+  5
+94
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+123.9968000000001
+ 30
+0
+ 40
+2.5
+  1
+Samsung QM90B Display Right
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+95
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+121.4968000000001
+ 11
+319.892
+ 21
+121.4968000000001
+  0
+TEXT
+  5
+96
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+115.6172000000001
+ 30
+0
+ 40
+1.8
+  1
+90" Display
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+97
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+276.556
+ 20
+118.0570000000001
+ 11
+278.556
+ 21
+118.0570000000001
+  0
+LINE
+  5
+98
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+277.556
+ 20
+117.0570000000001
+ 11
+277.556
+ 21
+119.0570000000001
+  0
+LINE
+  5
+99
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+114.6172000000001
+ 11
+319.892
+ 21
+114.6172000000001
+  0
+TEXT
+  5
+9A
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+108.7376000000001
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+9B
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+276.556
+ 20
+111.1774000000001
+ 11
+278.556
+ 21
+111.1774000000001
+  0
+LINE
+  5
+9C
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+277.556
+ 20
+110.1774000000001
+ 11
+277.556
+ 21
+112.1774000000001
+  0
+LINE
+  5
+9D
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+277.556
+ 20
+107.7376000000001
+ 11
+319.892
+ 21
+107.7376000000001
+  0
+TEXT
+  5
+9E
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+108.2376000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+9F
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+100.8580000000001
+ 11
+319.892
+ 21
+100.8580000000001
+  0
+TEXT
+  5
+A0
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+94.97840000000008
+ 30
+0
+ 40
+1.8
+  1
+HDMI In 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+A1
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+276.556
+ 20
+97.41820000000008
+ 11
+278.556
+ 21
+97.41820000000008
+  0
+LINE
+  5
+A2
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+277.556
+ 20
+96.41820000000008
+ 11
+277.556
+ 21
+98.41820000000008
+  0
+LINE
+  5
+A3
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+93.97840000000008
+ 11
+319.892
+ 21
+93.97840000000008
+  0
+TEXT
+  5
+A4
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+88.09880000000008
+ 30
+0
+ 40
+1.8
+  1
+HDMI In 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+A5
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+276.556
+ 20
+90.53860000000009
+ 11
+278.556
+ 21
+90.53860000000009
+  0
+LINE
+  5
+A6
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+277.556
+ 20
+89.53860000000009
+ 11
+277.556
+ 21
+91.53860000000009
+  0
+TEXT
+  5
+A7
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+88.0988000000001
+ 30
+0
+ 40
+1.8
+  1
+S/N: QM90B-R
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+A8
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+621.5360000000001
+ 20
+40
+ 10
+663.8720000000001
+ 20
+40
+ 10
+663.8720000000001
+ 20
+71.22280000000001
+ 10
+621.5360000000001
+ 20
+71.22280000000001
+ 10
+621.5360000000001
+ 20
+40
+  0
+LWPOLYLINE
+  5
+A9
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+621.5360000000001
+ 20
+60.6388
+ 10
+663.8720000000001
+ 20
+60.6388
+  0
+TEXT
+  5
+AA
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+622.5360000000001
+ 20
+63.1388
+ 30
+0
+ 40
+2.5
+  1
+Speaker Zone 7
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+AB
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+621.5360000000001
+ 20
+60.6388
+ 11
+663.8720000000001
+ 21
+60.6388
+  0
+TEXT
+  5
+AC
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+622.5360000000001
+ 20
+54.75920000000001
+ 30
+0
+ 40
+1.8
+  1
+Ceiling Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+AD
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+620.5360000000001
+ 20
+57.19900000000001
+ 11
+622.5360000000001
+ 21
+57.19900000000001
+  0
+LINE
+  5
+AE
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+621.5360000000001
+ 20
+56.19900000000001
+ 11
+621.5360000000001
+ 21
+58.19900000000001
+  0
+LINE
+  5
+AF
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+621.5360000000001
+ 20
+53.75920000000001
+ 11
+663.8720000000001
+ 21
+53.75920000000001
+  0
+TEXT
+  5
+B0
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+622.5360000000001
+ 20
+54.25920000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+B1
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+621.5360000000001
+ 20
+46.87960000000001
+ 11
+663.8720000000001
+ 21
+46.87960000000001
+  0
+TEXT
+  5
+B2
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+622.5360000000001
+ 20
+41.00000000000001
+ 30
+0
+ 40
+1.8
+  1
+Speaker In
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+B3
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+620.5360000000001
+ 20
+43.43980000000001
+ 11
+622.5360000000001
+ 21
+43.43980000000001
+  0
+LINE
+  5
+B4
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+621.5360000000001
+ 20
+42.43980000000001
+ 11
+621.5360000000001
+ 21
+44.43980000000001
+  0
+TEXT
+  5
+B5
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+622.5360000000001
+ 20
+41
+ 30
+0
+ 40
+1.8
+  1
+S/N: QSC-AMP8-Z07
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+B6
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+431.024
+ 20
+40
+ 10
+473.36
+ 20
+40
+ 10
+473.36
+ 20
+71.22280000000001
+ 10
+431.024
+ 20
+71.22280000000001
+ 10
+431.024
+ 20
+40
+  0
+LWPOLYLINE
+  5
+B7
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+431.024
+ 20
+60.6388
+ 10
+473.36
+ 20
+60.6388
+  0
+TEXT
+  5
+B8
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+432.024
+ 20
+63.1388
+ 30
+0
+ 40
+2.5
+  1
+Speaker Zone 5
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+B9
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+431.024
+ 20
+60.6388
+ 11
+473.36
+ 21
+60.6388
+  0
+TEXT
+  5
+BA
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+432.024
+ 20
+54.75920000000001
+ 30
+0
+ 40
+1.8
+  1
+Ceiling Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+BB
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+430.024
+ 20
+57.19900000000001
+ 11
+432.024
+ 21
+57.19900000000001
+  0
+LINE
+  5
+BC
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+431.024
+ 20
+56.19900000000001
+ 11
+431.024
+ 21
+58.19900000000001
+  0
+LINE
+  5
+BD
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+431.024
+ 20
+53.75920000000001
+ 11
+473.36
+ 21
+53.75920000000001
+  0
+TEXT
+  5
+BE
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+432.024
+ 20
+54.25920000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+BF
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+431.024
+ 20
+46.87960000000001
+ 11
+473.36
+ 21
+46.87960000000001
+  0
+TEXT
+  5
+C0
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+432.024
+ 20
+41.00000000000001
+ 30
+0
+ 40
+1.8
+  1
+Speaker In
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+C1
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+430.024
+ 20
+43.43980000000001
+ 11
+432.024
+ 21
+43.43980000000001
+  0
+LINE
+  5
+C2
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+431.024
+ 20
+42.43980000000001
+ 11
+431.024
+ 21
+44.43980000000001
+  0
+TEXT
+  5
+C3
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+432.024
+ 20
+41
+ 30
+0
+ 40
+1.8
+  1
+S/N: QSC-AMP8-Z05
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+C4
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+229.928
+ 20
+147.9568
+ 10
+272.264
+ 20
+147.9568
+ 10
+272.264
+ 20
+254.8552000000001
+ 10
+229.928
+ 20
+254.8552000000001
+ 10
+229.928
+ 20
+147.9568
+  0
+LWPOLYLINE
+  5
+C5
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+229.928
+ 20
+244.2712000000001
+ 10
+272.264
+ 20
+244.2712000000001
+  0
+TEXT
+  5
+C6
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+246.7712000000001
+ 30
+0
+ 40
+2.5
+  1
+QSC AMP8 Speaker Amplifier
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+C7
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+244.2712000000001
+ 11
+272.264
+ 21
+244.2712000000001
+  0
+TEXT
+  5
+C8
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+238.3916000000001
+ 30
+0
+ 40
+1.8
+  1
+QSC AMP8
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+C9
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+240.8314000000001
+ 11
+230.928
+ 21
+240.8314000000001
+  0
+LINE
+  5
+CA
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+239.8314000000001
+ 11
+229.928
+ 21
+241.8314000000001
+  0
+LINE
+  5
+CB
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+237.3916000000001
+ 11
+272.264
+ 21
+237.3916000000001
+  0
+TEXT
+  5
+CC
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+231.5120000000001
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+CD
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+233.9518
+ 11
+230.928
+ 21
+233.9518
+  0
+LINE
+  5
+CE
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+232.9518
+ 11
+229.928
+ 21
+234.9518
+  0
+LINE
+  5
+CF
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+229.928
+ 20
+230.5120000000001
+ 11
+272.264
+ 21
+230.5120000000001
+  0
+TEXT
+  5
+D0
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+231.0120000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+D1
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+223.6324
+ 11
+272.264
+ 21
+223.6324
+  0
+TEXT
+  5
+D2
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+217.7528
+ 30
+0
+ 40
+1.8
+  1
+Dante In 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+D3
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+220.1926
+ 11
+230.928
+ 21
+220.1926
+  0
+LINE
+  5
+D4
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+219.1926
+ 11
+229.928
+ 21
+221.1926
+  0
+LINE
+  5
+D5
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+216.7528
+ 11
+272.264
+ 21
+216.7528
+  0
+TEXT
+  5
+D6
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+210.8732
+ 30
+0
+ 40
+1.8
+  1
+Dante In 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+D7
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+213.313
+ 11
+230.928
+ 21
+213.313
+  0
+LINE
+  5
+D8
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+212.313
+ 11
+229.928
+ 21
+214.313
+  0
+LINE
+  5
+D9
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+229.928
+ 20
+209.8732
+ 11
+272.264
+ 21
+209.8732
+  0
+TEXT
+  5
+DA
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+210.3732
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+DB
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+202.9936
+ 11
+272.264
+ 21
+202.9936
+  0
+TEXT
+  5
+DC
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+197.114
+ 30
+0
+ 40
+1.8
+  1
+Speaker Out 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+DD
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+199.5538
+ 11
+273.264
+ 21
+199.5538
+  0
+LINE
+  5
+DE
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+198.5538
+ 11
+272.264
+ 21
+200.5538
+  0
+LINE
+  5
+DF
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+196.114
+ 11
+272.264
+ 21
+196.114
+  0
+TEXT
+  5
+E0
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+190.2344
+ 30
+0
+ 40
+1.8
+  1
+Speaker Out 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+E1
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+192.6742
+ 11
+273.264
+ 21
+192.6742
+  0
+LINE
+  5
+E2
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+191.6742
+ 11
+272.264
+ 21
+193.6742
+  0
+LINE
+  5
+E3
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+189.2344
+ 11
+272.264
+ 21
+189.2344
+  0
+TEXT
+  5
+E4
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+183.3548
+ 30
+0
+ 40
+1.8
+  1
+Speaker Out 3
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+E5
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+185.7946
+ 11
+273.264
+ 21
+185.7946
+  0
+LINE
+  5
+E6
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+184.7946
+ 11
+272.264
+ 21
+186.7946
+  0
+LINE
+  5
+E7
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+182.3548
+ 11
+272.264
+ 21
+182.3548
+  0
+TEXT
+  5
+E8
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+176.4752
+ 30
+0
+ 40
+1.8
+  1
+Speaker Out 4
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+E9
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+178.915
+ 11
+273.264
+ 21
+178.915
+  0
+LINE
+  5
+EA
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+177.915
+ 11
+272.264
+ 21
+179.915
+  0
+LINE
+  5
+EB
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+175.4752
+ 11
+272.264
+ 21
+175.4752
+  0
+TEXT
+  5
+EC
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+169.5956
+ 30
+0
+ 40
+1.8
+  1
+Speaker Out 5
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+ED
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+172.0354
+ 11
+273.264
+ 21
+172.0354
+  0
+LINE
+  5
+EE
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+171.0354
+ 11
+272.264
+ 21
+173.0354
+  0
+LINE
+  5
+EF
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+168.5956
+ 11
+272.264
+ 21
+168.5956
+  0
+TEXT
+  5
+F0
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+162.716
+ 30
+0
+ 40
+1.8
+  1
+Speaker Out 6
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+F1
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+165.1557999999999
+ 11
+273.264
+ 21
+165.1557999999999
+  0
+LINE
+  5
+F2
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+164.1557999999999
+ 11
+272.264
+ 21
+166.1557999999999
+  0
+LINE
+  5
+F3
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+161.716
+ 11
+272.264
+ 21
+161.716
+  0
+TEXT
+  5
+F4
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+155.8363999999999
+ 30
+0
+ 40
+1.8
+  1
+Speaker Out 7
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+F5
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+158.2761999999999
+ 11
+273.264
+ 21
+158.2761999999999
+  0
+LINE
+  5
+F6
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+157.2761999999999
+ 11
+272.264
+ 21
+159.2761999999999
+  0
+LINE
+  5
+F7
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+154.8363999999999
+ 11
+272.264
+ 21
+154.8363999999999
+  0
+TEXT
+  5
+F8
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+148.9567999999999
+ 30
+0
+ 40
+1.8
+  1
+Speaker Out 8
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+F9
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+151.3965999999999
+ 11
+273.264
+ 21
+151.3965999999999
+  0
+LINE
+  5
+FA
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+150.3965999999999
+ 11
+272.264
+ 21
+152.3965999999999
+  0
+TEXT
+  5
+FB
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+148.9568
+ 30
+0
+ 40
+1.8
+  1
+S/N: QSC-AMP8-01
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+FC
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+145.256
+ 20
+40
+ 10
+187.592
+ 20
+40
+ 10
+187.592
+ 20
+71.22280000000001
+ 10
+145.256
+ 20
+71.22280000000001
+ 10
+145.256
+ 20
+40
+  0
+LWPOLYLINE
+  5
+FD
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+145.256
+ 20
+60.6388
+ 10
+187.592
+ 20
+60.6388
+  0
+TEXT
+  5
+FE
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+146.256
+ 20
+63.1388
+ 30
+0
+ 40
+2.5
+  1
+Speaker Zone 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+FF
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+145.256
+ 20
+60.6388
+ 11
+187.592
+ 21
+60.6388
+  0
+TEXT
+  5
+100
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+146.256
+ 20
+54.75920000000001
+ 30
+0
+ 40
+1.8
+  1
+Ceiling Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+101
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+144.256
+ 20
+57.19900000000001
+ 11
+146.256
+ 21
+57.19900000000001
+  0
+LINE
+  5
+102
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+145.256
+ 20
+56.19900000000001
+ 11
+145.256
+ 21
+58.19900000000001
+  0
+LINE
+  5
+103
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+145.256
+ 20
+53.75920000000001
+ 11
+187.592
+ 21
+53.75920000000001
+  0
+TEXT
+  5
+104
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+146.256
+ 20
+54.25920000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+105
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+145.256
+ 20
+46.87960000000001
+ 11
+187.592
+ 21
+46.87960000000001
+  0
+TEXT
+  5
+106
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+146.256
+ 20
+41.00000000000001
+ 30
+0
+ 40
+1.8
+  1
+Speaker In
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+107
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+144.256
+ 20
+43.43980000000001
+ 11
+146.256
+ 21
+43.43980000000001
+  0
+LINE
+  5
+108
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+145.256
+ 20
+42.43980000000001
+ 11
+145.256
+ 21
+44.43980000000001
+  0
+TEXT
+  5
+109
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+146.256
+ 20
+41
+ 30
+0
+ 40
+1.8
+  1
+S/N: QSC-AMP8-Z02
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+10A
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+240.512
+ 20
+40
+ 10
+282.848
+ 20
+40
+ 10
+282.848
+ 20
+71.22280000000001
+ 10
+240.512
+ 20
+71.22280000000001
+ 10
+240.512
+ 20
+40
+  0
+LWPOLYLINE
+  5
+10B
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+240.512
+ 20
+60.6388
+ 10
+282.848
+ 20
+60.6388
+  0
+TEXT
+  5
+10C
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+241.512
+ 20
+63.1388
+ 30
+0
+ 40
+2.5
+  1
+Speaker Zone 3
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+10D
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+240.512
+ 20
+60.6388
+ 11
+282.848
+ 21
+60.6388
+  0
+TEXT
+  5
+10E
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+241.512
+ 20
+54.75920000000001
+ 30
+0
+ 40
+1.8
+  1
+Ceiling Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+10F
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+239.512
+ 20
+57.19900000000001
+ 11
+241.512
+ 21
+57.19900000000001
+  0
+LINE
+  5
+110
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+240.512
+ 20
+56.19900000000001
+ 11
+240.512
+ 21
+58.19900000000001
+  0
+LINE
+  5
+111
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+240.512
+ 20
+53.75920000000001
+ 11
+282.848
+ 21
+53.75920000000001
+  0
+TEXT
+  5
+112
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+241.512
+ 20
+54.25920000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+113
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+240.512
+ 20
+46.87960000000001
+ 11
+282.848
+ 21
+46.87960000000001
+  0
+TEXT
+  5
+114
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+241.512
+ 20
+41.00000000000001
+ 30
+0
+ 40
+1.8
+  1
+Speaker In
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+115
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+239.512
+ 20
+43.43980000000001
+ 11
+241.512
+ 21
+43.43980000000001
+  0
+LINE
+  5
+116
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+240.512
+ 20
+42.43980000000001
+ 11
+240.512
+ 21
+44.43980000000001
+  0
+TEXT
+  5
+117
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+241.512
+ 20
+41
+ 30
+0
+ 40
+1.8
+  1
+S/N: QSC-AMP8-Z03
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+118
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+431.024
+ 20
+542.74
+ 10
+473.36
+ 20
+542.74
+ 10
+473.36
+ 20
+580.8424000000001
+ 10
+431.024
+ 20
+580.8424000000001
+ 10
+431.024
+ 20
+542.74
+  0
+LWPOLYLINE
+  5
+119
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+431.024
+ 20
+570.2584000000002
+ 10
+473.36
+ 20
+570.2584000000002
+  0
+TEXT
+  5
+11A
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+432.024
+ 20
+572.7584000000002
+ 30
+0
+ 40
+2.5
+  1
+Shure ULXD2 Wireless Mic 3
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+11B
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+431.024
+ 20
+570.2584000000002
+ 11
+473.36
+ 21
+570.2584000000002
+  0
+TEXT
+  5
+11C
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+432.024
+ 20
+564.3788000000002
+ 30
+0
+ 40
+1.8
+  1
+ULXD2/B58
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+11D
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+430.024
+ 20
+566.8186000000002
+ 11
+432.024
+ 21
+566.8186000000002
+  0
+LINE
+  5
+11E
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+431.024
+ 20
+565.8186000000002
+ 11
+431.024
+ 21
+567.8186000000002
+  0
+LINE
+  5
+11F
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+431.024
+ 20
+563.3788000000002
+ 11
+473.36
+ 21
+563.3788000000002
+  0
+TEXT
+  5
+120
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+432.024
+ 20
+557.4992000000002
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+121
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+430.024
+ 20
+559.9390000000002
+ 11
+432.024
+ 21
+559.9390000000002
+  0
+LINE
+  5
+122
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+431.024
+ 20
+558.9390000000002
+ 11
+431.024
+ 21
+560.9390000000002
+  0
+LINE
+  5
+123
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+431.024
+ 20
+556.4992000000002
+ 11
+473.36
+ 21
+556.4992000000002
+  0
+TEXT
+  5
+124
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+432.024
+ 20
+556.9992000000002
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+125
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+431.024
+ 20
+549.6196000000002
+ 11
+473.36
+ 21
+549.6196000000002
+  0
+TEXT
+  5
+126
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+472.36
+ 20
+543.7400000000002
+ 30
+0
+ 40
+1.8
+  1
+USB Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+127
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+472.36
+ 20
+546.1798000000002
+ 11
+474.36
+ 21
+546.1798000000002
+  0
+LINE
+  5
+128
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+473.36
+ 20
+545.1798000000002
+ 11
+473.36
+ 21
+547.1798000000002
+  0
+TEXT
+  5
+129
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+432.024
+ 20
+543.74
+ 30
+0
+ 40
+1.8
+  1
+S/N: ULXD2-B58-03
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+12A
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+50
+ 20
+40
+ 10
+92.336
+ 20
+40
+ 10
+92.336
+ 20
+71.22280000000001
+ 10
+50
+ 20
+71.22280000000001
+ 10
+50
+ 20
+40
+  0
+LWPOLYLINE
+  5
+12B
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+50
+ 20
+60.6388
+ 10
+92.336
+ 20
+60.6388
+  0
+TEXT
+  5
+12C
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+51
+ 20
+63.1388
+ 30
+0
+ 40
+2.5
+  1
+Speaker Zone 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+12D
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+50
+ 20
+60.6388
+ 11
+92.336
+ 21
+60.6388
+  0
+TEXT
+  5
+12E
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+51
+ 20
+54.75920000000001
+ 30
+0
+ 40
+1.8
+  1
+Ceiling Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+12F
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+49
+ 20
+57.19900000000001
+ 11
+51
+ 21
+57.19900000000001
+  0
+LINE
+  5
+130
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+50
+ 20
+56.19900000000001
+ 11
+50
+ 21
+58.19900000000001
+  0
+LINE
+  5
+131
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+50
+ 20
+53.75920000000001
+ 11
+92.336
+ 21
+53.75920000000001
+  0
+TEXT
+  5
+132
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+51
+ 20
+54.25920000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+133
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+50
+ 20
+46.87960000000001
+ 11
+92.336
+ 21
+46.87960000000001
+  0
+TEXT
+  5
+134
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+51
+ 20
+41.00000000000001
+ 30
+0
+ 40
+1.8
+  1
+Speaker In
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+135
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+49
+ 20
+43.43980000000001
+ 11
+51
+ 21
+43.43980000000001
+  0
+LINE
+  5
+136
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+50
+ 20
+42.43980000000001
+ 11
+50
+ 21
+44.43980000000001
+  0
+TEXT
+  5
+137
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+51
+ 20
+41
+ 30
+0
+ 40
+1.8
+  1
+S/N: QSC-AMP8-Z01
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+138
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+277.556
+ 20
+270.7312000000001
+ 10
+319.892
+ 20
+270.7312000000001
+ 10
+319.892
+ 20
+363.8704000000001
+ 10
+277.556
+ 20
+363.8704000000001
+ 10
+277.556
+ 20
+270.7312000000001
+  0
+LWPOLYLINE
+  5
+139
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+277.556
+ 20
+353.2864000000001
+ 10
+319.892
+ 20
+353.2864000000001
+  0
+TEXT
+  5
+13A
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+355.7864000000001
+ 30
+0
+ 40
+2.5
+  1
+Dante Audio Network
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+13B
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+353.2864000000001
+ 11
+319.892
+ 21
+353.2864000000001
+  0
+TEXT
+  5
+13C
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+347.4068000000001
+ 30
+0
+ 40
+1.8
+  1
+Dante/AES67
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+13D
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+276.556
+ 20
+349.8466000000001
+ 11
+278.556
+ 21
+349.8466000000001
+  0
+LINE
+  5
+13E
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+277.556
+ 20
+348.8466000000001
+ 11
+277.556
+ 21
+350.8466000000001
+  0
+LINE
+  5
+13F
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+346.4068000000001
+ 11
+319.892
+ 21
+346.4068000000001
+  0
+TEXT
+  5
+140
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+340.5272000000001
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+141
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+276.556
+ 20
+342.9670000000001
+ 11
+278.556
+ 21
+342.9670000000001
+  0
+LINE
+  5
+142
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+277.556
+ 20
+341.9670000000001
+ 11
+277.556
+ 21
+343.9670000000001
+  0
+LINE
+  5
+143
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+277.556
+ 20
+339.5272000000001
+ 11
+319.892
+ 21
+339.5272000000001
+  0
+TEXT
+  5
+144
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+340.0272000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+145
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+332.6476000000001
+ 11
+319.892
+ 21
+332.6476000000001
+  0
+TEXT
+  5
+146
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+326.7680000000001
+ 30
+0
+ 40
+1.8
+  1
+Dante 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+147
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+276.556
+ 20
+329.2078000000001
+ 11
+278.556
+ 21
+329.2078000000001
+  0
+LINE
+  5
+148
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+277.556
+ 20
+328.2078000000001
+ 11
+277.556
+ 21
+330.2078000000001
+  0
+LINE
+  5
+149
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+325.7680000000001
+ 11
+319.892
+ 21
+325.7680000000001
+  0
+TEXT
+  5
+14A
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+319.8884000000002
+ 30
+0
+ 40
+1.8
+  1
+Dante 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+14B
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+276.556
+ 20
+322.3282000000002
+ 11
+278.556
+ 21
+322.3282000000002
+  0
+LINE
+  5
+14C
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+277.556
+ 20
+321.3282000000002
+ 11
+277.556
+ 21
+323.3282000000002
+  0
+LINE
+  5
+14D
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+318.8884000000002
+ 11
+319.892
+ 21
+318.8884000000002
+  0
+TEXT
+  5
+14E
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+313.0088000000002
+ 30
+0
+ 40
+1.8
+  1
+Dante 3
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+14F
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+276.556
+ 20
+315.4486000000002
+ 11
+278.556
+ 21
+315.4486000000002
+  0
+LINE
+  5
+150
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+277.556
+ 20
+314.4486000000002
+ 11
+277.556
+ 21
+316.4486000000002
+  0
+LINE
+  5
+151
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+312.0088000000002
+ 11
+319.892
+ 21
+312.0088000000002
+  0
+TEXT
+  5
+152
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+306.1292000000002
+ 30
+0
+ 40
+1.8
+  1
+Dante 4
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+153
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+276.556
+ 20
+308.5690000000002
+ 11
+278.556
+ 21
+308.5690000000002
+  0
+LINE
+  5
+154
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+277.556
+ 20
+307.5690000000002
+ 11
+277.556
+ 21
+309.5690000000002
+  0
+LINE
+  5
+155
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+277.556
+ 20
+305.1292000000002
+ 11
+319.892
+ 21
+305.1292000000002
+  0
+TEXT
+  5
+156
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+305.6292000000002
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+157
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+298.2496000000002
+ 11
+319.892
+ 21
+298.2496000000002
+  0
+TEXT
+  5
+158
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+318.892
+ 20
+292.3700000000002
+ 30
+0
+ 40
+1.8
+  1
+Dante 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+159
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+318.892
+ 20
+294.8098000000002
+ 11
+320.892
+ 21
+294.8098000000002
+  0
+LINE
+  5
+15A
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+319.892
+ 20
+293.8098000000002
+ 11
+319.892
+ 21
+295.8098000000002
+  0
+LINE
+  5
+15B
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+291.3700000000002
+ 11
+319.892
+ 21
+291.3700000000002
+  0
+TEXT
+  5
+15C
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+318.892
+ 20
+285.4904000000002
+ 30
+0
+ 40
+1.8
+  1
+Dante 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+15D
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+318.892
+ 20
+287.9302000000002
+ 11
+320.892
+ 21
+287.9302000000002
+  0
+LINE
+  5
+15E
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+319.892
+ 20
+286.9302000000002
+ 11
+319.892
+ 21
+288.9302000000002
+  0
+LINE
+  5
+15F
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+284.4904000000002
+ 11
+319.892
+ 21
+284.4904000000002
+  0
+TEXT
+  5
+160
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+318.892
+ 20
+278.6108000000003
+ 30
+0
+ 40
+1.8
+  1
+Dante 3
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+161
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+318.892
+ 20
+281.0506000000003
+ 11
+320.892
+ 21
+281.0506000000003
+  0
+LINE
+  5
+162
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+319.892
+ 20
+280.0506000000003
+ 11
+319.892
+ 21
+282.0506000000003
+  0
+LINE
+  5
+163
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+277.556
+ 20
+277.6108000000003
+ 11
+319.892
+ 21
+277.6108000000003
+  0
+TEXT
+  5
+164
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+318.892
+ 20
+271.7312000000003
+ 30
+0
+ 40
+1.8
+  1
+Dante 4
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+165
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+318.892
+ 20
+274.1710000000003
+ 11
+320.892
+ 21
+274.1710000000003
+  0
+LINE
+  5
+166
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+319.892
+ 20
+273.1710000000003
+ 11
+319.892
+ 21
+275.1710000000003
+  0
+TEXT
+  5
+167
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+278.556
+ 20
+271.7312000000001
+ 30
+0
+ 40
+1.8
+  1
+S/N: DANTE-NET-01
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+168
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+182.3
+ 20
+270.7312000000001
+ 10
+224.636
+ 20
+270.7312000000001
+ 10
+224.636
+ 20
+363.8704000000001
+ 10
+182.3
+ 20
+363.8704000000001
+ 10
+182.3
+ 20
+270.7312000000001
+  0
+LWPOLYLINE
+  5
+169
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+182.3
+ 20
+353.2864000000001
+ 10
+224.636
+ 20
+353.2864000000001
+  0
+TEXT
+  5
+16A
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+355.7864000000001
+ 30
+0
+ 40
+2.5
+  1
+Shure ULXD4Q Wireless Receiv
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+16B
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+353.2864000000001
+ 11
+224.636
+ 21
+353.2864000000001
+  0
+TEXT
+  5
+16C
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+347.4068000000001
+ 30
+0
+ 40
+1.8
+  1
+ULXD4Q
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+16D
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+181.3
+ 20
+349.8466000000001
+ 11
+183.3
+ 21
+349.8466000000001
+  0
+LINE
+  5
+16E
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+182.3
+ 20
+348.8466000000001
+ 11
+182.3
+ 21
+350.8466000000001
+  0
+LINE
+  5
+16F
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+346.4068000000001
+ 11
+224.636
+ 21
+346.4068000000001
+  0
+TEXT
+  5
+170
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+340.5272000000001
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+171
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+181.3
+ 20
+342.9670000000001
+ 11
+183.3
+ 21
+342.9670000000001
+  0
+LINE
+  5
+172
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+182.3
+ 20
+341.9670000000001
+ 11
+182.3
+ 21
+343.9670000000001
+  0
+LINE
+  5
+173
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+182.3
+ 20
+339.5272000000001
+ 11
+224.636
+ 21
+339.5272000000001
+  0
+TEXT
+  5
+174
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+340.0272000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+175
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+332.6476000000001
+ 11
+224.636
+ 21
+332.6476000000001
+  0
+TEXT
+  5
+176
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+326.7680000000001
+ 30
+0
+ 40
+1.8
+  1
+Dante 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+177
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+181.3
+ 20
+329.2078000000001
+ 11
+183.3
+ 21
+329.2078000000001
+  0
+LINE
+  5
+178
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+182.3
+ 20
+328.2078000000001
+ 11
+182.3
+ 21
+330.2078000000001
+  0
+LINE
+  5
+179
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+325.7680000000001
+ 11
+224.636
+ 21
+325.7680000000001
+  0
+TEXT
+  5
+17A
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+319.8884000000002
+ 30
+0
+ 40
+1.8
+  1
+Dante 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+17B
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+181.3
+ 20
+322.3282000000002
+ 11
+183.3
+ 21
+322.3282000000002
+  0
+LINE
+  5
+17C
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+182.3
+ 20
+321.3282000000002
+ 11
+182.3
+ 21
+323.3282000000002
+  0
+LINE
+  5
+17D
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+318.8884000000002
+ 11
+224.636
+ 21
+318.8884000000002
+  0
+TEXT
+  5
+17E
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+313.0088000000002
+ 30
+0
+ 40
+1.8
+  1
+Dante 3
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+17F
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+181.3
+ 20
+315.4486000000002
+ 11
+183.3
+ 21
+315.4486000000002
+  0
+LINE
+  5
+180
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+182.3
+ 20
+314.4486000000002
+ 11
+182.3
+ 21
+316.4486000000002
+  0
+LINE
+  5
+181
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+312.0088000000002
+ 11
+224.636
+ 21
+312.0088000000002
+  0
+TEXT
+  5
+182
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+306.1292000000002
+ 30
+0
+ 40
+1.8
+  1
+Dante 4
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+183
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+181.3
+ 20
+308.5690000000002
+ 11
+183.3
+ 21
+308.5690000000002
+  0
+LINE
+  5
+184
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+182.3
+ 20
+307.5690000000002
+ 11
+182.3
+ 21
+309.5690000000002
+  0
+LINE
+  5
+185
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+182.3
+ 20
+305.1292000000002
+ 11
+224.636
+ 21
+305.1292000000002
+  0
+TEXT
+  5
+186
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+305.6292000000002
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+187
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+298.2496000000002
+ 11
+224.636
+ 21
+298.2496000000002
+  0
+TEXT
+  5
+188
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+223.636
+ 20
+292.3700000000002
+ 30
+0
+ 40
+1.8
+  1
+Dante 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+189
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+223.636
+ 20
+294.8098000000002
+ 11
+225.636
+ 21
+294.8098000000002
+  0
+LINE
+  5
+18A
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+224.636
+ 20
+293.8098000000002
+ 11
+224.636
+ 21
+295.8098000000002
+  0
+LINE
+  5
+18B
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+291.3700000000002
+ 11
+224.636
+ 21
+291.3700000000002
+  0
+TEXT
+  5
+18C
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+223.636
+ 20
+285.4904000000002
+ 30
+0
+ 40
+1.8
+  1
+Dante 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+18D
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+223.636
+ 20
+287.9302000000002
+ 11
+225.636
+ 21
+287.9302000000002
+  0
+LINE
+  5
+18E
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+224.636
+ 20
+286.9302000000002
+ 11
+224.636
+ 21
+288.9302000000002
+  0
+LINE
+  5
+18F
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+284.4904000000002
+ 11
+224.636
+ 21
+284.4904000000002
+  0
+TEXT
+  5
+190
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+223.636
+ 20
+278.6108000000003
+ 30
+0
+ 40
+1.8
+  1
+Dante 3
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+191
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+223.636
+ 20
+281.0506000000003
+ 11
+225.636
+ 21
+281.0506000000003
+  0
+LINE
+  5
+192
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+224.636
+ 20
+280.0506000000003
+ 11
+224.636
+ 21
+282.0506000000003
+  0
+LINE
+  5
+193
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+277.6108000000003
+ 11
+224.636
+ 21
+277.6108000000003
+  0
+TEXT
+  5
+194
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+223.636
+ 20
+271.7312000000003
+ 30
+0
+ 40
+1.8
+  1
+Dante 4
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+195
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+223.636
+ 20
+274.1710000000003
+ 11
+225.636
+ 21
+274.1710000000003
+  0
+LINE
+  5
+196
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+224.636
+ 20
+273.1710000000003
+ 11
+224.636
+ 21
+275.1710000000003
+  0
+TEXT
+  5
+197
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+271.7312000000001
+ 30
+0
+ 40
+1.8
+  1
+S/N: ULXD4Q-01
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+198
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+526.28
+ 20
+40
+ 10
+568.616
+ 20
+40
+ 10
+568.616
+ 20
+71.22280000000001
+ 10
+526.28
+ 20
+71.22280000000001
+ 10
+526.28
+ 20
+40
+  0
+LWPOLYLINE
+  5
+199
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+526.28
+ 20
+60.6388
+ 10
+568.616
+ 20
+60.6388
+  0
+TEXT
+  5
+19A
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+527.28
+ 20
+63.1388
+ 30
+0
+ 40
+2.5
+  1
+Speaker Zone 6
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+19B
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+526.28
+ 20
+60.6388
+ 11
+568.616
+ 21
+60.6388
+  0
+TEXT
+  5
+19C
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+527.28
+ 20
+54.75920000000001
+ 30
+0
+ 40
+1.8
+  1
+Ceiling Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+19D
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+525.28
+ 20
+57.19900000000001
+ 11
+527.28
+ 21
+57.19900000000001
+  0
+LINE
+  5
+19E
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+526.28
+ 20
+56.19900000000001
+ 11
+526.28
+ 21
+58.19900000000001
+  0
+LINE
+  5
+19F
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+526.28
+ 20
+53.75920000000001
+ 11
+568.616
+ 21
+53.75920000000001
+  0
+TEXT
+  5
+1A0
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+527.28
+ 20
+54.25920000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1A1
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+526.28
+ 20
+46.87960000000001
+ 11
+568.616
+ 21
+46.87960000000001
+  0
+TEXT
+  5
+1A2
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+527.28
+ 20
+41.00000000000001
+ 30
+0
+ 40
+1.8
+  1
+Speaker In
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1A3
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+525.28
+ 20
+43.43980000000001
+ 11
+527.28
+ 21
+43.43980000000001
+  0
+LINE
+  5
+1A4
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+526.28
+ 20
+42.43980000000001
+ 11
+526.28
+ 21
+44.43980000000001
+  0
+TEXT
+  5
+1A5
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+527.28
+ 20
+41
+ 30
+0
+ 40
+1.8
+  1
+S/N: QSC-AMP8-Z06
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A6
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+335.768
+ 20
+40
+ 10
+378.104
+ 20
+40
+ 10
+378.104
+ 20
+71.22280000000001
+ 10
+335.768
+ 20
+71.22280000000001
+ 10
+335.768
+ 20
+40
+  0
+LWPOLYLINE
+  5
+1A7
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+335.768
+ 20
+60.6388
+ 10
+378.104
+ 20
+60.6388
+  0
+TEXT
+  5
+1A8
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+336.768
+ 20
+63.1388
+ 30
+0
+ 40
+2.5
+  1
+Speaker Zone 4
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1A9
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+335.768
+ 20
+60.6388
+ 11
+378.104
+ 21
+60.6388
+  0
+TEXT
+  5
+1AA
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+336.768
+ 20
+54.75920000000001
+ 30
+0
+ 40
+1.8
+  1
+Ceiling Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1AB
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+334.768
+ 20
+57.19900000000001
+ 11
+336.768
+ 21
+57.19900000000001
+  0
+LINE
+  5
+1AC
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+335.768
+ 20
+56.19900000000001
+ 11
+335.768
+ 21
+58.19900000000001
+  0
+LINE
+  5
+1AD
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+335.768
+ 20
+53.75920000000001
+ 11
+378.104
+ 21
+53.75920000000001
+  0
+TEXT
+  5
+1AE
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+336.768
+ 20
+54.25920000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1AF
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+335.768
+ 20
+46.87960000000001
+ 11
+378.104
+ 21
+46.87960000000001
+  0
+TEXT
+  5
+1B0
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+336.768
+ 20
+41.00000000000001
+ 30
+0
+ 40
+1.8
+  1
+Speaker In
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1B1
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+334.768
+ 20
+43.43980000000001
+ 11
+336.768
+ 21
+43.43980000000001
+  0
+LINE
+  5
+1B2
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+335.768
+ 20
+42.43980000000001
+ 11
+335.768
+ 21
+44.43980000000001
+  0
+TEXT
+  5
+1B3
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+336.768
+ 20
+41
+ 30
+0
+ 40
+1.8
+  1
+S/N: QSC-AMP8-Z04
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B4
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+716.792
+ 20
+40
+ 10
+759.128
+ 20
+40
+ 10
+759.128
+ 20
+71.22280000000001
+ 10
+716.792
+ 20
+71.22280000000001
+ 10
+716.792
+ 20
+40
+  0
+LWPOLYLINE
+  5
+1B5
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+716.792
+ 20
+60.6388
+ 10
+759.128
+ 20
+60.6388
+  0
+TEXT
+  5
+1B6
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+717.792
+ 20
+63.1388
+ 30
+0
+ 40
+2.5
+  1
+Speaker Zone 8
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1B7
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+716.792
+ 20
+60.6388
+ 11
+759.128
+ 21
+60.6388
+  0
+TEXT
+  5
+1B8
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+717.792
+ 20
+54.75920000000001
+ 30
+0
+ 40
+1.8
+  1
+Ceiling Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1B9
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+715.792
+ 20
+57.19900000000001
+ 11
+717.792
+ 21
+57.19900000000001
+  0
+LINE
+  5
+1BA
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+716.792
+ 20
+56.19900000000001
+ 11
+716.792
+ 21
+58.19900000000001
+  0
+LINE
+  5
+1BB
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+716.792
+ 20
+53.75920000000001
+ 11
+759.128
+ 21
+53.75920000000001
+  0
+TEXT
+  5
+1BC
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+717.792
+ 20
+54.25920000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1BD
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+716.792
+ 20
+46.87960000000001
+ 11
+759.128
+ 21
+46.87960000000001
+  0
+TEXT
+  5
+1BE
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+717.792
+ 20
+41.00000000000001
+ 30
+0
+ 40
+1.8
+  1
+Speaker In
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1BF
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+715.792
+ 20
+43.43980000000001
+ 11
+717.792
+ 21
+43.43980000000001
+  0
+LINE
+  5
+1C0
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+716.792
+ 20
+42.43980000000001
+ 11
+716.792
+ 21
+44.43980000000001
+  0
+TEXT
+  5
+1C1
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+717.792
+ 20
+41
+ 30
+0
+ 40
+1.8
+  1
+S/N: QSC-AMP8-Z08
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1C2
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+229.928
+ 20
+419.9656000000001
+ 10
+272.264
+ 20
+419.9656000000001
+ 10
+272.264
+ 20
+526.864
+ 10
+229.928
+ 20
+526.864
+ 10
+229.928
+ 20
+419.9656000000001
+  0
+LWPOLYLINE
+  5
+1C3
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+229.928
+ 20
+516.2800000000001
+ 10
+272.264
+ 20
+516.2800000000001
+  0
+TEXT
+  5
+1C4
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+518.7800000000001
+ 30
+0
+ 40
+2.5
+  1
+Cisco Webex Codec Pro
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1C5
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+516.2800000000001
+ 11
+272.264
+ 21
+516.2800000000001
+  0
+TEXT
+  5
+1C6
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+510.4004000000001
+ 30
+0
+ 40
+1.8
+  1
+CS-CODEC-PRO
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1C7
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+512.8402000000001
+ 11
+230.928
+ 21
+512.8402000000001
+  0
+LINE
+  5
+1C8
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+511.8402000000001
+ 11
+229.928
+ 21
+513.8402000000001
+  0
+LINE
+  5
+1C9
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+509.4004000000001
+ 11
+272.264
+ 21
+509.4004000000001
+  0
+TEXT
+  5
+1CA
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+503.5208000000001
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1CB
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+505.9606000000001
+ 11
+230.928
+ 21
+505.9606000000001
+  0
+LINE
+  5
+1CC
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+504.9606000000001
+ 11
+229.928
+ 21
+506.9606000000001
+  0
+LINE
+  5
+1CD
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+229.928
+ 20
+502.5208000000001
+ 11
+272.264
+ 21
+502.5208000000001
+  0
+TEXT
+  5
+1CE
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+503.0208000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1CF
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+495.6412000000001
+ 11
+272.264
+ 21
+495.6412000000001
+  0
+TEXT
+  5
+1D0
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+489.7616000000002
+ 30
+0
+ 40
+1.8
+  1
+HDMI In 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1D1
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+492.2014000000001
+ 11
+230.928
+ 21
+492.2014000000001
+  0
+LINE
+  5
+1D2
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+491.2014000000001
+ 11
+229.928
+ 21
+493.2014000000001
+  0
+LINE
+  5
+1D3
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+488.7616000000002
+ 11
+272.264
+ 21
+488.7616000000002
+  0
+TEXT
+  5
+1D4
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+482.8820000000002
+ 30
+0
+ 40
+1.8
+  1
+HDMI In 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1D5
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+485.3218000000002
+ 11
+230.928
+ 21
+485.3218000000002
+  0
+LINE
+  5
+1D6
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+484.3218000000002
+ 11
+229.928
+ 21
+486.3218000000002
+  0
+LINE
+  5
+1D7
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+481.8820000000002
+ 11
+272.264
+ 21
+481.8820000000002
+  0
+TEXT
+  5
+1D8
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+476.0024000000002
+ 30
+0
+ 40
+1.8
+  1
+HDMI In 3
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1D9
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+478.4422000000002
+ 11
+230.928
+ 21
+478.4422000000002
+  0
+LINE
+  5
+1DA
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+477.4422000000002
+ 11
+229.928
+ 21
+479.4422000000002
+  0
+LINE
+  5
+1DB
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+475.0024000000002
+ 11
+272.264
+ 21
+475.0024000000002
+  0
+TEXT
+  5
+1DC
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+469.1228000000002
+ 30
+0
+ 40
+1.8
+  1
+HDMI In 4
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1DD
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+471.5626000000002
+ 11
+230.928
+ 21
+471.5626000000002
+  0
+LINE
+  5
+1DE
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+470.5626000000002
+ 11
+229.928
+ 21
+472.5626000000002
+  0
+LINE
+  5
+1DF
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+468.1228000000002
+ 11
+272.264
+ 21
+468.1228000000002
+  0
+TEXT
+  5
+1E0
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+462.2432000000002
+ 30
+0
+ 40
+1.8
+  1
+USB In 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1E1
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+464.6830000000002
+ 11
+230.928
+ 21
+464.6830000000002
+  0
+LINE
+  5
+1E2
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+463.6830000000002
+ 11
+229.928
+ 21
+465.6830000000002
+  0
+LINE
+  5
+1E3
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+461.2432000000002
+ 11
+272.264
+ 21
+461.2432000000002
+  0
+TEXT
+  5
+1E4
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+455.3636000000002
+ 30
+0
+ 40
+1.8
+  1
+USB In 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1E5
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+457.8034000000002
+ 11
+230.928
+ 21
+457.8034000000002
+  0
+LINE
+  5
+1E6
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+456.8034000000002
+ 11
+229.928
+ 21
+458.8034000000002
+  0
+LINE
+  5
+1E7
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+229.928
+ 20
+454.3636000000002
+ 11
+272.264
+ 21
+454.3636000000002
+  0
+TEXT
+  5
+1E8
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+454.8636000000002
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1E9
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+447.4840000000003
+ 11
+272.264
+ 21
+447.4840000000003
+  0
+TEXT
+  5
+1EA
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+441.6044000000003
+ 30
+0
+ 40
+1.8
+  1
+HDMI Out 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1EB
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+444.0442000000003
+ 11
+273.264
+ 21
+444.0442000000003
+  0
+LINE
+  5
+1EC
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+443.0442000000003
+ 11
+272.264
+ 21
+445.0442000000003
+  0
+LINE
+  5
+1ED
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+440.6044000000003
+ 11
+272.264
+ 21
+440.6044000000003
+  0
+TEXT
+  5
+1EE
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+434.7248000000003
+ 30
+0
+ 40
+1.8
+  1
+HDMI Out 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1EF
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+437.1646000000003
+ 11
+273.264
+ 21
+437.1646000000003
+  0
+LINE
+  5
+1F0
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+436.1646000000003
+ 11
+272.264
+ 21
+438.1646000000003
+  0
+LINE
+  5
+1F1
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+433.7248000000003
+ 11
+272.264
+ 21
+433.7248000000003
+  0
+TEXT
+  5
+1F2
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+427.8452000000003
+ 30
+0
+ 40
+1.8
+  1
+USB Out 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1F3
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+430.2850000000003
+ 11
+273.264
+ 21
+430.2850000000003
+  0
+LINE
+  5
+1F4
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+429.2850000000003
+ 11
+272.264
+ 21
+431.2850000000003
+  0
+LINE
+  5
+1F5
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+426.8452000000003
+ 11
+272.264
+ 21
+426.8452000000003
+  0
+TEXT
+  5
+1F6
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+271.264
+ 20
+420.9656000000003
+ 30
+0
+ 40
+1.8
+  1
+USB Out 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1F7
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+271.264
+ 20
+423.4054000000003
+ 11
+273.264
+ 21
+423.4054000000003
+  0
+LINE
+  5
+1F8
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+272.264
+ 20
+422.4054000000003
+ 11
+272.264
+ 21
+424.4054000000003
+  0
+TEXT
+  5
+1F9
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+420.9656000000001
+ 30
+0
+ 40
+1.8
+  1
+S/N: FTT2650XXXX
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1FA
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+335.768
+ 20
+542.74
+ 10
+378.104
+ 20
+542.74
+ 10
+378.104
+ 20
+580.8424000000001
+ 10
+335.768
+ 20
+580.8424000000001
+ 10
+335.768
+ 20
+542.74
+  0
+LWPOLYLINE
+  5
+1FB
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+335.768
+ 20
+570.2584000000002
+ 10
+378.104
+ 20
+570.2584000000002
+  0
+TEXT
+  5
+1FC
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+336.768
+ 20
+572.7584000000002
+ 30
+0
+ 40
+2.5
+  1
+Shure ULXD2 Wireless Mic 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1FD
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+335.768
+ 20
+570.2584000000002
+ 11
+378.104
+ 21
+570.2584000000002
+  0
+TEXT
+  5
+1FE
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+336.768
+ 20
+564.3788000000002
+ 30
+0
+ 40
+1.8
+  1
+ULXD2/B58
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+1FF
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+334.768
+ 20
+566.8186000000002
+ 11
+336.768
+ 21
+566.8186000000002
+  0
+LINE
+  5
+200
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+335.768
+ 20
+565.8186000000002
+ 11
+335.768
+ 21
+567.8186000000002
+  0
+LINE
+  5
+201
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+335.768
+ 20
+563.3788000000002
+ 11
+378.104
+ 21
+563.3788000000002
+  0
+TEXT
+  5
+202
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+336.768
+ 20
+557.4992000000002
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+203
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+334.768
+ 20
+559.9390000000002
+ 11
+336.768
+ 21
+559.9390000000002
+  0
+LINE
+  5
+204
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+335.768
+ 20
+558.9390000000002
+ 11
+335.768
+ 21
+560.9390000000002
+  0
+LINE
+  5
+205
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+335.768
+ 20
+556.4992000000002
+ 11
+378.104
+ 21
+556.4992000000002
+  0
+TEXT
+  5
+206
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+336.768
+ 20
+556.9992000000002
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+207
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+335.768
+ 20
+549.6196000000002
+ 11
+378.104
+ 21
+549.6196000000002
+  0
+TEXT
+  5
+208
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+377.104
+ 20
+543.7400000000002
+ 30
+0
+ 40
+1.8
+  1
+USB Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+209
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+377.104
+ 20
+546.1798000000002
+ 11
+379.104
+ 21
+546.1798000000002
+  0
+LINE
+  5
+20A
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+378.104
+ 20
+545.1798000000002
+ 11
+378.104
+ 21
+547.1798000000002
+  0
+TEXT
+  5
+20B
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+336.768
+ 20
+543.74
+ 30
+0
+ 40
+1.8
+  1
+S/N: ULXD2-B58-02
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+TEXT
+  5
+20C
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+186.592
+ 20
+543.7400000000002
+ 30
+0
+ 40
+1.8
+  1
+USB Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+20D
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+240.512
+ 20
+542.74
+ 10
+282.848
+ 20
+542.74
+ 10
+282.848
+ 20
+580.8424000000001
+ 10
+240.512
+ 20
+580.8424000000001
+ 10
+240.512
+ 20
+542.74
+  0
+LWPOLYLINE
+  5
+20E
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+240.512
+ 20
+570.2584000000002
+ 10
+282.848
+ 20
+570.2584000000002
+  0
+TEXT
+  5
+20F
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+241.512
+ 20
+572.7584000000002
+ 30
+0
+ 40
+2.5
+  1
+Shure ULXD2 Wireless Mic 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+210
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+240.512
+ 20
+570.2584000000002
+ 11
+282.848
+ 21
+570.2584000000002
+  0
+TEXT
+  5
+211
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+241.512
+ 20
+564.3788000000002
+ 30
+0
+ 40
+1.8
+  1
+ULXD2/B58
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+212
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+239.512
+ 20
+566.8186000000002
+ 11
+241.512
+ 21
+566.8186000000002
+  0
+LINE
+  5
+213
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+240.512
+ 20
+565.8186000000002
+ 11
+240.512
+ 21
+567.8186000000002
+  0
+LINE
+  5
+214
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+240.512
+ 20
+563.3788000000002
+ 11
+282.848
+ 21
+563.3788000000002
+  0
+TEXT
+  5
+215
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+241.512
+ 20
+557.4992000000002
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+216
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+239.512
+ 20
+559.9390000000002
+ 11
+241.512
+ 21
+559.9390000000002
+  0
+LINE
+  5
+217
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+240.512
+ 20
+558.9390000000002
+ 11
+240.512
+ 21
+560.9390000000002
+  0
+LINE
+  5
+218
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+240.512
+ 20
+556.4992000000002
+ 11
+282.848
+ 21
+556.4992000000002
+  0
+TEXT
+  5
+219
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+241.512
+ 20
+556.9992000000002
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+21A
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+240.512
+ 20
+549.6196000000002
+ 11
+282.848
+ 21
+549.6196000000002
+  0
+TEXT
+  5
+21B
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+281.848
+ 20
+543.7400000000002
+ 30
+0
+ 40
+1.8
+  1
+USB Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+21C
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+281.848
+ 20
+546.1798000000002
+ 11
+283.848
+ 21
+546.1798000000002
+  0
+LINE
+  5
+21D
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+282.848
+ 20
+545.1798000000002
+ 11
+282.848
+ 21
+547.1798000000002
+  0
+TEXT
+  5
+21E
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+241.512
+ 20
+543.74
+ 30
+0
+ 40
+1.8
+  1
+S/N: ULXD2-B58-01
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+21F
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+526.28
+ 20
+542.74
+ 10
+568.616
+ 20
+542.74
+ 10
+568.616
+ 20
+580.8424000000001
+ 10
+526.28
+ 20
+580.8424000000001
+ 10
+526.28
+ 20
+542.74
+  0
+LWPOLYLINE
+  5
+220
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+526.28
+ 20
+570.2584000000002
+ 10
+568.616
+ 20
+570.2584000000002
+  0
+TEXT
+  5
+221
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+527.28
+ 20
+572.7584000000002
+ 30
+0
+ 40
+2.5
+  1
+Shure ULXD2 Wireless Mic 4
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+222
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+526.28
+ 20
+570.2584000000002
+ 11
+568.616
+ 21
+570.2584000000002
+  0
+TEXT
+  5
+223
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+527.28
+ 20
+564.3788000000002
+ 30
+0
+ 40
+1.8
+  1
+ULXD2/B58
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+224
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+525.28
+ 20
+566.8186000000002
+ 11
+527.28
+ 21
+566.8186000000002
+  0
+LINE
+  5
+225
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+526.28
+ 20
+565.8186000000002
+ 11
+526.28
+ 21
+567.8186000000002
+  0
+LINE
+  5
+226
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+526.28
+ 20
+563.3788000000002
+ 11
+568.616
+ 21
+563.3788000000002
+  0
+TEXT
+  5
+227
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+527.28
+ 20
+557.4992000000002
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+228
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+525.28
+ 20
+559.9390000000002
+ 11
+527.28
+ 21
+559.9390000000002
+  0
+LINE
+  5
+229
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+526.28
+ 20
+558.9390000000002
+ 11
+526.28
+ 21
+560.9390000000002
+  0
+LINE
+  5
+22A
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+526.28
+ 20
+556.4992000000002
+ 11
+568.616
+ 21
+556.4992000000002
+  0
+TEXT
+  5
+22B
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+527.28
+ 20
+556.9992000000002
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+22C
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+526.28
+ 20
+549.6196000000002
+ 11
+568.616
+ 21
+549.6196000000002
+  0
+TEXT
+  5
+22D
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+567.616
+ 20
+543.7400000000002
+ 30
+0
+ 40
+1.8
+  1
+USB Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+22E
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+567.616
+ 20
+546.1798000000002
+ 11
+569.616
+ 21
+546.1798000000002
+  0
+LINE
+  5
+22F
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+568.616
+ 20
+545.1798000000002
+ 11
+568.616
+ 21
+547.1798000000002
+  0
+TEXT
+  5
+230
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+527.28
+ 20
+543.74
+ 30
+0
+ 40
+1.8
+  1
+S/N: ULXD2-B58-04
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+231
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+182.3
+ 20
+87.0988000000001
+ 10
+224.636
+ 20
+87.0988000000001
+ 10
+224.636
+ 20
+132.0808000000001
+ 10
+182.3
+ 20
+132.0808000000001
+ 10
+182.3
+ 20
+87.0988000000001
+  0
+LWPOLYLINE
+  5
+232
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+182.3
+ 20
+121.4968000000001
+ 10
+224.636
+ 20
+121.4968000000001
+  0
+TEXT
+  5
+233
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+123.9968000000001
+ 30
+0
+ 40
+2.5
+  1
+Samsung QM90B Display Left
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+234
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+121.4968000000001
+ 11
+224.636
+ 21
+121.4968000000001
+  0
+TEXT
+  5
+235
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+115.6172000000001
+ 30
+0
+ 40
+1.8
+  1
+90" Display
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+236
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+181.3
+ 20
+118.0570000000001
+ 11
+183.3
+ 21
+118.0570000000001
+  0
+LINE
+  5
+237
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+182.3
+ 20
+117.0570000000001
+ 11
+182.3
+ 21
+119.0570000000001
+  0
+LINE
+  5
+238
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+114.6172000000001
+ 11
+224.636
+ 21
+114.6172000000001
+  0
+TEXT
+  5
+239
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+108.7376000000001
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+23A
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+181.3
+ 20
+111.1774000000001
+ 11
+183.3
+ 21
+111.1774000000001
+  0
+LINE
+  5
+23B
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+182.3
+ 20
+110.1774000000001
+ 11
+182.3
+ 21
+112.1774000000001
+  0
+LINE
+  5
+23C
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+182.3
+ 20
+107.7376000000001
+ 11
+224.636
+ 21
+107.7376000000001
+  0
+TEXT
+  5
+23D
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+108.2376000000001
+ 30
+0
+ 40
+1.8
+  1
+INPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+23E
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+100.8580000000001
+ 11
+224.636
+ 21
+100.8580000000001
+  0
+TEXT
+  5
+23F
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+94.97840000000008
+ 30
+0
+ 40
+1.8
+  1
+HDMI In 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+240
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+181.3
+ 20
+97.41820000000008
+ 11
+183.3
+ 21
+97.41820000000008
+  0
+LINE
+  5
+241
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+182.3
+ 20
+96.41820000000008
+ 11
+182.3
+ 21
+98.41820000000008
+  0
+LINE
+  5
+242
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+182.3
+ 20
+93.97840000000008
+ 11
+224.636
+ 21
+93.97840000000008
+  0
+TEXT
+  5
+243
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+88.09880000000008
+ 30
+0
+ 40
+1.8
+  1
+HDMI In 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+244
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+181.3
+ 20
+90.53860000000009
+ 11
+183.3
+ 21
+90.53860000000009
+  0
+LINE
+  5
+245
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+182.3
+ 20
+89.53860000000009
+ 11
+182.3
+ 21
+91.53860000000009
+  0
+TEXT
+  5
+246
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+183.3
+ 20
+88.0988000000001
+ 30
+0
+ 40
+1.8
+  1
+S/N: QM90B-L
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+247
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+229.928
+ 20
+379.7464000000001
+ 10
+272.264
+ 20
+379.7464000000001
+ 10
+272.264
+ 20
+404.0896000000001
+ 10
+229.928
+ 20
+404.0896000000001
+ 10
+229.928
+ 20
+379.7464000000001
+  0
+LWPOLYLINE
+  5
+248
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+229.928
+ 20
+393.5056000000001
+ 10
+272.264
+ 20
+393.5056000000001
+  0
+TEXT
+  5
+249
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+396.0056000000001
+ 30
+0
+ 40
+2.5
+  1
+Cisco Room Navigator Touch P
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+24A
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+393.5056000000001
+ 11
+272.264
+ 21
+393.5056000000001
+  0
+TEXT
+  5
+24B
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+387.6260000000001
+ 30
+0
+ 40
+1.8
+  1
+CS-T10-NR-K9
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+24C
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+390.0658000000001
+ 11
+230.928
+ 21
+390.0658000000001
+  0
+LINE
+  5
+24D
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+389.0658000000001
+ 11
+229.928
+ 21
+391.0658000000001
+  0
+LINE
+  5
+24E
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+229.928
+ 20
+386.6260000000001
+ 11
+272.264
+ 21
+386.6260000000001
+  0
+TEXT
+  5
+24F
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+380.7464000000001
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+250
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+228.928
+ 20
+383.1862000000001
+ 11
+230.928
+ 21
+383.1862000000001
+  0
+LINE
+  5
+251
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+229.928
+ 20
+382.1862000000001
+ 11
+229.928
+ 21
+384.1862000000001
+  0
+TEXT
+  5
+252
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+230.928
+ 20
+380.7464000000001
+ 30
+0
+ 40
+1.8
+  1
+S/N: CS-T10-NR-01
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+253
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+325.184
+ 20
+596.7184000000001
+ 10
+367.52
+ 20
+596.7184000000001
+ 10
+367.52
+ 20
+641.7004000000001
+ 10
+325.184
+ 20
+641.7004000000001
+ 10
+325.184
+ 20
+596.7184000000001
+  0
+LWPOLYLINE
+  5
+254
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+325.184
+ 20
+631.1164000000001
+ 10
+367.52
+ 20
+631.1164000000001
+  0
+TEXT
+  5
+255
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+326.184
+ 20
+633.6164000000001
+ 30
+0
+ 40
+2.5
+  1
+Cisco PTZ 4K Camera 3
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+256
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+325.184
+ 20
+631.1164000000001
+ 11
+367.52
+ 21
+631.1164000000001
+  0
+TEXT
+  5
+257
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+326.184
+ 20
+625.2368000000001
+ 30
+0
+ 40
+1.8
+  1
+CTS-CAM-P60-K9
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+258
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+324.184
+ 20
+627.6766000000001
+ 11
+326.184
+ 21
+627.6766000000001
+  0
+LINE
+  5
+259
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+325.184
+ 20
+626.6766000000001
+ 11
+325.184
+ 21
+628.6766000000001
+  0
+LINE
+  5
+25A
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+325.184
+ 20
+624.2368000000001
+ 11
+367.52
+ 21
+624.2368000000001
+  0
+TEXT
+  5
+25B
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+326.184
+ 20
+618.3572000000001
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+25C
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+324.184
+ 20
+620.7970000000001
+ 11
+326.184
+ 21
+620.7970000000001
+  0
+LINE
+  5
+25D
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+325.184
+ 20
+619.7970000000001
+ 11
+325.184
+ 21
+621.7970000000001
+  0
+LINE
+  5
+25E
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+325.184
+ 20
+617.3572000000001
+ 11
+367.52
+ 21
+617.3572000000001
+  0
+TEXT
+  5
+25F
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+326.184
+ 20
+617.8572000000001
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+260
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+325.184
+ 20
+610.4776000000002
+ 11
+367.52
+ 21
+610.4776000000002
+  0
+TEXT
+  5
+261
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+366.52
+ 20
+604.5980000000002
+ 30
+0
+ 40
+1.8
+  1
+HDMI Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+262
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+366.52
+ 20
+607.0378000000002
+ 11
+368.52
+ 21
+607.0378000000002
+  0
+LINE
+  5
+263
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+367.52
+ 20
+606.0378000000002
+ 11
+367.52
+ 21
+608.0378000000002
+  0
+LINE
+  5
+264
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+325.184
+ 20
+603.5980000000002
+ 11
+367.52
+ 21
+603.5980000000002
+  0
+TEXT
+  5
+265
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+366.52
+ 20
+597.7184000000002
+ 30
+0
+ 40
+1.8
+  1
+USB Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+266
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+366.52
+ 20
+600.1582000000002
+ 11
+368.52
+ 21
+600.1582000000002
+  0
+LINE
+  5
+267
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+367.52
+ 20
+599.1582000000002
+ 11
+367.52
+ 21
+601.1582000000002
+  0
+TEXT
+  5
+268
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+326.184
+ 20
+597.7184000000001
+ 30
+0
+ 40
+1.8
+  1
+S/N: CAM-P60-03
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+269
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+249.096
+ 20
+474.4148000000001
+ 10
+251.096
+ 20
+473.4148000000001
+ 10
+249.096
+ 20
+472.4148000000001
+  0
+TEXT
+  5
+26A
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+227.282
+ 20
+474.9148000000001
+ 30
+0
+ 40
+1.8
+  1
+HDMI
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+26B
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+619.2094000000001
+ 10
+251.096
+ 20
+619.2094000000001
+ 10
+251.096
+ 20
+473.4148000000001
+ 10
+251.096
+ 20
+473.4148000000001
+  0
+TEXT
+  5
+26C
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+251.096
+ 20
+474.9148000000001
+ 30
+0
+ 40
+1.8
+  1
+HDMI
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+26D
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+346.352
+ 20
+619.2094000000001
+ 10
+298.724
+ 20
+619.2094000000001
+ 10
+298.724
+ 20
+473.4148000000001
+ 10
+251.096
+ 20
+473.4148000000001
+  0
+LWPOLYLINE
+  5
+26E
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+253.096
+ 20
+474.4148000000001
+ 10
+251.096
+ 20
+473.4148000000001
+ 10
+253.096
+ 20
+472.4148000000001
+  0
+TEXT
+  5
+26F
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+274.91
+ 20
+474.9148000000001
+ 30
+0
+ 40
+1.8
+  1
+HDMI
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+270
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+249.096
+ 20
+474.4148000000001
+ 10
+251.096
+ 20
+473.4148000000001
+ 10
+249.096
+ 20
+472.4148000000001
+  0
+TEXT
+  5
+271
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+228.032
+ 20
+474.9148000000001
+ 30
+0
+ 40
+1.8
+  1
+USB
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+272
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+619.2094000000001
+ 10
+252.596
+ 20
+619.2094000000001
+ 10
+252.596
+ 20
+473.4148000000001
+ 10
+251.096
+ 20
+473.4148000000001
+  0
+LWPOLYLINE
+  5
+273
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+253.096
+ 20
+474.4148000000001
+ 10
+251.096
+ 20
+473.4148000000001
+ 10
+253.096
+ 20
+472.4148000000001
+  0
+TEXT
+  5
+274
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+251.846
+ 20
+474.9148000000001
+ 30
+0
+ 40
+1.8
+  1
+USB
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+275
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+473.4148000000001
+ 10
+227.282
+ 20
+473.4148000000001
+ 10
+227.282
+ 20
+109.5898000000001
+ 10
+203.468
+ 20
+109.5898000000001
+  0
+LWPOLYLINE
+  5
+276
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+205.468
+ 20
+110.5898000000001
+ 10
+203.468
+ 20
+109.5898000000001
+ 10
+205.468
+ 20
+108.5898000000001
+  0
+TEXT
+  5
+277
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+215.375
+ 20
+111.0898000000001
+ 30
+0
+ 40
+1.8
+  1
+HDMI
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+278
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+296.724
+ 20
+110.5898000000001
+ 10
+298.724
+ 20
+109.5898000000001
+ 10
+296.724
+ 20
+108.5898000000001
+  0
+TEXT
+  5
+279
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+286.817
+ 20
+111.0898000000001
+ 30
+0
+ 40
+1.8
+  1
+HDMI
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+27A
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+298.724
+ 20
+317.3008000000001
+ 10
+203.468
+ 20
+317.3008000000001
+  0
+LWPOLYLINE
+  5
+27B
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+205.468
+ 20
+318.3008000000001
+ 10
+203.468
+ 20
+317.3008000000001
+ 10
+205.468
+ 20
+316.3008000000001
+  0
+TEXT
+  5
+27C
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+228.782
+ 20
+318.8008000000001
+ 30
+0
+ 40
+1.8
+  1
+Dante
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+27D
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+203.468
+ 20
+317.3008000000001
+ 10
+228.782
+ 20
+317.3008000000001
+ 10
+228.782
+ 20
+201.4060000000001
+ 10
+251.096
+ 20
+201.4060000000001
+  0
+LWPOLYLINE
+  5
+27E
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+249.096
+ 20
+202.4060000000001
+ 10
+251.096
+ 20
+201.4060000000001
+ 10
+249.096
+ 20
+200.4060000000001
+  0
+TEXT
+  5
+27F
+100
+AcDbEntity
+  8
+DANTE
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+239.939
+ 20
+202.9060000000001
+ 30
+0
+ 40
+1.8
+  1
+Dante
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+280
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+201.4060000000001
+ 10
+161.132
+ 20
+201.4060000000001
+ 10
+161.132
+ 20
+55.6114
+ 10
+71.16800000000001
+ 20
+55.6114
+  0
+LWPOLYLINE
+  5
+281
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+73.16800000000001
+ 20
+56.6114
+ 10
+71.16800000000001
+ 20
+55.6114
+ 10
+73.16800000000001
+ 20
+54.6114
+  0
+TEXT
+  5
+282
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+116.15
+ 20
+57.1114
+ 30
+0
+ 40
+1.8
+  1
+Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+283
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+201.4060000000001
+ 10
+208.76
+ 20
+201.4060000000001
+ 10
+208.76
+ 20
+55.6114
+ 10
+166.424
+ 20
+55.6114
+  0
+LWPOLYLINE
+  5
+284
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+168.424
+ 20
+56.6114
+ 10
+166.424
+ 20
+55.6114
+ 10
+168.424
+ 20
+54.6114
+  0
+TEXT
+  5
+285
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+187.592
+ 20
+57.1114
+ 30
+0
+ 40
+1.8
+  1
+Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+286
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+201.4060000000001
+ 10
+256.388
+ 20
+201.4060000000001
+ 10
+256.388
+ 20
+55.6114
+ 10
+261.68
+ 20
+55.6114
+  0
+LWPOLYLINE
+  5
+287
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+259.68
+ 20
+56.6114
+ 10
+261.68
+ 20
+55.6114
+ 10
+259.68
+ 20
+54.6114
+  0
+TEXT
+  5
+288
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+259.034
+ 20
+57.1114
+ 30
+0
+ 40
+1.8
+  1
+Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+289
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+201.4060000000001
+ 10
+304.016
+ 20
+201.4060000000001
+ 10
+304.016
+ 20
+55.6114
+ 10
+356.936
+ 20
+55.6114
+  0
+LWPOLYLINE
+  5
+28A
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+354.936
+ 20
+56.6114
+ 10
+356.936
+ 20
+55.6114
+ 10
+354.936
+ 20
+54.6114
+  0
+TEXT
+  5
+28B
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+330.476
+ 20
+57.1114
+ 30
+0
+ 40
+1.8
+  1
+Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+28C
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+201.4060000000001
+ 10
+351.644
+ 20
+201.4060000000001
+ 10
+351.644
+ 20
+55.6114
+ 10
+452.192
+ 20
+55.6114
+  0
+LWPOLYLINE
+  5
+28D
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+450.192
+ 20
+56.6114
+ 10
+452.192
+ 20
+55.6114
+ 10
+450.192
+ 20
+54.6114
+  0
+TEXT
+  5
+28E
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+401.918
+ 20
+57.1114
+ 30
+0
+ 40
+1.8
+  1
+Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+28F
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+201.4060000000001
+ 10
+399.272
+ 20
+201.4060000000001
+ 10
+399.272
+ 20
+55.6114
+ 10
+547.448
+ 20
+55.6114
+  0
+LWPOLYLINE
+  5
+290
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+545.448
+ 20
+56.6114
+ 10
+547.448
+ 20
+55.6114
+ 10
+545.448
+ 20
+54.6114
+  0
+TEXT
+  5
+291
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+473.36
+ 20
+57.1114
+ 30
+0
+ 40
+1.8
+  1
+Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+292
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+201.4060000000001
+ 10
+446.9
+ 20
+201.4060000000001
+ 10
+446.9
+ 20
+55.6114
+ 10
+642.7040000000001
+ 20
+55.6114
+  0
+LWPOLYLINE
+  5
+293
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+640.7040000000001
+ 20
+56.6114
+ 10
+642.7040000000001
+ 20
+55.6114
+ 10
+640.7040000000001
+ 20
+54.6114
+  0
+TEXT
+  5
+294
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+544.802
+ 20
+57.1114
+ 30
+0
+ 40
+1.8
+  1
+Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+295
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+201.4060000000001
+ 10
+494.528
+ 20
+201.4060000000001
+ 10
+494.528
+ 20
+55.6114
+ 10
+737.96
+ 20
+55.6114
+  0
+LWPOLYLINE
+  5
+296
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+735.96
+ 20
+56.6114
+ 10
+737.96
+ 20
+55.6114
+ 10
+735.96
+ 20
+54.6114
+  0
+TEXT
+  5
+297
+100
+AcDbEntity
+  8
+SPEAKER_LEVEL
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+616.244
+ 20
+57.1114
+ 30
+0
+ 40
+1.8
+  1
+Speaker
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+298
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+391.9180000000001
+ 10
+255.596
+ 20
+391.9180000000001
+ 10
+255.596
+ 20
+473.4148000000001
+ 10
+251.096
+ 20
+473.4148000000001
+  0
+LWPOLYLINE
+  5
+299
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   18
+100
+AcDbPolyline
+ 90
+    3
+ 70
+    0
+ 43
+0
+ 10
+253.096
+ 20
+474.4148000000001
+ 10
+251.096
+ 20
+473.4148000000001
+ 10
+253.096
+ 20
+472.4148000000001
+  0
+TEXT
+  5
+29A
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+253.346
+ 20
+474.9148000000001
+ 30
+0
+ 40
+1.8
+  1
+Ethernet
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+29B
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+251.096
+ 20
+473.4148000000001
+ 10
+274.91
+ 20
+473.4148000000001
+ 10
+274.91
+ 20
+109.5898000000001
+ 10
+298.724
+ 20
+109.5898000000001
+  0
+LWPOLYLINE
+  5
+29C
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+-54.61578892085336
+ 20
+522.0079324180261
+ 10
+-12.27978892085336
+ 20
+522.0079324180261
+ 10
+-12.27978892085336
+ 20
+560.1103324180262
+ 10
+-54.61578892085336
+ 20
+560.1103324180262
+ 10
+-54.61578892085336
+ 20
+522.0079324180261
+  0
+LWPOLYLINE
+  5
+29D
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+-54.61578892085336
+ 20
+549.5263324180263
+ 10
+-12.27978892085336
+ 20
+549.5263324180263
+  0
+TEXT
+  5
+29E
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+-53.61578892085336
+ 20
+552.0263324180263
+ 30
+0
+ 40
+2.5
+  1
+Cisco Ceiling Mic Mic 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+29F
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+-54.61578892085336
+ 20
+549.5263324180263
+ 11
+-12.27978892085336
+ 21
+549.5263324180263
+  0
+TEXT
+  5
+2A0
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+-53.61578892085336
+ 20
+543.6467324180263
+ 30
+0
+ 40
+1.8
+  1
+CS-MIC-CLNG-T
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2A1
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-55.61578892085336
+ 20
+546.0865324180263
+ 11
+-53.61578892085336
+ 21
+546.0865324180263
+  0
+LINE
+  5
+2A2
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-54.61578892085336
+ 20
+545.0865324180263
+ 11
+-54.61578892085336
+ 21
+547.0865324180263
+  0
+LINE
+  5
+2A3
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+-54.61578892085336
+ 20
+542.6467324180263
+ 11
+-12.27978892085336
+ 21
+542.6467324180263
+  0
+TEXT
+  5
+2A4
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+-53.61578892085336
+ 20
+536.7671324180263
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2A5
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-55.61578892085336
+ 20
+539.2069324180263
+ 11
+-53.61578892085336
+ 21
+539.2069324180263
+  0
+LINE
+  5
+2A6
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-54.61578892085336
+ 20
+538.2069324180263
+ 11
+-54.61578892085336
+ 21
+540.2069324180263
+  0
+LINE
+  5
+2A7
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+-54.61578892085336
+ 20
+535.7671324180263
+ 11
+-12.27978892085336
+ 21
+535.7671324180263
+  0
+TEXT
+  5
+2A8
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+-53.61578892085336
+ 20
+536.2671324180263
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2A9
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+-54.61578892085336
+ 20
+528.8875324180264
+ 11
+-12.27978892085336
+ 21
+528.8875324180264
+  0
+LINE
+  5
+2AA
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-13.27978892085336
+ 20
+525.4477324180264
+ 11
+-11.27978892085336
+ 21
+525.4477324180264
+  0
+LINE
+  5
+2AB
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-12.27978892085336
+ 20
+524.4477324180264
+ 11
+-12.27978892085336
+ 21
+526.4477324180264
+  0
+TEXT
+  5
+2AC
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+-53.61578892085336
+ 20
+523.0079324180261
+ 30
+0
+ 40
+1.8
+  1
+S/N: CLNG-MIC-01
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+2AD
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+40.64021107914664
+ 20
+522.0079324180261
+ 10
+82.97621107914662
+ 20
+522.0079324180261
+ 10
+82.97621107914662
+ 20
+560.1103324180262
+ 10
+40.64021107914664
+ 20
+560.1103324180262
+ 10
+40.64021107914664
+ 20
+522.0079324180261
+  0
+LWPOLYLINE
+  5
+2AE
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+40.64021107914664
+ 20
+549.5263324180263
+ 10
+82.97621107914662
+ 20
+549.5263324180263
+  0
+TEXT
+  5
+2AF
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+41.64021107914664
+ 20
+552.0263324180263
+ 30
+0
+ 40
+2.5
+  1
+Cisco Ceiling Mic Mic 2
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2B0
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+40.64021107914664
+ 20
+549.5263324180263
+ 11
+82.97621107914662
+ 21
+549.5263324180263
+  0
+TEXT
+  5
+2B1
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+41.64021107914664
+ 20
+543.6467324180263
+ 30
+0
+ 40
+1.8
+  1
+CS-MIC-CLNG-T
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2B2
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+39.64021107914664
+ 20
+546.0865324180263
+ 11
+41.64021107914664
+ 21
+546.0865324180263
+  0
+LINE
+  5
+2B3
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+40.64021107914664
+ 20
+545.0865324180263
+ 11
+40.64021107914664
+ 21
+547.0865324180263
+  0
+LINE
+  5
+2B4
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+40.64021107914664
+ 20
+542.6467324180263
+ 11
+82.97621107914662
+ 21
+542.6467324180263
+  0
+TEXT
+  5
+2B5
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+41.64021107914664
+ 20
+536.7671324180263
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2B6
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+39.64021107914664
+ 20
+539.2069324180263
+ 11
+41.64021107914664
+ 21
+539.2069324180263
+  0
+LINE
+  5
+2B7
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+40.64021107914664
+ 20
+538.2069324180263
+ 11
+40.64021107914664
+ 21
+540.2069324180263
+  0
+LINE
+  5
+2B8
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+40.64021107914664
+ 20
+535.7671324180263
+ 11
+82.97621107914662
+ 21
+535.7671324180263
+  0
+TEXT
+  5
+2B9
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+41.64021107914664
+ 20
+536.2671324180263
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2BA
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+40.64021107914664
+ 20
+528.8875324180264
+ 11
+82.97621107914662
+ 21
+528.8875324180264
+  0
+LINE
+  5
+2BB
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+81.97621107914662
+ 20
+525.4477324180264
+ 11
+83.97621107914662
+ 21
+525.4477324180264
+  0
+LINE
+  5
+2BC
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+82.97621107914662
+ 20
+524.4477324180264
+ 11
+82.97621107914662
+ 21
+526.4477324180264
+  0
+TEXT
+  5
+2BD
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+41.64021107914664
+ 20
+523.0079324180261
+ 30
+0
+ 40
+1.8
+  1
+S/N: CLNG-MIC-02
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+TEXT
+  5
+2BE
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+-13.27978892085336
+ 20
+523.0079324180264
+ 30
+0
+ 40
+1.8
+  1
+USB Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+2BF
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   35
+100
+AcDbPolyline
+ 90
+    5
+ 70
+    0
+ 43
+0
+ 10
+43.80357783079997
+ 20
+451.075825825893
+ 10
+86.13957783079995
+ 20
+451.075825825893
+ 10
+86.13957783079995
+ 20
+496.057825825893
+ 10
+43.80357783079997
+ 20
+496.057825825893
+ 10
+43.80357783079997
+ 20
+451.075825825893
+  0
+LWPOLYLINE
+  5
+2C0
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbPolyline
+ 90
+    2
+ 70
+    0
+ 43
+0
+ 10
+43.80357783079997
+ 20
+485.473825825893
+ 10
+86.13957783079995
+ 20
+485.473825825893
+  0
+TEXT
+  5
+2C1
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+44.80357783079997
+ 20
+487.973825825893
+ 30
+0
+ 40
+2.5
+  1
+Cisco PTZ 4K Camera 1
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2C2
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+43.80357783079997
+ 20
+485.473825825893
+ 11
+86.13957783079995
+ 21
+485.473825825893
+  0
+TEXT
+  5
+2C3
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+44.80357783079997
+ 20
+479.594225825893
+ 30
+0
+ 40
+1.8
+  1
+CTS-CAM-P60-K9
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2C4
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+42.80357783079997
+ 20
+482.034025825893
+ 11
+44.80357783079997
+ 21
+482.034025825893
+  0
+LINE
+  5
+2C5
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+43.80357783079997
+ 20
+481.034025825893
+ 11
+43.80357783079997
+ 21
+483.034025825893
+  0
+LINE
+  5
+2C6
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+43.80357783079997
+ 20
+478.594225825893
+ 11
+86.13957783079995
+ 21
+478.594225825893
+  0
+TEXT
+  5
+2C7
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+44.80357783079997
+ 20
+472.7146258258931
+ 30
+0
+ 40
+1.8
+  1
+Ethernet RJ45
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2C8
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+42.80357783079997
+ 20
+475.154425825893
+ 11
+44.80357783079997
+ 21
+475.154425825893
+  0
+LINE
+  5
+2C9
+100
+AcDbEntity
+  8
+ETHERNET
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+43.80357783079997
+ 20
+474.154425825893
+ 11
+43.80357783079997
+ 21
+476.154425825893
+  0
+LINE
+  5
+2CA
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+   13
+100
+AcDbLine
+ 10
+43.80357783079997
+ 20
+471.7146258258931
+ 11
+86.13957783079995
+ 21
+471.7146258258931
+  0
+TEXT
+  5
+2CB
+100
+AcDbEntity
+  8
+DEVICE_TEXT
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+44.80357783079997
+ 20
+472.2146258258931
+ 30
+0
+ 40
+1.8
+  1
+OUTPUT
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2CC
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+43.80357783079997
+ 20
+464.8350258258931
+ 11
+86.13957783079995
+ 21
+464.8350258258931
+  0
+TEXT
+  5
+2CD
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+85.13957783079995
+ 20
+458.9554258258931
+ 30
+0
+ 40
+1.8
+  1
+HDMI Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2CE
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+85.13957783079995
+ 20
+461.3952258258931
+ 11
+87.13957783079995
+ 21
+461.3952258258931
+  0
+LINE
+  5
+2CF
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+86.13957783079995
+ 20
+460.3952258258931
+ 11
+86.13957783079995
+ 21
+462.3952258258931
+  0
+LINE
+  5
+2D0
+100
+AcDbEntity
+  8
+DEVICES
+  6
+ByLayer
+ 62
+  256
+370
+    5
+100
+AcDbLine
+ 10
+43.80357783079997
+ 20
+457.9554258258931
+ 11
+86.13957783079995
+ 21
+457.9554258258931
+  0
+TEXT
+  5
+2D1
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+85.13957783079995
+ 20
+452.0758258258931
+ 30
+0
+ 40
+1.8
+  1
+USB Out
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LINE
+  5
+2D2
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+85.13957783079995
+ 20
+454.5156258258931
+ 11
+87.13957783079995
+ 21
+454.5156258258931
+  0
+LINE
+  5
+2D3
+100
+AcDbEntity
+  8
+USB
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+86.13957783079995
+ 20
+453.5156258258931
+ 11
+86.13957783079995
+ 21
+455.5156258258931
+  0
+TEXT
+  5
+2D4
+100
+AcDbEntity
+  8
+NOTES
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbText
+ 10
+44.80357783079997
+ 20
+452.075825825893
+ 30
+0
+ 40
+1.8
+  1
+S/N: CAM-P60-01
+ 50
+0
+ 41
+1
+ 51
+0
+  7
+STANDARD
+ 71
+    0
+210
+0
+220
+0
+230
+1
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+2D5
+100
+AcDbEntity
+  8
+USB
+  6
+DASHED
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+43.29065962778664
+ 20
+474.872031631333
+ 10
+141.7989973522399
+ 20
+461.1780474633597
+ 10
+204.968
+ 20
+473.4148000000001
+ 10
+251.096
+ 20
+473.4148000000001
+  0
+LWPOLYLINE
+  5
+2D6
+100
+AcDbEntity
+  8
+HDMI
+  6
+ByLayer
+ 62
+  256
+370
+   25
+100
+AcDbPolyline
+ 90
+    4
+ 70
+    0
+ 43
+0
+ 10
+82.60564643261328
+ 20
+542.458469621653
+ 10
+203.468
+ 20
+619.2094000000001
+ 10
+203.468
+ 20
+473.4148000000001
+ 10
+251.096
+ 20
+473.4148000000001
+  0
+ENDSEC
+  0
+SECTION
+  2
+OBJECTS
+  0
+DICTIONARY
+  5
+C
+330
+0
+100
+AcDbDictionary
+281
+    1
+  3
+ACAD_GROUP
+350
+D
+  0
+DICTIONARY
+  5
+D
+330
+C
+100
+AcDbDictionary
+281
+    1
+  0
+PLOTSETTINGS
+  5
+2D7
+100
+AcDbPlotSettings
+  6
+1x1
+ 40
+0
+ 41
+0
+ 42
+0
+ 43
+0
+  0
+ENDSEC
+  0
+EOF

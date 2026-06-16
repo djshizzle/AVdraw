@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<Status>
+  <SystemUnit>
+    <ProductId>Cisco Webex Codec Pro</ProductId>
+  </SystemUnit>
+  <Network>
+    <IPv4>
+      <Address>192.168.1.100</Address>
+    </IPv4>
+  </Network>
+  <Peripherals>
+    <ConnectedDevice item="1">
+      <Name>Cisco TelePresence Touch 10</Name>
+      <Type>TouchPanel</Type>
+      <Status>Connected</Status>
+      <SerialNumber>FTT12345678</SerialNumber>
+      <NetworkAddress>192.168.1.101</NetworkAddress>
+    </ConnectedDevice>
+    <ConnectedDevice item="2">
+      <Name>Cisco PTZ 4K Camera</Name>
+      <Type>Camera</Type>
+      <Status>Connected</Status>
+      <SerialNumber>CAM-P60-01</SerialNumber>
+      <NetworkAddress>192.168.1.102</NetworkAddress>
+    </ConnectedDevice>
+    <ConnectedDevice item="3">
+      <Name>Cisco Ceiling Microphone</Name>
+      <Type>Microphone</Type>
+      <Status>Connected</Status>
+      <SerialNumber>CLNG-MIC-01</SerialNumber>
+      <NetworkAddress>192.168.1.103</NetworkAddress>
+    </ConnectedDevice>
+    <ConnectedDevice item="4">
+      <Name>Cisco Room Navigator</Name>
+      <Type>NavigationController</Type>
+      <Status>Connected</Status>
+      <SerialNumber>NAV-001</SerialNumber>
+      <NetworkAddress>192.168.1.104</NetworkAddress>
+    </ConnectedDevice>
+    <ConnectedDevice item="5">
+      <Name>Cisco Quad Camera</Name>
+      <Type>Camera</Type>
+      <Status>NotConnected</Status>
+      <SerialNumber>QUAD-001</SerialNumber>
+      <NetworkAddress></NetworkAddress>
+    </ConnectedDevice>
+  </Peripherals>
+  <Video>
+    <Input>
+      <Connector item="1">
+        <SignalState>OK</SignalState>
+      </Connector>
+      <Connector item="2">
+        <SignalState>None</SignalState>
+      </Connector>
+      <Connector item="3">
+        <SignalState>None</SignalState>
+      </Connector>
+      <Connector item="4">
+        <SignalState>None</SignalState>
+      </Connector>
+    </Input>
+    <Output>
+      <Connector item="1">
+        <SignalState>OK</SignalState>
+      </Connector>
+      <Connector item="2">
+        <SignalState>None</SignalState>
+      </Connector>
+    </Output>
+  </Video>
+</Status>

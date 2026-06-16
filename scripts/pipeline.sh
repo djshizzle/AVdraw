@@ -43,9 +43,19 @@ echo "Step 2/2: draw.io → EasySchematic"
 python3 "$SRC/drawio_to_easyschematic.py" --input "$DRAWIO" --output "$JSON" --name "$NAME"
 
 echo ""
-echo "Step 3/3: draw.io → DXF (AutoCAD)"
+echo "Step 3/4: draw.io → DXF (AutoCAD)"
 DXF="$OUTPUT_DIR/${SAFE_NAME}.dxf"
 python3 "$SRC/drawio_to_dxf.py" --input "$DRAWIO" --output "$DXF" --name "$NAME"
+
+echo ""
+echo "Step 4/4: AI Signal Flow Review"
+REVIEW="$OUTPUT_DIR/${SAFE_NAME}_review.json"
+if [ -n "$ANTHROPIC_API_KEY" ]; then
+  python3 "$SRC/ai_reviewer.py" --input "$DRAWIO" --name "$NAME"
+else
+  echo "  (Running local rules only — set ANTHROPIC_API_KEY for full AI review)"
+  python3 "$SRC/ai_reviewer.py" --input "$DRAWIO" --name "$NAME" --no-ai
+fi
 
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -53,6 +63,7 @@ echo " Outputs:"
 echo "   draw.io       → $DRAWIO"
 echo "   EasySchematic → $JSON"
 echo "   AutoCAD DXF   → $DXF"
+echo "   Review Report → $REVIEW"
 echo ""
 echo " Next steps:"
 echo "   1. Open $DRAWIO in draw.io to refine layout/connections"

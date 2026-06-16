@@ -1,0 +1,221 @@
+{
+  "codec_model": "Cisco Webex Codec Pro",
+  "codec_ip": "192.168.1.100",
+  "matched": [
+    {
+      "drawio_label": "Cisco Room Navigator Touch Panel",
+      "drawio_id": "182",
+      "drawio_type": "control-panel",
+      "xstatus_name": "Cisco TelePresence Touch 10",
+      "xstatus_type": "TouchPanel",
+      "xstatus_status": "Connected",
+      "serial": "FTT12345678"
+    },
+    {
+      "drawio_label": "Cisco PTZ 4K Camera 1",
+      "drawio_id": "27",
+      "drawio_type": "camera",
+      "xstatus_name": "Cisco PTZ 4K Camera",
+      "xstatus_type": "Camera",
+      "xstatus_status": "Connected",
+      "serial": "CAM-P60-01"
+    },
+    {
+      "drawio_label": "Cisco Ceiling Mic Mic 1",
+      "drawio_id": "48",
+      "drawio_type": "microphone",
+      "xstatus_name": "Cisco Ceiling Microphone",
+      "xstatus_type": "Microphone",
+      "xstatus_status": "Connected",
+      "serial": "CLNG-MIC-01"
+    },
+    {
+      "drawio_label": "Cisco PTZ 4K Camera 2",
+      "drawio_id": "34",
+      "drawio_type": "camera",
+      "xstatus_name": "Cisco Quad Camera",
+      "xstatus_type": "Camera",
+      "xstatus_status": "NotConnected",
+      "serial": "QUAD-001"
+    }
+  ],
+  "missing_from_schematic": [
+    {
+      "xstatus_name": "Cisco Room Navigator",
+      "xstatus_type": "NavigationController",
+      "norm_type": "control-panel",
+      "xstatus_status": "Connected",
+      "serial": "NAV-001",
+      "network_address": "192.168.1.104"
+    }
+  ],
+  "extra_in_schematic": [
+    {
+      "drawio_label": "Cisco PTZ 4K Camera 3",
+      "drawio_id": "41",
+      "drawio_type": "camera",
+      "model": "CTS-CAM-P60-K9",
+      "serial": "CAM-P60-03"
+    },
+    {
+      "drawio_label": "Cisco Ceiling Mic Mic 2",
+      "drawio_id": "54",
+      "drawio_type": "microphone",
+      "model": "CS-MIC-CLNG-T",
+      "serial": "CLNG-MIC-02"
+    },
+    {
+      "drawio_label": "Shure ULXD2 Wireless Mic 1",
+      "drawio_id": "60",
+      "drawio_type": "microphone",
+      "model": "ULXD2/B58",
+      "serial": "ULXD2-B58-01"
+    },
+    {
+      "drawio_label": "Shure ULXD2 Wireless Mic 2",
+      "drawio_id": "66",
+      "drawio_type": "microphone",
+      "model": "ULXD2/B58",
+      "serial": "ULXD2-B58-02"
+    },
+    {
+      "drawio_label": "Shure ULXD2 Wireless Mic 3",
+      "drawio_id": "72",
+      "drawio_type": "microphone",
+      "model": "ULXD2/B58",
+      "serial": "ULXD2-B58-03"
+    },
+    {
+      "drawio_label": "Shure ULXD2 Wireless Mic 4",
+      "drawio_id": "78",
+      "drawio_type": "microphone",
+      "model": "ULXD2/B58",
+      "serial": "ULXD2-B58-04"
+    },
+    {
+      "drawio_label": "Shure ULXD4Q Wireless Receiver",
+      "drawio_id": "84",
+      "drawio_type": "device",
+      "model": "ULXD4Q",
+      "serial": "ULXD4Q-01"
+    },
+    {
+      "drawio_label": "Dante Audio Network",
+      "drawio_id": "112",
+      "drawio_type": "audio-interface",
+      "model": "Dante/AES67",
+      "serial": "DANTE-NET-01"
+    },
+    {
+      "drawio_label": "QSC AMP8 Speaker Amplifier",
+      "drawio_id": "126",
+      "drawio_type": "speaker",
+      "model": "QSC AMP8",
+      "serial": "QSC-AMP8-01"
+    },
+    {
+      "drawio_label": "Samsung QM90B Display Left",
+      "drawio_id": "98",
+      "drawio_type": "display",
+      "model": "90\" Display",
+      "serial": "QM90B-L"
+    },
+    {
+      "drawio_label": "Samsung QM90B Display Right",
+      "drawio_id": "105",
+      "drawio_type": "display",
+      "model": "90\" Display",
+      "serial": "QM90B-R"
+    },
+    {
+      "drawio_label": "Speaker Zone 1",
+      "drawio_id": "142",
+      "drawio_type": "speaker",
+      "model": "Ceiling Speaker",
+      "serial": "QSC-AMP8-Z01"
+    },
+    {
+      "drawio_label": "Speaker Zone 2",
+      "drawio_id": "147",
+      "drawio_type": "speaker",
+      "model": "Ceiling Speaker",
+      "serial": "QSC-AMP8-Z02"
+    },
+    {
+      "drawio_label": "Speaker Zone 3",
+      "drawio_id": "152",
+      "drawio_type": "speaker",
+      "model": "Ceiling Speaker",
+      "serial": "QSC-AMP8-Z03"
+    },
+    {
+      "drawio_label": "Speaker Zone 4",
+      "drawio_id": "157",
+      "drawio_type": "speaker",
+      "model": "Ceiling Speaker",
+      "serial": "QSC-AMP8-Z04"
+    },
+    {
+      "drawio_label": "Speaker Zone 5",
+      "drawio_id": "162",
+      "drawio_type": "speaker",
+      "model": "Ceiling Speaker",
+      "serial": "QSC-AMP8-Z05"
+    },
+    {
+      "drawio_label": "Speaker Zone 6",
+      "drawio_id": "167",
+      "drawio_type": "speaker",
+      "model": "Ceiling Speaker",
+      "serial": "QSC-AMP8-Z06"
+    },
+    {
+      "drawio_label": "Speaker Zone 7",
+      "drawio_id": "172",
+      "drawio_type": "speaker",
+      "model": "Ceiling Speaker",
+      "serial": "QSC-AMP8-Z07"
+    },
+    {
+      "drawio_label": "Speaker Zone 8",
+      "drawio_id": "177",
+      "drawio_type": "speaker",
+      "model": "Ceiling Speaker",
+      "serial": "QSC-AMP8-Z08"
+    }
+  ],
+  "signal_mismatches": [
+    {
+      "direction": "input",
+      "connector": "2",
+      "signal_state": "None",
+      "note": "Video Input Connector 2 is None"
+    },
+    {
+      "direction": "input",
+      "connector": "3",
+      "signal_state": "None",
+      "note": "Video Input Connector 3 is None"
+    },
+    {
+      "direction": "input",
+      "connector": "4",
+      "signal_state": "None",
+      "note": "Video Input Connector 4 is None"
+    },
+    {
+      "direction": "output",
+      "connector": "2",
+      "signal_state": "None",
+      "note": "Video Output Connector 2 is None"
+    }
+  ],
+  "peripheral_warnings": [
+    {
+      "peripheral": "Cisco Quad Camera",
+      "status": "NotConnected",
+      "type": "Camera",
+      "serial": "QUAD-001"
+    }
+  ]
+}
