@@ -1,0 +1,11 @@
+Name,Type,Model,Serial,Quantity,Room,Notes
+Cisco Webex Codec Pro,Codec,CS-CODEC-PRO,,1,,Main room codec
+Cisco PTZ 4K Camera,Camera,CTS-CAM-P60-K9,,2,,Ceiling mounted
+Samsung QM90B Display,Display,QM90B,,2,,Front displays
+Cisco Ceiling Mic,Microphone,CS-MIC-CLNG-T,,2,,Ceiling array
+Shure ULXD4Q Receiver,Audio Mixer,ULXD4Q,,1,,Wireless receiver rack
+Dante Audio Network,Network,Dante/AES67,,1,,Dante hub
+QSC AMP8 Amplifier,Amplifier,QSC AMP8,,1,,Rack amplifier
+Speaker Zone,Speaker,Ceiling Speaker,,4,,Ceiling zones
+Cisco Room Navigator,Touch Panel,CS-T10-NR-K9,,1,,Table touch panel
+Cisco Catalyst 9300,Switch,C9300-24P,,1,,PoE network switch
