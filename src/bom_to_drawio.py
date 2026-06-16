@@ -102,8 +102,8 @@ DEVICE_TYPE_MAP = {
     "control panel":     "control-panel",
     "network":           "audio-interface",
     "receiver":          "audio-interface",
-    "wireless-mic":      "microphone",
-    "wireless-receiver": "audio-interface",
+    "wireless-mic":      "wireless-mic",
+    "wireless-receiver": "wireless-receiver",
     "dsp":               "audio-interface",
     "patch-panel":       "device",
     "ups":               "device",
@@ -112,8 +112,11 @@ DEVICE_TYPE_MAP = {
 
 DEFAULT_PORTS_BY_TYPE = {
     "video-conferencing": {
-        "inputs":  [("HDMI In", "hdmi", 4), ("USB In", "usb", 2)],
-        "outputs": [("HDMI Out", "hdmi", 2), ("USB Out", "usb", 2)],
+        # Mic+camera+content mix — needs enough USB to absorb PTZ cams AND
+        # ceiling mics typical for a single codec deployment without a DSP.
+        "inputs":  [("HDMI In", "hdmi", 4), ("USB In", "usb", 6)],
+        "outputs": [("HDMI Out", "hdmi", 2), ("USB Out", "usb", 2),
+                    ("Dante Out", "dante", 2)],
         "info":    [("Ethernet RJ45", "ethernet")],
     },
     "camera": {
@@ -127,8 +130,21 @@ DEFAULT_PORTS_BY_TYPE = {
         "info":    [("Ethernet RJ45", "ethernet")],
     },
     "microphone": {
+        # Wired ceiling mics — USB out to codec, or analog out to DSP
         "inputs":  [],
-        "outputs": [("USB Out", "usb", 1)],
+        "outputs": [("USB Out", "usb", 1), ("Analog Out", "analog-audio", 1)],
+        "info":    [("Ethernet RJ45", "ethernet")],
+    },
+    "wireless-mic": {
+        # Handheld / lavalier transmitter — RF only, no network
+        "inputs":  [],
+        "outputs": [("RF Out", "rf", 1)],
+        "info":    [],
+    },
+    "wireless-receiver": {
+        # Multi-channel rack receiver — RF in (one per channel), Dante out
+        "inputs":  [("RF In", "rf", 4)],
+        "outputs": [("Dante Out", "dante", 4), ("Analog Out", "analog-audio", 4)],
         "info":    [("Ethernet RJ45", "ethernet")],
     },
     "speaker": {
@@ -137,13 +153,15 @@ DEFAULT_PORTS_BY_TYPE = {
         "info":    [],
     },
     "amplifier": {
-        "inputs":  [("Dante In", "dante", 2)],
+        "inputs":  [("Dante In", "dante", 2), ("Analog In", "analog-audio", 4)],
         "outputs": [("Speaker Out", "speaker-level", 8)],
         "info":    [("Ethernet RJ45", "ethernet")],
     },
     "audio-interface": {
-        "inputs":  [("Dante", "dante", 4)],
-        "outputs": [("Dante", "dante", 4)],
+        # DSP / Dante hub — explicit Dante in/out (NOT bidirectional info row,
+        # which was causing input→input wiring on receivers and amps).
+        "inputs":  [("Dante In", "dante", 4), ("Analog In", "analog-audio", 4)],
+        "outputs": [("Dante Out", "dante", 4), ("Analog Out", "analog-audio", 4)],
         "info":    [("Ethernet RJ45", "ethernet")],
     },
     "control-panel": {
@@ -188,6 +206,8 @@ ROLE_ORDER = [
     "camera",
     "computer",
     "microphone",
+    "wireless-mic",
+    "wireless-receiver",
     "video-conferencing",
     "control-panel",
     "audio-interface",
@@ -695,6 +715,35 @@ def build_drawio(bom_devices: list[dict], xstatus: Optional[dict], name: str) ->
         device_type = DEVICE_TYPE_MAP.get(raw_dtype, raw_dtype)
         model       = device.get("model", "")
         notes       = device.get("notes", "")
+
+        # Smart reclassification — labels/models often distinguish wireless
+        # gear that the BOM lazily tags as "Microphone" or "Audio Mixer".
+        # We retag here so the type defaults + auto-wiring pick the right
+        # signal paths (RF in, Dante out for receivers; RF out for txs).
+        label_low = label.lower()
+        model_low = (model or "").lower()
+        combined  = f"{label_low} {model_low}"
+        if device_type == "microphone":
+            # Wireless transmitter clues: handheld/lapel/wireless/bodypack,
+            # or known wireless mic model series.
+            if any(kw in combined for kw in (
+                "wireless mic", "wireless-mic", "handheld", "bodypack",
+                "lavalier", "lav mic", "wireless transmitter",
+                "ulxd2", "qlxd2", "axient", "slxd2", "ad2", "ew-d",
+            )):
+                device_type = "wireless-mic"
+        elif device_type == "audio-interface":
+            # Wireless receiver clues: receiver, base station, or known rx models.
+            if any(kw in combined for kw in (
+                "wireless receiver", "wireless rx", "receiver", "base station",
+                "ulxd4", "qlxd4", "axient digital", "slxd4", "ad4", "ew-dr",
+            )):
+                # Don't retag if label says "matrix" / "switcher" / "dsp" / "core"
+                if not any(kw in combined for kw in
+                           ("matrix", "switcher", "dsp", "q-sys", "qsys",
+                            "core", "tesira", "biamp", "bss")):
+                    device_type = "wireless-receiver"
+
         port_cfg    = port_rows_from_bom(device, device_type)
         add_device(label, device_type, port_cfg, model=model, notes=notes)
 
@@ -773,6 +822,8 @@ def build_drawio(bom_devices: list[dict], xstatus: Optional[dict], name: str) ->
     cameras  = nodes_of_type("camera")
     displays = nodes_of_type("display")
     mics     = nodes_of_type("microphone")
+    wmics    = nodes_of_type("wireless-mic")
+    wrxs     = nodes_of_type("wireless-receiver")
     amps     = nodes_of_type("amplifier")
     speakers = nodes_of_type("speaker")
     panels   = nodes_of_type("control-panel")
@@ -802,24 +853,47 @@ def build_drawio(bom_devices: list[dict], xstatus: Optional[dict], name: str) ->
     for mic in mics:
         wire(mic, "usb", "out", codec, "usb", "in", "USB")
 
+    # ── Wireless audio chain ───────────────────────────────────────────────
+    # Wireless mics (transmitters) → Wireless receivers (RF antenna in).
+    # Distribute mics round-robin across available receivers so each
+    # 4-channel rx gets up to its 4 mics before spilling to the next.
+    if wrxs and wmics:
+        rx_capacity = {id(rx): 4 for rx in wrxs}
+        rx_iter = iter(wrxs)
+        cur_rx = next(rx_iter, None)
+        for wm in wmics:
+            while cur_rx is not None and rx_capacity[id(cur_rx)] <= 0:
+                cur_rx = next(rx_iter, None)
+            if cur_rx is None:
+                break  # ran out of receiver slots
+            wire(wm, "rf", "out", cur_rx, "rf", "in", "RF")
+            rx_capacity[id(cur_rx)] -= 1
+
     # Dante hub = audio-interface with most dante ports
     dante_hub = sorted(audio_ifs,
                        key=lambda e: sum(1 for k in e["pid_map"] if "dante" in k),
                        reverse=True)[0] if audio_ifs else None
 
-    # Other audio interfaces → Dante hub
+    # Wireless receivers → Dante hub (or directly to amp if no hub)
+    for rx in wrxs:
+        if dante_hub:
+            wire(rx, "dante", "out", dante_hub, "dante", "in", "Dante")
+        elif amps:
+            wire(rx, "dante", "out", amps[0], "dante", "in", "Dante")
+
+    # Other audio interfaces → Dante hub (DSP-to-DSP)
     for ai in audio_ifs:
         if ai is dante_hub:
             continue
-        wire(ai, "dante", "bi", dante_hub, "dante", "bi", "Dante")
+        wire(ai, "dante", "out", dante_hub, "dante", "in", "Dante")
 
-    # Dante hub → Amps
+    # Dante hub → Amps (program audio)
     for amp in amps:
-        wire(dante_hub, "dante", "bi", amp, "dante", "in", "Dante")
+        wire(dante_hub, "dante", "out", amp, "dante", "in", "Dante")
 
-    # Codec → Dante hub (program audio)
+    # Codec → Dante hub (program audio out from codec)
     if codec and dante_hub:
-        wire(codec, "dante", "bi", dante_hub, "dante", "bi", "Dante")
+        wire(codec, "dante", "out", dante_hub, "dante", "in", "Dante")
 
     # Amps → Speakers
     for amp in amps:

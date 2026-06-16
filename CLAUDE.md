@@ -393,11 +393,22 @@ Deps: `pip3 install fastapi uvicorn --user`.
 - `--webex-device NAME` (cloud xAPI, fuzzy name)
 Token from `WEBEX_TOKEN` env var or `--webex-token`.
 
-**Known real bugs the validators catch (don't fix without user approval):**
-- 2 ERRORS: Dante cables wired input→input in bom_to_drawio.py for
-  audio-interface devices (need dante_ports moved from Input to Output
-  section of the type-defaults map).
-- 6 WARNINGS: Wireless mics (ULXD2, Ceiling Mic) have no connections
-  because the BOM template doesn't define RF/Dante output ports for
-  them. Either add the ports to templates/bom_template.csv defaults or
-  add auto-wiring rules for `wireless-mic` → `wireless-receiver`.
+**Bugs previously caught by validators (now FIXED — commit 7xxx):**
+- ✅ Dante input→input wiring: audio-interface DEFAULT_PORTS_BY_TYPE now
+  has explicit `Dante In` (inputs) + `Dante Out` (outputs) instead of a
+  single bidirectional `Dante` info row. Auto-wiring uses directional
+  `out → in` instead of `bi → bi`.
+- ✅ Wireless mic orphans: `wireless-mic` and `wireless-receiver` are now
+  first-class device types in DEFAULT_PORTS_BY_TYPE with proper RF/Dante
+  port profiles. Auto-wiring chain: wireless-mic.rf_out →
+  wireless-receiver.rf_in → dante_hub.dante_in (round-robin 4-per-rx).
+  Smart label/model reclassification retags BOMs that lazily tag wireless
+  gear as "Microphone" or "Audio Mixer" (keywords: ulxd2, qlxd2, axient,
+  handheld, bodypack, lavalier, ulxd4, etc.).
+
+**Smart device-type reclassification:** When the BOM tags a row as plain
+`microphone` or `audio-interface`, bom_to_drawio inspects the label+model
+for keywords and retags wireless gear into its proper category. Negative
+keywords on the audio-interface check (matrix/switcher/dsp/q-sys/tesira/
+biamp/bss/core) prevent false positives — those legitimate DSP devices
+keep their audio-interface classification.
