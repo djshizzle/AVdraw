@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Output files (generated — not source)
+output/*.dxf
+output/*.json
+output/*_patched.drawio
+output/*_review.json
+output/*_xstatus_diff.json
+
+# Keep sample output files
+!output/Boardroom_Pro.drawio
+!output/Template_Test.drawio
+
+# Test fixtures
+test_xstatus.xml
+
+# Editor
+.vscode/
+.idea/
+*.swp
