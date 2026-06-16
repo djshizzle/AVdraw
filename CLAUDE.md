@@ -28,10 +28,15 @@ Run this loop on every task. Do not skip steps.
 ```
 - Read src/bom_to_drawio.py
 - Read src/drawio_to_easyschematic.py
-- Read src/xstatus.py
-- Read templates/sample_bom.csv
+- Read src/xstatus.py            ← shared xStatus/Webex transport module
+- Read src/xstatus_diff.py       ← diff CLI that consumes xstatus.py
+- Read src/ai_reviewer.py
+- Read src/nl_editor.py
+- Read src/drawio_to_dxf.py
+- Read templates/bom_template.csv  (44-column rich BOM)
+- Read templates/sample_bom.csv    (golden fixture — DO NOT MODIFY)
 - Read docs/signal_colors.md
-- Check output/ for any existing .drawio or .json files to understand current state
+- Check output/ for existing .drawio/.json/.dxf files
 ```
 **Goal:** Know exactly what the current code does before touching anything.
 
@@ -213,48 +218,94 @@ This makes AVdraw callable from AvaI BuildReadinessAgent
 ## CODING STANDARDS FOR THIS REPO
 
 ```python
-# BOM parsing — always use this pattern
+# BOM parsing — actual schema used in this repo (templates/bom_template.csv)
+# Required columns:
+#   Name      device label that appears in draw.io
+#   Type      device category (codec, camera, display, mic, amp, switcher, ...)
+#   Model     manufacturer + model number string
+#
+# Optional columns:
+#   Serial, Quantity, Room, Notes, IP, MAC, plus per-signal port-count columns
+#   (hdmi_in, hdmi_out, dante_in, dante_out, usb_in, usb_out, ethernet, ...)
+#
+# Comment lines starting with '#' are skipped.
+# Column names are case-insensitive and accept these aliases:
+#   name / device_name / device
+#   type / device_type
+#   model / model_number / model_no
+#   serial / serial_number / sn
+#   ip / ip_address
+#   mac / mac_address
+#   xlr_in → analog_audio_in, xlr_out → analog_audio_out
+
 import csv, sys
 
 def load_bom(path: str) -> list[dict]:
-    required = {"device_name", "signal_type", "input_count", "output_count"}
+    required = {"name", "type", "model"}   # case-insensitive after normalisation
     rows = []
-    with open(path, newline="") as f:
-        reader = csv.DictReader(f)
-        missing = required - set(reader.fieldnames or [])
+    with open(path, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(
+            r for r in f if not r.lstrip().startswith("#")
+        )
+        fields = {c.lower().strip() for c in (reader.fieldnames or [])}
+        missing = required - fields
         if missing:
             sys.exit(f"ERROR: BOM missing required columns: {missing}")
-        for i, row in enumerate(reader, start=2):  # row 1 = header
+        for i, row in enumerate(reader, start=2):
+            row = {k.lower().strip(): (v or "").strip() for k, v in row.items()}
             errs = []
-            if not row.get("device_name", "").strip():
-                errs.append("empty device_name")
-            if row.get("signal_type") not in SIGNAL_COLORS:
-                errs.append(f"unknown signal_type '{row.get('signal_type')}'")
+            if not row.get("name"):
+                errs.append("empty Name")
+            if not row.get("type"):
+                errs.append("empty Type")
             if errs:
-                print(f"WARNING row {i}: {row.get('device_name','?')} — {', '.join(errs)}", file=sys.stderr)
+                print(f"WARNING row {i}: {row.get('name','?')} — "
+                      f"{', '.join(errs)}", file=sys.stderr)
                 continue
             rows.append(row)
     return rows
 
-# draw.io XML — always use a unique cell ID strategy
-import uuid
-def cell_id(prefix: str) -> str:
-    return f"{prefix}-{uuid.uuid4().hex[:8]}"
 
-# Signal color lookup — always use this, never hardcode hex in scripts
+# draw.io XML — stable, deterministic cell IDs (idempotent output)
+# Don't use uuid4 — running the same BOM twice must produce byte-identical
+# .drawio files. Use a counter or hash-based ID instead:
+def cell_id(prefix: str, device_name: str, slot: int = 0) -> str:
+    # Deterministic — same BOM row always gets the same ID
+    import hashlib
+    h = hashlib.sha1(f"{prefix}:{device_name}:{slot}".encode()).hexdigest()[:8]
+    return f"{prefix}-{h}"
+
+
+# Signal color lookup — single source of truth in docs/signal_colors.md
+# Mirror the table from docs/signal_colors.md exactly:
 SIGNAL_COLORS = {
-    "hdmi": "#d6b656",
-    "sdi": "#6d8764",
-    "dante": "#7030a0",
-    "ethernet": "#006EAF",
-    "usb": "#0070c0",
-    "speaker": "#ff0000",
-    "analog-audio": "#ff6600",
-    "ndi": "#e36c09",
-    "displayport": "#0070c0",
-    "fiber": "#00b0f0",
-    "hdbaset": "#70ad47",
+    "hdmi":         "#d6b656",  # amber
+    "sdi":          "#6d8764",  # olive
+    "displayport":  "#0070c0",  # blue
+    "usb":          "#0070c0",  # blue
+    "ethernet":     "#006EAF",  # teal
+    "dante":        "#7030a0",  # purple
+    "ndi":          "#e36c09",  # orange
+    "avb":          "#833c00",  # brown
+    "speaker-level":"#ff0000",  # red
+    "analog-audio": "#ff6600",  # orange-red
+    "rf":           "#808080",  # grey
+    "fiber":        "#00b0f0",  # light blue
+    "hdbaset":      "#70ad47",  # green
+    "rs422":        "#ffc000",  # yellow
+    "gpio":         "#ffc000",  # yellow
 }
+
+
+# xStatus — always use the shared module, never reimplement
+from xstatus import load_xstatus, load_xstatus_safe, webex_fetch_xstatus
+
+# In pipeline contexts where xStatus is optional enrichment, use _safe variant —
+# it returns None on failure with a warning instead of raising:
+data = load_xstatus_safe("192.168.1.100", username="admin", password="cisco", timeout=5)
+if data is None:
+    # Codec unreachable — fall back to BOM-only mode (CLAUDE.md guardrail)
+    pass
 ```
 
 ---
@@ -294,24 +345,30 @@ Several roadmap items are **already implemented** — review before starting new
 
 | Roadmap item        | Status  | File                        | Notes                                          |
 |---------------------|---------|-----------------------------|------------------------------------------------|
+| Shared xStatus mod  | ✅ DONE | src/xstatus.py              | Direct codec + Webex cloud + file, all in one  |
 | P1 AI Reviewer      | ✅ DONE | src/ai_reviewer.py          | Local rules + Claude API (claude-sonnet-4-6)   |
 | P2 NL Editor        | ✅ DONE | src/nl_editor.py            | Claude API, 7 ops (ADD/REMOVE/RENAME/MOVE...)  |
-| P3 xStatus Diff     | ✅ DONE | src/xstatus_diff.py         | Direct codec + Webex cloud API + file modes    |
+| P3 xStatus Diff     | ✅ DONE | src/xstatus_diff.py         | Imports xstatus.py — direct + Webex + file     |
 | P4 DXF Export       | ✅ DONE | src/drawio_to_dxf.py        | Note: from drawio, NOT easyschematic — simpler |
 | P0 BOM validation   | ⚠️ PARTIAL | src/bom_to_drawio.py     | Has loose validation, needs strict layer       |
-| P0 xStatus failure  | ⚠️ PARTIAL | src/xstatus_diff.py      | Has try/except but no consistent timeout=5s    |
+| P0 xStatus failure  | ✅ DONE | src/xstatus.py              | load_xstatus_safe() returns None + warns       |
 | P0 drawio validator | ❌ TODO | (new file needed)           | Post-generation assertion checks               |
 | P5 AvaI webhook     | ❌ TODO | src/avai_webhook.py         | FastAPI endpoint for BuildReadinessAgent       |
 
-**Note on src/xstatus.py:** The roadmap references `src/xstatus.py` as a
-shared module, but in the current repo xStatus parsing lives inline in
-`src/xstatus_diff.py`. If you need a shared module, extract it from there.
+**BOM schema (resolved):** This repo uses a rich 44-column BOM with these
+required columns: `Name`, `Type`, `Model`. Optional: `Serial`, `Quantity`,
+`Room`, `Notes`, `IP`, `MAC`, plus per-signal port-count columns
+(`hdmi_in`, `hdmi_out`, `dante_in`, `dante_out`, etc.). Comment lines (`#`)
+are stripped. The roadmap's earlier strict 4-column schema
+(`device_name`/`signal_type`/`input_count`/`output_count`) is **NOT** used —
+see "Coding Standards" for the actual `load_bom()` pattern.
 
-**Note on BOM schema:** This repo's BOM template uses ~44 columns (Name, Type,
-Model, Serial, Quantity, Room, Notes, plus per-signal port counts). The
-roadmap's strict 4-column requirement (`device_name`, `signal_type`,
-`input_count`, `output_count`) is a different schema. Reconcile with the user
-before enforcing — the existing template would fail strict validation.
+**xStatus module (resolved):** All Cisco RoomOS / Webex telemetry now lives
+in `src/xstatus.py`. xstatus_diff.py imports from it. Other tools should too:
+
+```python
+from xstatus import load_xstatus_safe, webex_fetch_xstatus, webex_find_device
+```
 
 **Webex API:** xstatus_diff.py supports four source modes:
 - `--codec IP` (direct HTTP basic auth)

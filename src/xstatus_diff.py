@@ -48,188 +48,28 @@ Environment variables (alternative to --webex-token):
 from __future__ import annotations
 
 import argparse
-import base64
 import html
 import json
 import os
 import re
 import sys
-import urllib.error
-import urllib.request
-import ssl
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Optional
 
-
-# ---------------------------------------------------------------------------
-# Webex Devices API (cloud — bot token or personal access token)
-# ---------------------------------------------------------------------------
-
-WEBEX_API = "https://webexapis.com/v1"
-
-
-def _webex_get(path: str, token: str, params: dict | None = None) -> dict:
-    """Make a GET request to the Webex API and return parsed JSON."""
-    url = f"{WEBEX_API}{path}"
-    if params:
-        qs = "&".join(f"{k}={urllib.request.quote(str(v))}" for k, v in params.items())
-        url = f"{url}?{qs}"
-    req = urllib.request.Request(
-        url,
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-        },
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        body = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(
-            f"Webex API {exc.code} {exc.reason} for {url}: {body}"
-        ) from exc
-
-
-def webex_list_devices(token: str, display_name: str = "") -> list[dict]:
-    """
-    Return a list of Webex devices visible to the token.
-
-    Each dict has keys: id, displayName, product, mac, ip, connectionStatus,
-    workspaceId, serial, primarySipUrl, tags.
-    """
-    params = {"type": "roomdesk"}
-    if display_name:
-        params["displayName"] = display_name
-    data = _webex_get("/devices", token, params)
-    return data.get("items", [])
-
-
-def webex_find_device(token: str, name_query: str) -> dict:
-    """
-    Find a single Webex device by display name (case-insensitive substring).
-    Raises RuntimeError if 0 or >1 devices match.
-    """
-    devices = webex_list_devices(token, display_name=name_query)
-    if not devices:
-        raise RuntimeError(
-            f"No Webex devices found matching '{name_query}'. "
-            f"Run with --list-devices to see all available devices."
-        )
-    if len(devices) == 1:
-        return devices[0]
-
-    # Multiple matches — try exact (case-insensitive) first
-    query_low = name_query.lower()
-    exact = [d for d in devices if d.get("displayName", "").lower() == query_low]
-    if len(exact) == 1:
-        return exact[0]
-
-    names = "\n  ".join(f"{d['id']}  {d.get('displayName','')}" for d in devices)
-    raise RuntimeError(
-        f"Multiple Webex devices match '{name_query}'. "
-        f"Use --webex-device-id with one of:\n  {names}"
-    )
-
-
-def webex_fetch_xstatus(device_id: str, token: str) -> dict:
-    """
-    Pull full xStatus from a cloud-registered Webex device via the xAPI.
-
-    Returns the same dict structure as parse_xstatus_xml / parse_xstatus_text
-    so the rest of the diff pipeline works unchanged.
-
-    Webex xAPI endpoint:
-      GET /xapi/status?deviceId=<id>&name=Status
-    Response JSON shape:
-      {
-        "deviceId": "...",
-        "result": {
-          "SystemUnit": {"ProductId": "...", ...},
-          "Network": [{"IPv4": {"Address": "..."}}],
-          "Peripherals": {"ConnectedDevice": [...]},
-          "Video": {"Input": {"Connector": [...]}, "Output": {"Connector": [...]}}
-        }
-      }
-    """
-    data = _webex_get("/xapi/status", token, {"deviceId": device_id, "name": "Status"})
-    result = data.get("result", data)  # some SDK versions omit wrapper
-
-    def txt_path(obj: dict, *keys: str, default: str = "") -> str:
-        """Drill into a nested dict/list safely."""
-        cur = obj
-        for k in keys:
-            if isinstance(cur, list):
-                cur = cur[0] if cur else {}
-            if not isinstance(cur, dict):
-                return default
-            cur = cur.get(k, {})
-        if isinstance(cur, str):
-            return cur.strip()
-        return default
-
-    codec_model = txt_path(result, "SystemUnit", "ProductId")
-    codec_ip = txt_path(result, "Network", "0", "IPv4", "Address")
-    # Webex network is a list
-    net_list = result.get("Network", [])
-    if isinstance(net_list, list) and net_list:
-        codec_ip = txt_path(net_list[0], "IPv4", "Address")
-
-    # Peripherals
-    peripherals: list[dict] = []
-    peri_block = result.get("Peripherals", {})
-    connected = peri_block.get("ConnectedDevice", [])
-    if isinstance(connected, dict):
-        connected = [connected]
-    for dev in connected:
-        name    = dev.get("Name", "")
-        ptype   = dev.get("Type", "")
-        status  = dev.get("Status", "")
-        serial  = dev.get("SerialNumber", "")
-        netaddr = dev.get("NetworkAddress", "")
-        if not name and not ptype:
-            continue
-        peripherals.append({
-            "name":            name,
-            "type":            ptype,
-            "norm_type":       _norm_type(ptype),
-            "status":          status,
-            "serial":          serial,
-            "network_address": netaddr,
-        })
-
-    # Video inputs
-    video_inputs: list[dict] = []
-    vi_list = result.get("Video", {}).get("Input", {}).get("Connector", [])
-    if isinstance(vi_list, dict):
-        vi_list = [vi_list]
-    for conn in vi_list:
-        idx = str(conn.get("id", conn.get("item", "?")))
-        sig = conn.get("SignalState", "Unknown")
-        if isinstance(sig, dict):
-            sig = sig.get("Value", sig.get("value", "Unknown"))
-        video_inputs.append({"connector": idx, "signal_state": sig})
-
-    # Video outputs
-    video_outputs: list[dict] = []
-    vo_list = result.get("Video", {}).get("Output", {}).get("Connector", [])
-    if isinstance(vo_list, dict):
-        vo_list = [vo_list]
-    for conn in vo_list:
-        idx = str(conn.get("id", conn.get("item", "?")))
-        sig = conn.get("SignalState", "Unknown")
-        if isinstance(sig, dict):
-            sig = sig.get("Value", sig.get("value", "Unknown"))
-        video_outputs.append({"connector": idx, "signal_state": sig})
-
-    return {
-        "codec_model":   codec_model,
-        "codec_ip":      codec_ip,
-        "peripherals":   peripherals,
-        "video_inputs":  video_inputs,
-        "video_outputs": video_outputs,
-    }
+# Shared xStatus / Webex transport layer
+from xstatus import (
+    XSTATUS_TYPE_MAP,
+    _norm_type,
+    fetch_xstatus_http,
+    load_xstatus,
+    parse_xstatus_text,
+    parse_xstatus_xml,
+    webex_fetch_xstatus,
+    webex_find_device,
+    webex_list_devices,
+    webex_token_from_env,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -268,22 +108,8 @@ LABEL_KEYWORD_TYPE: dict[str, str] = {
     "decoder":       "decoder",
 }
 
-# xStatus peripheral Type → normalised device type
-XSTATUS_TYPE_MAP: dict[str, str] = {
-    "camera":                  "camera",
-    "touchpanel":              "control-panel",
-    "touch panel":             "control-panel",
-    "microphone":              "microphone",
-    "navigationcontroller":    "control-panel",
-    "navigation controller":   "control-panel",
-    "speakertrack":            "camera",
-    "presenter track":         "camera",
-    "presentertrack":          "camera",
-    "display":                 "display",
-    "monitor":                 "display",
-    "mediaserver":             "encoder",
-    "media server":            "encoder",
-}
+# xStatus peripheral Type → normalised device type (imported from xstatus.py)
+# XSTATUS_TYPE_MAP is imported above — see src/xstatus.py for the canonical map.
 
 ROW_HEIGHT  = 26
 HEADER_H    = 40
@@ -399,218 +225,10 @@ def parse_drawio(path: str) -> tuple[list[dict], int]:
 
 
 # ---------------------------------------------------------------------------
-# xStatus fetching / parsing
+# xStatus fetching / parsing — moved to src/xstatus.py (shared module)
 # ---------------------------------------------------------------------------
-
-def fetch_xstatus_http(ip: str, username: str, password: str) -> str:
-    """Fetch /Status XML from a Cisco codec over HTTP (fallback HTTPS)."""
-    url     = f"http://{ip}/getxml?location=/Status"
-    creds   = base64.b64encode(f"{username}:{password}".encode()).decode()
-    headers = {"Authorization": f"Basic {creds}"}
-
-    req = urllib.request.Request(url, headers=headers)
-    try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            return resp.read().decode("utf-8", errors="replace")
-    except urllib.error.URLError:
-        pass  # try HTTPS
-
-    url_https = f"https://{ip}/getxml?location=/Status"
-    req2      = urllib.request.Request(url_https, headers=headers)
-    ctx       = ssl.create_default_context()
-    ctx.check_hostname = False
-    ctx.verify_mode    = ssl.CERT_NONE
-    with urllib.request.urlopen(req2, timeout=10, context=ctx) as resp:
-        return resp.read().decode("utf-8", errors="replace")
-
-
-def _norm_type(raw: str) -> str:
-    """Normalise an xStatus peripheral Type string to our internal category."""
-    key = raw.strip().lower()
-    for pattern, mapped in XSTATUS_TYPE_MAP.items():
-        if pattern in key:
-            return mapped
-    return "device"
-
-
-def parse_xstatus_xml(content: str) -> dict:
-    """
-    Parse Cisco xStatus XML.
-
-    Returns dict with:
-        codec_model, codec_ip,
-        peripherals: [{name, type, norm_type, status, serial, network_address}],
-        video_inputs:  [{connector, signal_state}],
-        video_outputs: [{connector, signal_state}],
-    """
-    try:
-        root = ET.fromstring(content)
-    except ET.ParseError as exc:
-        raise ValueError(f"XML parse error: {exc}") from exc
-
-    # Some codecs wrap in <Status> directly; handle both
-    status_el = root if root.tag == "Status" else root.find("Status")
-    if status_el is None:
-        status_el = root  # best effort
-
-    # Helper: text of first matching element
-    def txt(parent: ET.Element, path: str, default: str = "") -> str:
-        el = parent.find(path)
-        return el.text.strip() if el is not None and el.text else default
-
-    codec_model = txt(status_el, "SystemUnit/ProductId")
-    codec_ip    = txt(status_el, "Network/IPv4/Address")
-
-    # Peripherals
-    peripherals: list[dict] = []
-    peri_parent = status_el.find("Peripherals")
-    if peri_parent is not None:
-        for dev in peri_parent.findall("ConnectedDevice"):
-            name    = txt(dev, "Name")
-            ptype   = txt(dev, "Type")
-            status  = txt(dev, "Status")
-            serial  = txt(dev, "SerialNumber")
-            netaddr = txt(dev, "NetworkAddress")
-            if not name and not ptype:
-                continue
-            peripherals.append({
-                "name":            name,
-                "type":            ptype,
-                "norm_type":       _norm_type(ptype),
-                "status":          status,
-                "serial":          serial,
-                "network_address": netaddr,
-            })
-
-    # Video inputs
-    video_inputs: list[dict] = []
-    vi_parent = status_el.find("Video/Input")
-    if vi_parent is not None:
-        for conn in vi_parent.findall("Connector"):
-            idx    = conn.get("item", conn.get("id", "?"))
-            sig    = txt(conn, "SignalState", "Unknown")
-            video_inputs.append({"connector": idx, "signal_state": sig})
-
-    # Video outputs
-    video_outputs: list[dict] = []
-    vo_parent = status_el.find("Video/Output")
-    if vo_parent is not None:
-        for conn in vo_parent.findall("Connector"):
-            idx    = conn.get("item", conn.get("id", "?"))
-            sig    = txt(conn, "SignalState", "Unknown")
-            video_outputs.append({"connector": idx, "signal_state": sig})
-
-    return {
-        "codec_model":   codec_model,
-        "codec_ip":      codec_ip,
-        "peripherals":   peripherals,
-        "video_inputs":  video_inputs,
-        "video_outputs": video_outputs,
-    }
-
-
-def parse_xstatus_text(content: str) -> dict:
-    """
-    Parse Cisco xStatus plain-text (SSH output) format.
-
-    Line format examples:
-        Peripherals ConnectedDevice 1 Name: Cisco TelePresence Touch 10
-        Peripherals ConnectedDevice 1 Type: TouchPanel
-        Peripherals ConnectedDevice 1 Status: Connected
-        Video Input Connector 1 SignalState: OK
-        SystemUnit ProductId: Cisco Webex Codec Pro
-        Network 1 IPv4 Address: 192.168.1.100
-    """
-    peripherals:   dict[str, dict] = {}
-    video_inputs:  dict[str, str]  = {}
-    video_outputs: dict[str, str]  = {}
-    codec_model = ""
-    codec_ip    = ""
-
-    for line in content.splitlines():
-        line = line.strip()
-
-        # Codec model
-        m = re.match(r"SystemUnit\s+ProductId\s*:\s*(.+)", line, re.I)
-        if m:
-            codec_model = m.group(1).strip()
-
-        # Network IP
-        m = re.match(r"Network\s+\d*\s*IPv4\s+Address\s*:\s*(.+)", line, re.I)
-        if m:
-            codec_ip = m.group(1).strip()
-
-        # Peripheral fields
-        m = re.match(
-            r"Peripherals\s+ConnectedDevice\s+(\d+)\s+(\w+)\s*:\s*(.+)",
-            line, re.I
-        )
-        if m:
-            idx, key, val = m.group(1), m.group(2).lower(), m.group(3).strip()
-            if idx not in peripherals:
-                peripherals[idx] = {
-                    "name": "", "type": "", "norm_type": "device",
-                    "status": "", "serial": "", "network_address": "",
-                }
-            if key == "name":
-                peripherals[idx]["name"] = val
-            elif key == "type":
-                peripherals[idx]["type"]      = val
-                peripherals[idx]["norm_type"] = _norm_type(val)
-            elif key == "status":
-                peripherals[idx]["status"] = val
-            elif key in ("serialnumber", "serial"):
-                peripherals[idx]["serial"] = val
-            elif key in ("networkaddress", "ipaddress"):
-                peripherals[idx]["network_address"] = val
-
-        # Video input signal state
-        m = re.match(
-            r"Video\s+Input\s+Connector\s+(\d+)\s+SignalState\s*:\s*(.+)",
-            line, re.I
-        )
-        if m:
-            video_inputs[m.group(1)] = m.group(2).strip()
-
-        # Video output signal state
-        m = re.match(
-            r"Video\s+Output\s+Connector\s+(\d+)\s+SignalState\s*:\s*(.+)",
-            line, re.I
-        )
-        if m:
-            video_outputs[m.group(1)] = m.group(2).strip()
-
-    peri_list = [v for v in peripherals.values() if v["name"] or v["type"]]
-    vi_list   = [{"connector": k, "signal_state": v}
-                 for k, v in sorted(video_inputs.items())]
-    vo_list   = [{"connector": k, "signal_state": v}
-                 for k, v in sorted(video_outputs.items())]
-
-    return {
-        "codec_model":   codec_model,
-        "codec_ip":      codec_ip,
-        "peripherals":   peri_list,
-        "video_inputs":  vi_list,
-        "video_outputs": vo_list,
-    }
-
-
-def load_xstatus(source: str, username: str = "admin",
-                 password: str = "") -> dict:
-    """Load xStatus from a file path or live IP address."""
-    p = Path(source)
-    if p.exists():
-        content = p.read_text(encoding="utf-8", errors="replace")
-        # Detect XML vs text
-        stripped = content.lstrip()
-        if stripped.startswith("<"):
-            return parse_xstatus_xml(content)
-        else:
-            return parse_xstatus_text(content)
-    else:
-        # Treat as IP address — live fetch
-        raw = fetch_xstatus_http(source, username, password)
-        return parse_xstatus_xml(raw)
+# fetch_xstatus_http, _norm_type, parse_xstatus_xml, parse_xstatus_text,
+# load_xstatus are imported at the top of this file. See src/xstatus.py.
 
 
 # ---------------------------------------------------------------------------
