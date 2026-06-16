@@ -148,6 +148,28 @@ output/
 
 ## 7. Individual Tools
 
+### BOM Validator (pre-flight)
+
+```bash
+python3 src/bom_validator.py --bom my_room.csv
+python3 src/bom_validator.py --bom my_room.csv --strict   # warnings → errors
+```
+
+Checks: required columns, known type whitelist, port count integers,
+quantity sanity, IP/MAC format. Outputs human-readable report. Exit code 0
+if valid, 1 if errors, 2 if file unreadable.
+
+### draw.io Validator (post-generation)
+
+```bash
+python3 src/drawio_validator.py --input output/room.drawio
+python3 src/drawio_validator.py --input output/room.drawio --bom my_room.csv
+```
+
+Checks: well-formed XML, no duplicate cell IDs, at least one device,
+dangling outputs, orphan devices, recognised signal colors. With `--bom`,
+cross-checks that every BOM row produced a swimlane in the drawio.
+
 ### BOM → draw.io
 
 ```bash
@@ -156,6 +178,9 @@ python3 src/bom_to_drawio.py \
   --name "Boardroom A" \
   --output output/boardroom_a.drawio
 ```
+
+By default this auto-runs `bom_validator` (pre-flight) and `drawio_validator`
+(post-gen). Use `--no-validate` to skip, `--strict` to fail on any warning.
 
 ### draw.io → EasySchematic
 
@@ -261,7 +286,57 @@ python3 src/xstatus_diff.py \
 
 ---
 
-## 9. Load AV Shapes in draw.io
+## 9. AvaI Webhook (REST API)
+
+Run AVdraw as an HTTP service for AvaI BuildReadinessAgent or any other
+caller. Useful for batch processing 500+ rooms.
+
+### Install FastAPI deps
+
+```bash
+pip3 install fastapi uvicorn --user
+```
+
+### Start the server
+
+```bash
+python3 src/avai_webhook.py --host 0.0.0.0 --port 8765
+```
+
+Optional auth — set `AVDRAW_API_KEY=secret` env var, then clients send
+`X-API-Key: secret` header.
+
+### Endpoints
+
+```
+GET  /health
+POST /generate    full pipeline: BOM → drawio + json + dxf + review
+POST /validate    run bom_validator and/or drawio_validator
+POST /diff        xstatus_diff against codec / file / Webex device
+```
+
+### Example: generate a schematic
+
+```bash
+curl -X POST http://localhost:8765/generate \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "bom_csv": "templates/sample_bom.csv",
+    "room_name": "Boardroom Pro",
+    "skip_dxf": false,
+    "skip_review": false
+  }'
+```
+
+Response includes paths to generated files and AI review findings.
+
+`bom_csv` accepts either an absolute path, a path relative to the repo
+root, OR raw CSV content as a string (the server writes it to a temp
+file).
+
+---
+
+## 10. Load AV Shapes in draw.io
 
 A complete AV device shape library is included if you cloned
 https://github.com/Fe-Lit/Drawio-AV-Design to ~/Drawio-AV-Design.

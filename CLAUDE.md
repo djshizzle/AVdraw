@@ -341,19 +341,26 @@ on 500 rooms via a loop or bulk CSV input without modification.
 
 ## CURRENT REPO STATUS (as of Jun 2026)
 
-Several roadmap items are **already implemented** — review before starting new work:
+All P0-P5 roadmap items are now **DONE**. Before starting new work, confirm
+the user wants a *new* feature rather than improvement of an existing one.
 
 | Roadmap item        | Status  | File                        | Notes                                          |
 |---------------------|---------|-----------------------------|------------------------------------------------|
 | Shared xStatus mod  | ✅ DONE | src/xstatus.py              | Direct codec + Webex cloud + file, all in one  |
+| P0 BOM validation   | ✅ DONE | src/bom_validator.py        | Strict pre-flight, type whitelist, port checks |
+| P0 xStatus failure  | ✅ DONE | src/xstatus.py              | load_xstatus_safe() returns None + warns       |
+| P0 drawio validator | ✅ DONE | src/drawio_validator.py     | Dup IDs, dangling outputs, BOM ↔ drawio        |
 | P1 AI Reviewer      | ✅ DONE | src/ai_reviewer.py          | Local rules + Claude API (claude-sonnet-4-6)   |
 | P2 NL Editor        | ✅ DONE | src/nl_editor.py            | Claude API, 7 ops (ADD/REMOVE/RENAME/MOVE...)  |
 | P3 xStatus Diff     | ✅ DONE | src/xstatus_diff.py         | Imports xstatus.py — direct + Webex + file     |
 | P4 DXF Export       | ✅ DONE | src/drawio_to_dxf.py        | Note: from drawio, NOT easyschematic — simpler |
-| P0 BOM validation   | ⚠️ PARTIAL | src/bom_to_drawio.py     | Has loose validation, needs strict layer       |
-| P0 xStatus failure  | ✅ DONE | src/xstatus.py              | load_xstatus_safe() returns None + warns       |
-| P0 drawio validator | ❌ TODO | (new file needed)           | Post-generation assertion checks               |
-| P5 AvaI webhook     | ❌ TODO | src/avai_webhook.py         | FastAPI endpoint for BuildReadinessAgent       |
+| P5 AvaI webhook     | ✅ DONE | src/avai_webhook.py         | FastAPI: /generate /validate /diff /health     |
+
+**Validation contract (auto-wired):** `bom_to_drawio.py` now runs both
+validators automatically. Use `--no-validate` to skip, `--strict` to promote
+warnings to errors. `pipeline.sh` runs Step 0 (BOM validator) and Step 5
+(final drawio validator with BOM cross-check) on top of the in-script
+validation in Step 1.
 
 **BOM schema (resolved):** This repo uses a rich 44-column BOM with these
 required columns: `Name`, `Type`, `Model`. Optional: `Serial`, `Quantity`,
@@ -363,12 +370,21 @@ are stripped. The roadmap's earlier strict 4-column schema
 (`device_name`/`signal_type`/`input_count`/`output_count`) is **NOT** used —
 see "Coding Standards" for the actual `load_bom()` pattern.
 
-**xStatus module (resolved):** All Cisco RoomOS / Webex telemetry now lives
-in `src/xstatus.py`. xstatus_diff.py imports from it. Other tools should too:
+**xStatus module (resolved):** All Cisco RoomOS / Webex telemetry lives in
+`src/xstatus.py`. xstatus_diff.py and ai_reviewer.py import from it:
 
 ```python
 from xstatus import load_xstatus_safe, webex_fetch_xstatus, webex_find_device
 ```
+
+**AvaI webhook:** FastAPI endpoint at `src/avai_webhook.py`. Run with
+`python3 src/avai_webhook.py --port 8765`. Endpoints:
+- `POST /generate` → full pipeline (BOM → drawio + json + dxf + review)
+- `POST /validate` → run BOM + drawio validators
+- `POST /diff`     → xstatus_diff against codec/file/Webex device
+- `GET  /health`   → status + repo paths
+Auth: optional `AVDRAW_API_KEY` env var → `X-API-Key` header.
+Deps: `pip3 install fastapi uvicorn --user`.
 
 **Webex API:** xstatus_diff.py supports four source modes:
 - `--codec IP` (direct HTTP basic auth)
@@ -376,3 +392,12 @@ from xstatus import load_xstatus_safe, webex_fetch_xstatus, webex_find_device
 - `--webex-device-id ID` (cloud xAPI)
 - `--webex-device NAME` (cloud xAPI, fuzzy name)
 Token from `WEBEX_TOKEN` env var or `--webex-token`.
+
+**Known real bugs the validators catch (don't fix without user approval):**
+- 2 ERRORS: Dante cables wired input→input in bom_to_drawio.py for
+  audio-interface devices (need dante_ports moved from Input to Output
+  section of the type-defaults map).
+- 6 WARNINGS: Wireless mics (ULXD2, Ceiling Mic) have no connections
+  because the BOM template doesn't define RF/Dante output ports for
+  them. Either add the ports to templates/bom_template.csv defaults or
+  add auto-wiring rules for `wireless-mic` → `wireless-receiver`.

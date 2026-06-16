@@ -862,10 +862,34 @@ def main():
     parser.add_argument("--password",  default="")
     parser.add_argument("--output",    default="schematic.drawio")
     parser.add_argument("--name",      default="AV Schematic")
+    parser.add_argument("--no-validate", action="store_true",
+                        help="Skip pre-flight BOM and post-gen drawio validation")
+    parser.add_argument("--strict", action="store_true",
+                        help="Treat validator warnings as errors")
     args = parser.parse_args()
 
     if not args.bom and not args.codec and not args.xstatus:
         parser.print_help(); sys.exit(1)
+
+    # ── Pre-flight: validate BOM ────────────────────────────────────────────
+    if args.bom and not args.no_validate:
+        try:
+            from bom_validator import validate_bom, print_report as bom_report
+            print(f"[Validate] Pre-flight BOM check: {args.bom}")
+            vres = validate_bom(args.bom, strict=args.strict)
+            if vres.errors:
+                bom_report(vres, args.bom)
+                print("[Validate] BOM failed — aborting (use --no-validate to skip)",
+                      file=sys.stderr)
+                sys.exit(2)
+            if vres.warnings:
+                print(f"[Validate] BOM OK with {len(vres.warnings)} warning(s)")
+                for w in vres.warnings:
+                    print(f"  {w.format()}", file=sys.stderr)
+            else:
+                print(f"[Validate] BOM clean ({len(vres.rows)} rows)")
+        except ImportError:
+            print("[Validate] bom_validator not available — skipping", file=sys.stderr)
 
     bom_devices = []
     if args.bom:
@@ -890,6 +914,36 @@ def main():
     out = Path(args.output)
     out.write_text(xml, encoding="utf-8")
     print(f"[Done] {out}")
+
+    # ── Post-generation: validate drawio ────────────────────────────────────
+    if not args.no_validate:
+        try:
+            from drawio_validator import validate_drawio, print_report as dv_report
+            print(f"[Validate] Post-gen drawio check: {out}")
+            dres = validate_drawio(str(out),
+                                   bom_path=args.bom or "",
+                                   strict=args.strict)
+            if dres.errors:
+                dv_report(dres, str(out))
+                print("[Validate] drawio output has STRUCTURAL ERRORS",
+                      file=sys.stderr)
+                # Don't abort on post-gen errors — the file is already written,
+                # let the user inspect it. But exit non-zero so pipelines notice.
+                sys.exit(3)
+            elif dres.warnings:
+                print(f"[Validate] drawio OK with {len(dres.warnings)} warning(s)")
+                for w in dres.warnings[:10]:  # cap output
+                    print(f"  {w.format()}", file=sys.stderr)
+                if len(dres.warnings) > 10:
+                    print(f"  ... and {len(dres.warnings) - 10} more",
+                          file=sys.stderr)
+            else:
+                print(f"[Validate] drawio clean "
+                      f"({dres.device_count} devices, {dres.edge_count} edges)")
+        except ImportError:
+            print("[Validate] drawio_validator not available — skipping",
+                  file=sys.stderr)
+
     print(f"       Open in draw.io desktop app or https://app.diagrams.net")
 
 
