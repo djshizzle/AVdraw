@@ -11,15 +11,38 @@ Categories:
   EXTRA_IN_SCHEMATIC    - drawio has it but xStatus does not report it
   SIGNAL_MISMATCHES     - video input/output connector signal states that look wrong
 
+Source options (pick one):
+  --codec IP            Direct HTTP/HTTPS to codec (basic auth, on-prem/LAN)
+  --xstatus FILE        Pre-saved xStatus XML or SSH text file (offline)
+  --webex-device-id ID  Webex cloud API by device ID (bot/personal token)
+  --webex-device NAME   Webex cloud API — find device by display name search
+
 Usage:
+  # Direct codec (on-prem / VPN)
   python3 src/xstatus_diff.py --input output/Boardroom_Pro.drawio \\
       --codec 192.168.1.100 --username admin --password cisco
 
+  # Saved xStatus file
   python3 src/xstatus_diff.py --input output/Boardroom_Pro.drawio \\
       --xstatus saved_xstatus.xml
 
+  # Webex cloud — list available devices first
+  python3 src/xstatus_diff.py --list-devices --webex-token $WEBEX_TOKEN
+
+  # Webex cloud — diff by device ID
   python3 src/xstatus_diff.py --input output/Boardroom_Pro.drawio \\
-      --xstatus saved_xstatus.xml --patch
+      --webex-device-id Y2lzY2... --webex-token $WEBEX_TOKEN
+
+  # Webex cloud — diff by display name (fuzzy)
+  python3 src/xstatus_diff.py --input output/Boardroom_Pro.drawio \\
+      --webex-device "Boardroom Pro" --webex-token $WEBEX_TOKEN
+
+  # Patch missing devices into schematic
+  python3 src/xstatus_diff.py --input output/Boardroom_Pro.drawio \\
+      --webex-device "Boardroom Pro" --webex-token $WEBEX_TOKEN --patch
+
+Environment variables (alternative to --webex-token):
+  WEBEX_TOKEN   Bearer token from developer.webex.com (bot or personal access token)
 """
 
 from __future__ import annotations
@@ -28,6 +51,7 @@ import argparse
 import base64
 import html
 import json
+import os
 import re
 import sys
 import urllib.error
@@ -36,6 +60,176 @@ import ssl
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Optional
+
+
+# ---------------------------------------------------------------------------
+# Webex Devices API (cloud — bot token or personal access token)
+# ---------------------------------------------------------------------------
+
+WEBEX_API = "https://webexapis.com/v1"
+
+
+def _webex_get(path: str, token: str, params: dict | None = None) -> dict:
+    """Make a GET request to the Webex API and return parsed JSON."""
+    url = f"{WEBEX_API}{path}"
+    if params:
+        qs = "&".join(f"{k}={urllib.request.quote(str(v))}" for k, v in params.items())
+        url = f"{url}?{qs}"
+    req = urllib.request.Request(
+        url,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(
+            f"Webex API {exc.code} {exc.reason} for {url}: {body}"
+        ) from exc
+
+
+def webex_list_devices(token: str, display_name: str = "") -> list[dict]:
+    """
+    Return a list of Webex devices visible to the token.
+
+    Each dict has keys: id, displayName, product, mac, ip, connectionStatus,
+    workspaceId, serial, primarySipUrl, tags.
+    """
+    params = {"type": "roomdesk"}
+    if display_name:
+        params["displayName"] = display_name
+    data = _webex_get("/devices", token, params)
+    return data.get("items", [])
+
+
+def webex_find_device(token: str, name_query: str) -> dict:
+    """
+    Find a single Webex device by display name (case-insensitive substring).
+    Raises RuntimeError if 0 or >1 devices match.
+    """
+    devices = webex_list_devices(token, display_name=name_query)
+    if not devices:
+        raise RuntimeError(
+            f"No Webex devices found matching '{name_query}'. "
+            f"Run with --list-devices to see all available devices."
+        )
+    if len(devices) == 1:
+        return devices[0]
+
+    # Multiple matches — try exact (case-insensitive) first
+    query_low = name_query.lower()
+    exact = [d for d in devices if d.get("displayName", "").lower() == query_low]
+    if len(exact) == 1:
+        return exact[0]
+
+    names = "\n  ".join(f"{d['id']}  {d.get('displayName','')}" for d in devices)
+    raise RuntimeError(
+        f"Multiple Webex devices match '{name_query}'. "
+        f"Use --webex-device-id with one of:\n  {names}"
+    )
+
+
+def webex_fetch_xstatus(device_id: str, token: str) -> dict:
+    """
+    Pull full xStatus from a cloud-registered Webex device via the xAPI.
+
+    Returns the same dict structure as parse_xstatus_xml / parse_xstatus_text
+    so the rest of the diff pipeline works unchanged.
+
+    Webex xAPI endpoint:
+      GET /xapi/status?deviceId=<id>&name=Status
+    Response JSON shape:
+      {
+        "deviceId": "...",
+        "result": {
+          "SystemUnit": {"ProductId": "...", ...},
+          "Network": [{"IPv4": {"Address": "..."}}],
+          "Peripherals": {"ConnectedDevice": [...]},
+          "Video": {"Input": {"Connector": [...]}, "Output": {"Connector": [...]}}
+        }
+      }
+    """
+    data = _webex_get("/xapi/status", token, {"deviceId": device_id, "name": "Status"})
+    result = data.get("result", data)  # some SDK versions omit wrapper
+
+    def txt_path(obj: dict, *keys: str, default: str = "") -> str:
+        """Drill into a nested dict/list safely."""
+        cur = obj
+        for k in keys:
+            if isinstance(cur, list):
+                cur = cur[0] if cur else {}
+            if not isinstance(cur, dict):
+                return default
+            cur = cur.get(k, {})
+        if isinstance(cur, str):
+            return cur.strip()
+        return default
+
+    codec_model = txt_path(result, "SystemUnit", "ProductId")
+    codec_ip = txt_path(result, "Network", "0", "IPv4", "Address")
+    # Webex network is a list
+    net_list = result.get("Network", [])
+    if isinstance(net_list, list) and net_list:
+        codec_ip = txt_path(net_list[0], "IPv4", "Address")
+
+    # Peripherals
+    peripherals: list[dict] = []
+    peri_block = result.get("Peripherals", {})
+    connected = peri_block.get("ConnectedDevice", [])
+    if isinstance(connected, dict):
+        connected = [connected]
+    for dev in connected:
+        name    = dev.get("Name", "")
+        ptype   = dev.get("Type", "")
+        status  = dev.get("Status", "")
+        serial  = dev.get("SerialNumber", "")
+        netaddr = dev.get("NetworkAddress", "")
+        if not name and not ptype:
+            continue
+        peripherals.append({
+            "name":            name,
+            "type":            ptype,
+            "norm_type":       _norm_type(ptype),
+            "status":          status,
+            "serial":          serial,
+            "network_address": netaddr,
+        })
+
+    # Video inputs
+    video_inputs: list[dict] = []
+    vi_list = result.get("Video", {}).get("Input", {}).get("Connector", [])
+    if isinstance(vi_list, dict):
+        vi_list = [vi_list]
+    for conn in vi_list:
+        idx = str(conn.get("id", conn.get("item", "?")))
+        sig = conn.get("SignalState", "Unknown")
+        if isinstance(sig, dict):
+            sig = sig.get("Value", sig.get("value", "Unknown"))
+        video_inputs.append({"connector": idx, "signal_state": sig})
+
+    # Video outputs
+    video_outputs: list[dict] = []
+    vo_list = result.get("Video", {}).get("Output", {}).get("Connector", [])
+    if isinstance(vo_list, dict):
+        vo_list = [vo_list]
+    for conn in vo_list:
+        idx = str(conn.get("id", conn.get("item", "?")))
+        sig = conn.get("SignalState", "Unknown")
+        if isinstance(sig, dict):
+            sig = sig.get("Value", sig.get("value", "Unknown"))
+        video_outputs.append({"connector": idx, "signal_state": sig})
+
+    return {
+        "codec_model":   codec_model,
+        "codec_ip":      codec_ip,
+        "peripherals":   peripherals,
+        "video_inputs":  video_inputs,
+        "video_outputs": video_outputs,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -814,24 +1008,49 @@ def main() -> None:
         description="Compare draw.io schematic vs Cisco xStatus peripherals"
     )
     parser.add_argument(
-        "--input", "-i", required=True,
+        "--input", "-i",
         help="Path to draw.io file (e.g. output/Boardroom_Pro.drawio)"
     )
 
-    src_group = parser.add_mutually_exclusive_group(required=True)
+    src_group = parser.add_mutually_exclusive_group()
     src_group.add_argument(
         "--codec",
-        help="Codec IP address for live xStatus pull"
+        help="Codec IP address for live xStatus pull (on-prem/LAN, basic auth)"
     )
     src_group.add_argument(
         "--xstatus",
         help="Path to saved xStatus XML or text file"
     )
+    src_group.add_argument(
+        "--webex-device-id",
+        dest="webex_device_id",
+        help="Webex device ID (from --list-devices) for cloud xAPI pull"
+    )
+    src_group.add_argument(
+        "--webex-device",
+        dest="webex_device",
+        help="Webex device display name (fuzzy match) for cloud xAPI pull"
+    )
 
+    # Webex auth
+    parser.add_argument(
+        "--webex-token",
+        dest="webex_token",
+        default=os.environ.get("WEBEX_TOKEN", ""),
+        help="Webex API bearer token (or set $WEBEX_TOKEN env var)"
+    )
+
+    # Direct codec auth
     parser.add_argument("--username", "-u", default="admin",
-                        help="Codec username (default: admin)")
+                        help="Codec username for --codec mode (default: admin)")
     parser.add_argument("--password", "-p", default="",
-                        help="Codec password")
+                        help="Codec password for --codec mode")
+
+    # Utility
+    parser.add_argument(
+        "--list-devices", action="store_true",
+        help="List all Webex devices visible to --webex-token and exit"
+    )
     parser.add_argument(
         "--patch", action="store_true",
         help="Auto-add MISSING_FROM_SCHEMATIC devices to the draw.io file"
@@ -842,6 +1061,41 @@ def main() -> None:
     )
 
     args = parser.parse_args()
+
+    # ── --list-devices shortcut ─────────────────────────────────────────────
+    if args.list_devices:
+        token = args.webex_token
+        if not token:
+            print("ERROR: --list-devices requires --webex-token or $WEBEX_TOKEN", file=sys.stderr)
+            sys.exit(1)
+        print("Fetching Webex device list...")
+        try:
+            devices = webex_list_devices(token)
+        except Exception as exc:
+            print(f"ERROR: {exc}", file=sys.stderr)
+            sys.exit(1)
+        if not devices:
+            print("No room/desk devices found for this token.")
+            sys.exit(0)
+        print(f"\n{'ID':<52}  {'Status':<12}  Name")
+        print("-" * 100)
+        for d in devices:
+            did    = d.get("id", "")
+            status = d.get("connectionStatus", "")
+            name   = d.get("displayName", "")
+            print(f"{did:<52}  {status:<12}  {name}")
+        print(f"\n{len(devices)} device(s) found.")
+        sys.exit(0)
+
+    # ── Validate that a source was given ────────────────────────────────────
+    if not any([args.codec, args.xstatus, args.webex_device_id, args.webex_device]):
+        parser.error(
+            "Specify a source: --codec IP | --xstatus FILE "
+            "| --webex-device-id ID | --webex-device NAME"
+        )
+
+    if not args.input:
+        parser.error("--input is required when performing a diff")
 
     # ── Parse draw.io ──────────────────────────────────────────────────────
     input_path = Path(args.input)
@@ -861,7 +1115,8 @@ def main() -> None:
         except Exception as exc:
             print(f"ERROR: Failed to fetch xStatus: {exc}", file=sys.stderr)
             sys.exit(1)
-    else:
+
+    elif args.xstatus:
         xstatus_path = Path(args.xstatus)
         if not xstatus_path.exists():
             print(f"ERROR: xStatus file not found: {xstatus_path}", file=sys.stderr)
@@ -871,6 +1126,40 @@ def main() -> None:
             xstatus = load_xstatus(str(xstatus_path))
         except Exception as exc:
             print(f"ERROR: Failed to parse xStatus file: {exc}", file=sys.stderr)
+            sys.exit(1)
+
+    elif args.webex_device_id or args.webex_device:
+        token = args.webex_token
+        if not token:
+            print(
+                "ERROR: Webex token required. Use --webex-token or export WEBEX_TOKEN=...",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+
+        # Resolve device ID
+        if args.webex_device_id:
+            device_id   = args.webex_device_id
+            device_name = device_id
+        else:
+            print(f"Looking up Webex device: '{args.webex_device}' ...")
+            try:
+                device = webex_find_device(token, args.webex_device)
+            except RuntimeError as exc:
+                print(f"ERROR: {exc}", file=sys.stderr)
+                sys.exit(1)
+            device_id   = device["id"]
+            device_name = device.get("displayName", device_id)
+            print(f"  Found: {device_name}  (id: {device_id})")
+            conn_status = device.get("connectionStatus", "")
+            if conn_status and conn_status.lower() != "connected":
+                print(f"  WARNING: Device connection status is '{conn_status}'")
+
+        print(f"Fetching xStatus via Webex cloud API for device: {device_name} ...")
+        try:
+            xstatus = webex_fetch_xstatus(device_id, token)
+        except Exception as exc:
+            print(f"ERROR: Failed to fetch xStatus from Webex cloud: {exc}", file=sys.stderr)
             sys.exit(1)
 
     pcount = len(xstatus.get("peripherals", []))
