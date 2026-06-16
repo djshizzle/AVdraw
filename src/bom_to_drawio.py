@@ -102,7 +102,11 @@ DEVICE_TYPE_MAP = {
     "control panel":     "control-panel",
     "network":           "audio-interface",
     "receiver":          "audio-interface",
-    "wireless receiver": "audio-interface",
+    "wireless-mic":      "microphone",
+    "wireless-receiver": "audio-interface",
+    "dsp":               "audio-interface",
+    "patch-panel":       "device",
+    "ups":               "device",
     "generic":           "device",
 }
 
@@ -234,20 +238,27 @@ def port_rows_from_bom(device: dict, device_type: str) -> dict:
             if c > 0:
                 lst.append((label, sig, c))
 
-        add(inputs,  "hdmi_in",         "HDMI In",       "hdmi")
-        add(inputs,  "usb_in",          "USB In",        "usb")
-        add(inputs,  "sdi_in",          "SDI In",        "sdi")
-        add(inputs,  "displayport_in",  "DP In",         "displayport")
-        add(inputs,  "speaker_in",      "Speaker In",    "speaker-level")
-        add(inputs,  "rf_in",           "RF In",         "rf")
-        add(outputs, "hdmi_out",        "HDMI Out",      "hdmi")
-        add(outputs, "usb_out",         "USB Out",       "usb")
-        add(outputs, "sdi_out",         "SDI Out",       "sdi")
-        add(outputs, "displayport_out", "DP Out",        "displayport")
-        add(outputs, "speaker_out",     "Speaker Out",   "speaker-level")
-        add(info,    "ethernet_ports",  "Ethernet RJ45", "ethernet")
-        add(info,    "dante_ports",     "Dante",         "dante")
-        add(info,    "ndi_ports",       "NDI",           "ndi")
+        add(inputs,  "hdmi_in",           "HDMI In",       "hdmi")
+        add(inputs,  "usb_in",            "USB In",        "usb")
+        add(inputs,  "sdi_in",            "SDI In",        "sdi")
+        add(inputs,  "displayport_in",    "DP In",         "displayport")
+        add(inputs,  "hdbaset_in",        "HDBaseT In",    "hdbaset")
+        add(inputs,  "speaker_in",        "Speaker In",    "speaker-level")
+        add(inputs,  "analog_audio_in",   "Analog In",     "analog-audio")
+        add(inputs,  "rf_in",             "RF In",         "rf")
+        add(inputs,  "fiber_ports",       "Fiber",         "fiber")
+        add(inputs,  "rs422_ports",       "RS-422",        "rs422")
+        add(inputs,  "gpio_ports",        "GPIO",          "gpio")
+        add(outputs, "hdmi_out",          "HDMI Out",      "hdmi")
+        add(outputs, "usb_out",           "USB Out",       "usb")
+        add(outputs, "sdi_out",           "SDI Out",       "sdi")
+        add(outputs, "displayport_out",   "DP Out",        "displayport")
+        add(outputs, "hdbaset_out",       "HDBaseT Out",   "hdbaset")
+        add(outputs, "speaker_out",       "Speaker Out",   "speaker-level")
+        add(outputs, "analog_audio_out",  "Analog Out",    "analog-audio")
+        add(info,    "ethernet_ports",    "Ethernet RJ45", "ethernet")
+        add(info,    "dante_ports",       "Dante",         "dante")
+        add(info,    "ndi_ports",         "NDI",           "ndi")
         return {"inputs": inputs, "outputs": outputs, "info": info}
     else:
         cfg = DEFAULT_PORTS_BY_TYPE.get(device_type, DEFAULT_PORTS_BY_TYPE["device"])
@@ -459,28 +470,66 @@ def build_edge(src_port_id: str, tgt_port_id: str, signal: str, label: str = "")
 def parse_bom_csv(path: str) -> list[dict]:
     devices = []
     with open(path, newline="", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
-        reader.fieldnames = [h2.strip().lower().replace(" ", "_")
-                             for h2 in (reader.fieldnames or [])]
-        for row in reader:
-            row = {k.strip().lower().replace(" ", "_"): v.strip()
-                   for k, v in row.items() if k}
-            name = row.get("name") or row.get("device_name") or row.get("device") or ""
-            if not name:
-                continue
-            row["name"] = name
-            if not row.get("device_type"):
-                row["device_type"] = row.get("type", "generic")
-            if not row.get("model"):
-                row["model"] = row.get("model_number") or row.get("model_no") or ""
-            serial = row.get("serial") or row.get("serial_number") or row.get("sn") or ""
-            if serial and not row.get("notes"):
-                row["notes"] = f"S/N: {serial}"
-            qty = int(row.get("quantity", 1) or 1)
-            for i in range(qty):
-                d = dict(row)
-                d["_label"] = f"{name} {i+1}" if qty > 1 else name
-                devices.append(d)
+        # Skip comment lines starting with #
+        lines = [l for l in f.readlines() if not l.strip().startswith("#")]
+    import io
+    reader = csv.DictReader(io.StringIO("".join(lines)))
+    reader.fieldnames = [h2.strip().lower().replace(" ", "_")
+                         for h2 in (reader.fieldnames or [])]
+    for row in reader:
+        row = {k.strip().lower().replace(" ", "_"): v.strip()
+               for k, v in row.items() if k}
+
+        # ── Name aliases ──────────────────────────────────────────────────
+        name = row.get("name") or row.get("device_name") or row.get("device") or ""
+        if not name:
+            continue
+        row["name"] = name
+
+        # ── Type aliases ──────────────────────────────────────────────────
+        if not row.get("device_type"):
+            row["device_type"] = row.get("type", "generic")
+
+        # ── Model aliases ─────────────────────────────────────────────────
+        if not row.get("model"):
+            row["model"] = row.get("model_number") or row.get("model_no") or ""
+
+        # ── Serial → notes ────────────────────────────────────────────────
+        serial = row.get("serial") or row.get("serial_number") or row.get("sn") or ""
+        notes  = row.get("notes", "")
+        if serial:
+            row["notes"] = f"S/N: {serial}" + (f"  {notes}" if notes else "")
+
+        # ── Network info → notes append ───────────────────────────────────
+        ip  = row.get("ip_address") or row.get("ip") or ""
+        mac = row.get("mac_address") or row.get("mac") or ""
+        if ip:
+            row["hostname"] = row.get("hostname", "")
+            row["notes"] = (row.get("notes","") + f"  IP: {ip}").strip()
+        if mac:
+            row["notes"] = (row.get("notes","") + f"  MAC: {mac}").strip()
+
+        # ── Port column aliases ───────────────────────────────────────────
+        # hdbaset_in / hdbaset_out
+        if not row.get("hdbaset_in"):
+            row["hdbaset_in"] = row.get("hdbaset_ports_in", "0")
+        if not row.get("hdbaset_out"):
+            row["hdbaset_out"] = row.get("hdbaset_ports_out", "0")
+        # analog audio
+        if not row.get("analog_audio_in"):
+            row["analog_audio_in"] = row.get("xlr_in", "0")
+        if not row.get("analog_audio_out"):
+            row["analog_audio_out"] = row.get("xlr_out", "0")
+        # fiber
+        if not row.get("fiber_ports"):
+            row["fiber_ports"] = row.get("fiber", "0")
+
+        qty = int(row.get("quantity", 1) or 1)
+        for i in range(qty):
+            d = dict(row)
+            d["_label"] = f"{name} {i+1}" if qty > 1 else name
+            d["_index"] = i
+            devices.append(d)
     return devices
 
 

@@ -1,0 +1,127 @@
+##############################################################################
+# AV SCHEMATIC STUDIO — BOM TEMPLATE
+# Save a copy of this file, fill in your devices, delete the examples rows,
+# then run:
+#   cd ~/AVops/av-schematic-studio
+#   bash scripts/pipeline.sh your_file.csv "Room Name"
+#
+# REQUIRED columns:  name, type
+# ALL other columns: optional — leave blank to use smart defaults per type
+##############################################################################
+#
+# ── COLUMN REFERENCE ────────────────────────────────────────────────────────
+#
+# IDENTITY
+#   name          Device label shown on schematic (required)
+#   type          Device category — controls layout row + default ports (required)
+#   manufacturer  Company name  e.g. Cisco, Shure, QSC
+#   model         Model number  e.g. CS-CODEC-PRO, MXA920
+#   serial        Serial number — shown as S/N: on device card
+#   quantity      How many identical units  (default: 1)
+#
+# LOCATION / GROUPING
+#   room          Room or zone name — used to group devices in EasySchematic
+#                 e.g. Boardroom, Rack Room, Ceiling, Stage
+#   rack          Rack name for rack elevation  e.g. Rack A, AV Rack 1
+#   rack_unit     Starting rack unit position  e.g. 3
+#   rack_height_u Device height in U  e.g. 1, 2, 4
+#
+# NETWORK
+#   hostname      Device hostname  e.g. codec-boardroom-01
+#   ip_address    Static IP  e.g. 192.168.1.100
+#   vlan          VLAN ID  e.g. 100
+#   mac_address   MAC address (for discovery / DHCP)
+#
+# POWER
+#   power_draw_w  Power consumption in watts  e.g. 120
+#   poe           Y/N — is this device PoE powered?  e.g. Y
+#   voltage       Supply voltage  e.g. 120V, 208V, 100-240V
+#
+# PHYSICAL
+#   height_mm     Physical height in mm
+#   width_mm      Physical width in mm
+#   depth_mm      Physical depth in mm
+#   weight_kg     Weight in kg
+#
+# PORT COUNTS — leave blank to use defaults for the device type
+# (filling even one port column disables ALL defaults for that device)
+#   hdmi_in       Number of HDMI inputs
+#   hdmi_out      Number of HDMI outputs
+#   sdi_in        Number of SDI inputs
+#   sdi_out       Number of SDI outputs
+#   displayport_in   Number of DisplayPort inputs
+#   displayport_out  Number of DisplayPort outputs
+#   usb_in        Number of USB inputs
+#   usb_out       Number of USB outputs
+#   ethernet_ports   Number of Ethernet/RJ45 ports
+#   dante_ports   Number of Dante ports
+#   ndi_ports     Number of NDI ports
+#   hdbaset_in    Number of HDBaseT inputs
+#   hdbaset_out   Number of HDBaseT outputs
+#   speaker_in    Number of speaker-level inputs
+#   speaker_out   Number of speaker-level outputs
+#   analog_audio_in   Number of analog audio inputs (XLR)
+#   analog_audio_out  Number of analog audio outputs (XLR)
+#   rf_in         Number of RF antenna inputs
+#   fiber_ports   Number of fiber ports
+#   rs422_ports   Number of RS-422 ports
+#   gpio_ports    Number of GPIO ports
+#
+# COST / BOM
+#   unit_cost     Unit cost in USD  e.g. 4500.00
+#   venue_provided   Y/N — gear supplied by venue (excluded from pack list)
+#
+# NOTES
+#   notes         Free-text note shown on device card
+#
+# ── VALID TYPE VALUES ────────────────────────────────────────────────────────
+#   codec              Video conferencing codec (Cisco, Poly, Crestron)
+#   camera             PTZ or fixed camera
+#   display            Monitor, TV, flat panel display
+#   projector          Projector
+#   microphone         Any microphone (ceiling, gooseneck, handheld)
+#   speaker            Passive ceiling/surface speaker
+#   amplifier          Power amplifier or DSP amplifier
+#   dsp                DSP processor (Q-SYS Core, BSS, Biamp)
+#   dante-device       Dante-network audio device
+#   audio-interface    Audio interface, stage box, I/O device
+#   wireless-mic       Wireless microphone transmitter
+#   wireless-receiver  Wireless microphone receiver / base station
+#   switcher           HDMI/SDI/AV matrix switcher
+#   switch             Network/ethernet switch
+#   router             IP router
+#   encoder            Video encoder (streaming, AV-over-IP)
+#   decoder            Video decoder
+#   ndi-device         NDI source or destination
+#   pc                 Desktop computer / workstation
+#   laptop             Laptop or notebook
+#   touch-panel        Touch control panel / room controller
+#   streaming-device   Stream deck, capture card, streaming appliance
+#   patch-panel        Patch panel (audio, video, network)
+#   ups                UPS / power conditioner
+#   generic            Anything not covered above
+##############################################################################
+name,type,manufacturer,model,serial,quantity,room,rack,rack_unit,rack_height_u,hostname,ip_address,vlan,mac_address,power_draw_w,poe,voltage,height_mm,width_mm,depth_mm,weight_kg,hdmi_in,hdmi_out,sdi_in,sdi_out,displayport_in,displayport_out,usb_in,usb_out,ethernet_ports,dante_ports,ndi_ports,hdbaset_in,hdbaset_out,speaker_in,speaker_out,analog_audio_in,analog_audio_out,rf_in,fiber_ports,rs422_ports,gpio_ports,unit_cost,venue_provided,notes
+##############################################################################
+# EXAMPLE ROWS — delete these and add your own devices below
+##############################################################################
+# ── VIDEO CONFERENCING ───────────────────────────────────────────────────────
+Cisco Webex Codec Pro,codec,Cisco,CS-CODEC-PRO,FTT2650XXXX,1,Boardroom,AV Rack 1,3,2,codec-boardroom-01,192.168.10.50,10,,120,N,100-240V,,,,,,4,2,,,,,2,2,2,,,,,,,,,,,,4500.00,N,Main room codec
+# ── CAMERAS ──────────────────────────────────────────────────────────────────
+Cisco PTZ 4K Camera,camera,Cisco,CTS-CAM-P60-K9,CAM-P60-01,3,Boardroom,,,,,,,,,Y,,,,,,,0,1,,,,,0,1,1,,,,,,,,,,,,1800.00,N,Ceiling mounted
+# ── DISPLAYS ─────────────────────────────────────────────────────────────────
+Samsung QM90B Display,display,Samsung,QM90B,QM90B-L,2,Boardroom,,,,,,,,,N,,,,,,,2,0,,,,,,0,1,,,,,,,,,,,,3200.00,N,Front wall - dual display
+# ── MICROPHONES ──────────────────────────────────────────────────────────────
+Cisco Ceiling Mic,microphone,Cisco,CS-MIC-CLNG-T,CLNG-MIC-01,2,Boardroom,,,,,,,,,Y,,,,,,,0,0,,,,,0,1,1,,,,,,,,,,,,900.00,N,Ceiling array center
+Shure ULXD2 Wireless Mic,wireless-mic,Shure,ULXD2/B58,ULXD2-01,4,Boardroom,,,,,,,,,,,,,,,,0,0,,,,,,0,0,,,,,,,0,0,1,,,650.00,N,Handheld wireless
+# ── WIRELESS RECEIVER ────────────────────────────────────────────────────────
+Shure ULXD4Q Receiver,wireless-receiver,Shure,ULXD4Q,ULXD4Q-01,1,Boardroom,AV Rack 1,5,1,,,,,28,N,100-240V,44,483,207,2.5,0,0,,,,,0,0,2,4,,,,,0,0,0,0,4,,,2400.00,N,4-channel wireless receiver
+# ── AUDIO PROCESSING ─────────────────────────────────────────────────────────
+Dante Audio Network,dante-device,,,DANTE-NET-01,1,Boardroom,AV Rack 1,7,1,,,,,,,,,,,,,0,0,,,,,0,0,2,4,,,,0,0,,,,,,,500.00,N,Dante distribution hub
+QSC AMP8 Amplifier,amplifier,QSC,AMP8,QSC-AMP8-01,1,Boardroom,AV Rack 1,8,2,,,,,800,N,120V,88,483,400,7,,,,,,,,0,1,2,,,,,8,,,,,,,1200.00,N,8-channel power amplifier
+# ── SPEAKERS ─────────────────────────────────────────────────────────────────
+Ceiling Speaker Zone,speaker,,,QSC-Z-01,8,Boardroom,,,,,,,,,,,,,,,,0,0,,,,,0,0,0,,,,1,0,,,,,,,,200.00,N,Ceiling distributed audio
+# ── CONTROL ──────────────────────────────────────────────────────────────────
+Cisco Room Navigator,touch-panel,Cisco,CS-T10-NR-K9,CS-T10-NR-01,1,Boardroom,,,,,192.168.10.51,10,,,Y,,,,,,,0,0,,,,,0,0,1,,,,,,,,,,,,650.00,N,Table touch panel
+# ── NETWORK ──────────────────────────────────────────────────────────────────
+Cisco Catalyst 9300,switch,Cisco,C9300-24P,C9300-01,1,Rack Room,AV Rack 1,1,2,sw-avroom-01,192.168.10.1,,,370,N,120V,44,445,424,5,,,,,,,,0,24,,,,,,,,,,,,,3500.00,N,24-port PoE switch - rack unit 1

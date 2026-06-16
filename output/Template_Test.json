@@ -1,0 +1,1580 @@
+{
+  "version": 41,
+  "name": "Template Test",
+  "nodes": [
+    {
+      "id": "936fa2f0-aee1-4780-ad37-1f1f6d8ddd76",
+      "type": "device",
+      "position": {
+        "x": 400,
+        "y": 2210
+      },
+      "data": {
+        "label": "Ceiling Speaker Zone 2",
+        "deviceType": "speaker",
+        "model": "Ceiling Speaker Zone 2",
+        "ports": [
+          {
+            "id": "31608bb6-7fdb-4ca9-bb69-f253076c94cb",
+            "label": "S/N: QSC-Z-01  N",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "3e876293-aefd-493d-a341-067495b9b91c",
+            "label": "Speaker In",
+            "direction": "input",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "e87fb7d3-1de3-4972-bff7-38b40648e0c5",
+      "type": "device",
+      "position": {
+        "x": 40,
+        "y": 2210
+      },
+      "data": {
+        "label": "Ceiling Speaker Zone 1",
+        "deviceType": "speaker",
+        "model": "Ceiling Speaker Zone 1",
+        "ports": [
+          {
+            "id": "a737c25e-b60f-4e80-a02a-2ee532e8a67a",
+            "label": "S/N: QSC-Z-01  N",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "65ec7ba1-28be-4e01-a9b1-4e7ab250f10f",
+            "label": "Speaker In",
+            "direction": "input",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "712e432c-4b36-44e8-8d95-c2643cd03960",
+      "type": "device",
+      "position": {
+        "x": 1120,
+        "y": 2210
+      },
+      "data": {
+        "label": "Ceiling Speaker Zone 4",
+        "deviceType": "speaker",
+        "model": "Ceiling Speaker Zone 4",
+        "ports": [
+          {
+            "id": "fa716b2b-1563-4ae4-9e51-43d17d2b6e10",
+            "label": "S/N: QSC-Z-01  N",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "64e26b0a-fe2f-4cb4-99cf-195d773303d5",
+            "label": "Speaker In",
+            "direction": "input",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bf23a522-17f9-4fd5-8591-5e24d55d99b1",
+      "type": "device",
+      "position": {
+        "x": 400,
+        "y": 310
+      },
+      "data": {
+        "label": "Cisco Ceiling Mic 2",
+        "deviceType": "microphone",
+        "model": "Cisco Ceiling Mic 2",
+        "ports": [
+          {
+            "id": "83b8f785-baa4-4da2-bccc-1770bdc43bcf",
+            "label": "CS-MIC-CLNG-T",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "fbc203e8-9bbd-4b6e-b104-34c36362a5c7",
+            "label": "S/N: CLNG-MIC-01  Ceiling array center",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "7f40cf13-ab8b-4c7c-9f8e-345a1588610c",
+            "label": "Ethernet RJ45",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "3914c289-f2ef-4237-953f-c076bd979420",
+            "label": "Dante",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          }
+        ]
+      }
+    },
+    {
+      "id": "62dea810-75e3-4627-835a-cf667b750b76",
+      "type": "device",
+      "position": {
+        "x": 360,
+        "y": 80
+      },
+      "data": {
+        "label": "Cisco PTZ 4K Camera 1",
+        "deviceType": "camera",
+        "model": "Cisco PTZ 4K Camera 1",
+        "ports": [
+          {
+            "id": "2cf7e509-932f-42b7-84d3-4752bba4a754",
+            "label": "CTS-CAM-P60-K9",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "44a7c07b-8f35-4e68-b58a-1b4135b4ac1b",
+            "label": "S/N: CAM-P60-01  Ceiling mounted",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "b3bf70a8-72ca-4694-8051-e87e2bebb460",
+            "label": "Ethernet RJ45",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "01bb6f5e-e08e-48f0-b410-cd2da6cb23ac",
+            "label": "Dante",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "4bf9861b-206f-40b8-b7f4-1d45884f5d88",
+            "label": "SDI In",
+            "direction": "input",
+            "signalType": "sdi",
+            "connectorType": "bnc"
+          }
+        ]
+      }
+    },
+    {
+      "id": "61f730c6-8e0d-444d-9bf1-8a0fa087017f",
+      "type": "device",
+      "position": {
+        "x": 1840,
+        "y": 310
+      },
+      "data": {
+        "label": "Shure ULXD2 Wireless Mic 4",
+        "deviceType": "microphone",
+        "model": "Shure ULXD2 Wireless Mic 4",
+        "ports": [
+          {
+            "id": "a42f411d-f1ad-44af-91f2-5a3d95af1fdf",
+            "label": "ULXD2/B58",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "d6f02720-e718-4f0d-9a2d-1e9704918498",
+            "label": "S/N: ULXD2-01  Handheld wireless",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "eb3a7d7d-da91-48ca-a2cb-88ca43540880",
+            "label": "Fiber",
+            "direction": "input",
+            "signalType": "fiber",
+            "connectorType": "lc"
+          }
+        ]
+      }
+    },
+    {
+      "id": "950e86f1-2717-418d-99b6-08772219525c",
+      "type": "device",
+      "position": {
+        "x": 720,
+        "y": 1542
+      },
+      "data": {
+        "label": "QSC AMP8 Amplifier",
+        "deviceType": "amplifier",
+        "model": "QSC AMP8 Amplifier",
+        "ports": [
+          {
+            "id": "0ff80d21-888b-4ca5-af01-1a1a51fe86a2",
+            "label": "AMP8",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "0d4bf476-1ec4-4fe3-aea5-99d98d32ce42",
+            "label": "S/N: QSC-AMP8-01  8-channel power amplifier",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "fad1f1f7-0d24-4151-a431-551054d5ff72",
+            "label": "Ethernet RJ45",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "dc0ccd52-490d-43b3-b13b-68c10ebab76a",
+            "label": "Dante 1",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "d17d52bf-1fbf-453a-8a92-d34d2abcacb1",
+            "label": "Dante 2",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "d632242b-eaa9-4188-97c5-5d3fd5cc0016",
+            "label": "Speaker Out 1",
+            "direction": "output",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          },
+          {
+            "id": "75c030f7-14ef-4e86-9ba4-8decb3f38b8f",
+            "label": "Speaker Out 2",
+            "direction": "output",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          },
+          {
+            "id": "6fc482c7-72f9-4580-9bd7-3c37affa708f",
+            "label": "Speaker Out 3",
+            "direction": "output",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          },
+          {
+            "id": "f84a4842-a942-4062-b3fe-314c20ed911d",
+            "label": "Speaker Out 4",
+            "direction": "output",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          },
+          {
+            "id": "29ba9ad7-0267-4635-bf69-f2b3344d9b0f",
+            "label": "Speaker Out 5",
+            "direction": "output",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          },
+          {
+            "id": "0e969788-f546-4f74-8ab0-0977c7aa503e",
+            "label": "Speaker Out 6",
+            "direction": "output",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          },
+          {
+            "id": "3e06da52-bb2b-4ad5-a4e0-32c85ea93d3a",
+            "label": "Speaker Out 7",
+            "direction": "output",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          },
+          {
+            "id": "8a2815d4-5fd0-462c-93f3-02a593a0e9a4",
+            "label": "Speaker Out 8",
+            "direction": "output",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "753055e1-dc18-40a3-b282-1521c86734ba",
+      "type": "device",
+      "position": {
+        "x": 1080,
+        "y": 80
+      },
+      "data": {
+        "label": "Cisco PTZ 4K Camera 3",
+        "deviceType": "camera",
+        "model": "Cisco PTZ 4K Camera 3",
+        "ports": [
+          {
+            "id": "33672193-5870-4fe9-b48e-77f57fe563c6",
+            "label": "CTS-CAM-P60-K9",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "52a40323-ff42-4f08-998d-1e5888ff2184",
+            "label": "S/N: CAM-P60-01  Ceiling mounted",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "cd054e52-2b49-493c-918a-b20f7985226e",
+            "label": "Ethernet RJ45",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "1710e401-00d9-4ea4-8e99-14283cf410ac",
+            "label": "Dante",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "dcb71519-5f09-483b-937b-28a25d762e4d",
+            "label": "SDI In",
+            "direction": "input",
+            "signalType": "sdi",
+            "connectorType": "bnc"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ec1e361e-fa51-49ac-b817-83019615bed4",
+      "type": "device",
+      "position": {
+        "x": 2200,
+        "y": 2210
+      },
+      "data": {
+        "label": "Ceiling Speaker Zone 7",
+        "deviceType": "speaker",
+        "model": "Ceiling Speaker Zone 7",
+        "ports": [
+          {
+            "id": "e9d5bdb6-6d5c-4b05-9274-a6adeb23eac8",
+            "label": "S/N: QSC-Z-01  N",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "8aeb2db7-b847-4c40-b97d-06a46c610dbc",
+            "label": "Speaker In",
+            "direction": "input",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "817fa6cb-924f-4ff3-96e0-7b8a69caf578",
+      "type": "device",
+      "position": {
+        "x": 1120,
+        "y": 310
+      },
+      "data": {
+        "label": "Shure ULXD2 Wireless Mic 2",
+        "deviceType": "microphone",
+        "model": "Shure ULXD2 Wireless Mic 2",
+        "ports": [
+          {
+            "id": "0d582aa4-9931-4195-b499-3c8518fd81c4",
+            "label": "ULXD2/B58",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "de23b7c3-6eef-41eb-b306-2533358cc63a",
+            "label": "S/N: ULXD2-01  Handheld wireless",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "8076c501-2e13-40c6-8df2-cb1adc8fc2c9",
+            "label": "Fiber",
+            "direction": "input",
+            "signalType": "fiber",
+            "connectorType": "lc"
+          }
+        ]
+      }
+    },
+    {
+      "id": "6fc4be07-2bd6-4375-9626-882b7bdf1d2c",
+      "type": "device",
+      "position": {
+        "x": 1480,
+        "y": 2210
+      },
+      "data": {
+        "label": "Ceiling Speaker Zone 5",
+        "deviceType": "speaker",
+        "model": "Ceiling Speaker Zone 5",
+        "ports": [
+          {
+            "id": "cedc45dd-e85a-4f02-bfee-b469ccfc1b61",
+            "label": "S/N: QSC-Z-01  N",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "341c518c-70fe-4046-a5b2-4b3adc3321c5",
+            "label": "Speaker In",
+            "direction": "input",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "24f1b5a9-e24f-4d98-9044-0ed0dd35b99d",
+      "type": "device",
+      "position": {
+        "x": 760,
+        "y": 2210
+      },
+      "data": {
+        "label": "Ceiling Speaker Zone 3",
+        "deviceType": "speaker",
+        "model": "Ceiling Speaker Zone 3",
+        "ports": [
+          {
+            "id": "779802f9-4252-42e0-9086-272d4b4f4ea5",
+            "label": "S/N: QSC-Z-01  N",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "453031e7-9788-4a18-91a0-1fad1520eb4e",
+            "label": "Speaker In",
+            "direction": "input",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "210b441c-9699-49b1-80c1-4cf7a89b0d61",
+      "type": "device",
+      "position": {
+        "x": 760,
+        "y": 310
+      },
+      "data": {
+        "label": "Shure ULXD2 Wireless Mic 1",
+        "deviceType": "microphone",
+        "model": "Shure ULXD2 Wireless Mic 1",
+        "ports": [
+          {
+            "id": "225d1612-e92b-41bd-b273-d5389420533b",
+            "label": "ULXD2/B58",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "56accfcd-f041-4c74-aad1-2a426dd828b3",
+            "label": "S/N: ULXD2-01  Handheld wireless",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "79250dbe-a656-499e-8683-fc68542a4e66",
+            "label": "Fiber",
+            "direction": "input",
+            "signalType": "fiber",
+            "connectorType": "lc"
+          }
+        ]
+      }
+    },
+    {
+      "id": "11c9489d-bef7-49f8-b52e-27f903085b2a",
+      "type": "device",
+      "position": {
+        "x": 540,
+        "y": 1980
+      },
+      "data": {
+        "label": "Samsung QM90B Display 1",
+        "deviceType": "display",
+        "model": "Samsung QM90B Display 1",
+        "ports": [
+          {
+            "id": "1d6dafbe-bdf3-489f-aece-c5f741dfc556",
+            "label": "QM90B",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "5fb0deaf-2ef4-43ab-8c64-df1c6c9f51c0",
+            "label": "S/N: QM90B-L  Front wall - dual display",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "8bdfb74e-8002-443a-aca1-9b7395738ba3",
+            "label": "Dante",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "4e567469-60df-4929-aeb7-3175f905fee9",
+            "label": "HDMI Out 1",
+            "direction": "output",
+            "signalType": "hdmi",
+            "connectorType": "hdmi"
+          },
+          {
+            "id": "38c31165-08c1-4bb4-903c-310f12b4022e",
+            "label": "HDMI Out 2",
+            "direction": "output",
+            "signalType": "hdmi",
+            "connectorType": "hdmi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "6c98d174-2014-456d-8011-a8fda2cbaab4",
+      "type": "device",
+      "position": {
+        "x": 1480,
+        "y": 310
+      },
+      "data": {
+        "label": "Shure ULXD2 Wireless Mic 3",
+        "deviceType": "microphone",
+        "model": "Shure ULXD2 Wireless Mic 3",
+        "ports": [
+          {
+            "id": "0b8965be-3caf-4e65-8139-08ca52e28817",
+            "label": "ULXD2/B58",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "f857ed1b-9ef7-4420-9544-23f7a2a7da57",
+            "label": "S/N: ULXD2-01  Handheld wireless",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "71b0b1ea-0206-410b-9262-ec8fe0c3b201",
+            "label": "Fiber",
+            "direction": "input",
+            "signalType": "fiber",
+            "connectorType": "lc"
+          }
+        ]
+      }
+    },
+    {
+      "id": "0d2f5033-0047-4796-be40-7fc4eaa558f7",
+      "type": "device",
+      "position": {
+        "x": 540,
+        "y": 1130
+      },
+      "data": {
+        "label": "Shure ULXD4Q Receiver",
+        "deviceType": "audio-interface",
+        "model": "Shure ULXD4Q Receiver",
+        "ports": [
+          {
+            "id": "da5f2e58-31c7-44eb-9afe-8cdbc621a013",
+            "label": "ULXD4Q",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "cf5f1947-374d-4fbe-a159-6d59062016eb",
+            "label": "S/N: ULXD4Q-01  4-channel wireless receiver",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "87c73e09-ea33-40e9-8f2d-4f22f044bdb8",
+            "label": "Ethernet RJ45 1",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "cf12c01f-695c-4b63-9c50-c8e9e48de56c",
+            "label": "Ethernet RJ45 2",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "ebb9fae7-3afc-4899-8576-7923d58ede42",
+            "label": "Dante 1",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "f3c26eed-aac7-4127-8167-6c9896e8b88c",
+            "label": "Dante 2",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "dd6c1fbe-acf6-4c72-81f3-0cf6ef0f50d3",
+            "label": "Dante 3",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "2c338eb7-e03b-4d27-8cf9-eeb06adf0043",
+            "label": "Dante 4",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "83ba1e90-c5de-4bc5-a591-42832eb77d25",
+            "label": "Fiber 1",
+            "direction": "input",
+            "signalType": "fiber",
+            "connectorType": "lc"
+          },
+          {
+            "id": "d6013b33-79ab-4a78-8f70-f725174285b0",
+            "label": "Fiber 2",
+            "direction": "input",
+            "signalType": "fiber",
+            "connectorType": "lc"
+          },
+          {
+            "id": "1b504bcd-e41e-4f18-9a71-fa0d0298bd29",
+            "label": "Fiber 3",
+            "direction": "input",
+            "signalType": "fiber",
+            "connectorType": "lc"
+          },
+          {
+            "id": "8766f2e9-68d5-4766-960e-007a7601cf3c",
+            "label": "Fiber 4",
+            "direction": "input",
+            "signalType": "fiber",
+            "connectorType": "lc"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f196a992-70fb-4bc6-b395-20e8cd4081d3",
+      "type": "device",
+      "position": {
+        "x": 720,
+        "y": 978
+      },
+      "data": {
+        "label": "Cisco Room Navigator",
+        "deviceType": "control-panel",
+        "model": "Cisco Room Navigator",
+        "ports": [
+          {
+            "id": "88b051cb-6924-41a3-b7d9-825011b7b4f6",
+            "label": "CS-T10-NR-K9",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "022b0813-b10d-462c-80d2-228a070ea03e",
+            "label": "S/N: CS-T10-NR-01  Table touch panel  IP: 192.168.10.51",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "49fc16b6-16c4-486f-bc89-98a404177116",
+            "label": "Dante",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c0676151-4ccc-417b-b9aa-615ec5ba0426",
+      "type": "device",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "label": "Cisco PTZ 4K Camera 2",
+        "deviceType": "camera",
+        "model": "Cisco PTZ 4K Camera 2",
+        "ports": [
+          {
+            "id": "33ce2863-fa9b-41fa-8896-bdb9e34fb6da",
+            "label": "CTS-CAM-P60-K9",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "8b4823d0-5939-4185-9f8b-2fd7b48173e3",
+            "label": "S/N: CAM-P60-01  Ceiling mounted",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "594044f8-a7b3-4ebc-9dd0-d8cbe564059e",
+            "label": "Ethernet RJ45",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "b7983351-a386-4fcd-9be1-3863ad4d512d",
+            "label": "Dante",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "53338975-fe44-4d58-a05b-e7d15ba08bc5",
+            "label": "SDI In",
+            "direction": "input",
+            "signalType": "sdi",
+            "connectorType": "bnc"
+          }
+        ]
+      }
+    },
+    {
+      "id": "17515686-8e7b-4dc3-9700-de86eb399bd0",
+      "type": "device",
+      "position": {
+        "x": 720,
+        "y": 488
+      },
+      "data": {
+        "label": "Cisco Webex Codec Pro",
+        "deviceType": "video-conferencing",
+        "model": "Cisco Webex Codec Pro",
+        "ports": [
+          {
+            "id": "8a20a74b-98ef-42b4-ae9e-10adce191ff8",
+            "label": "CS-CODEC-PRO",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "d745651e-52b0-4897-be5c-71c45a34b439",
+            "label": "S/N: FTT2650XXXX  Main room codec  IP: 192.168.10.50",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "f874baf4-e263-4862-8c7a-f055a0a4273a",
+            "label": "Ethernet RJ45 1",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "460c24fb-afcf-4ffb-9f91-67282d9d38a4",
+            "label": "Ethernet RJ45 2",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "2e354501-70b6-4c5a-8d73-41fedc1e6435",
+            "label": "Dante 1",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "73474ec1-d20e-4233-9ebf-bad1b090d78a",
+            "label": "Dante 2",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "05e25d91-bd13-43a5-ac54-443dd3d04981",
+            "label": "SDI In 1",
+            "direction": "input",
+            "signalType": "sdi",
+            "connectorType": "bnc"
+          },
+          {
+            "id": "0069168b-288d-4b4c-a9ab-8cb130cf214d",
+            "label": "SDI In 2",
+            "direction": "input",
+            "signalType": "sdi",
+            "connectorType": "bnc"
+          },
+          {
+            "id": "ffab63b1-42f5-4de4-8ea1-69e50a51e8ff",
+            "label": "HDMI Out 1",
+            "direction": "output",
+            "signalType": "hdmi",
+            "connectorType": "hdmi"
+          },
+          {
+            "id": "78b07a2b-0b2f-49b8-bf9e-36052c1ed849",
+            "label": "HDMI Out 2",
+            "direction": "output",
+            "signalType": "hdmi",
+            "connectorType": "hdmi"
+          },
+          {
+            "id": "c000a857-4ca7-4430-8e25-0a3784b2422b",
+            "label": "HDMI Out 3",
+            "direction": "output",
+            "signalType": "hdmi",
+            "connectorType": "hdmi"
+          },
+          {
+            "id": "37033387-1e5b-48bc-a468-8f064c99ec54",
+            "label": "HDMI Out 4",
+            "direction": "output",
+            "signalType": "hdmi",
+            "connectorType": "hdmi"
+          },
+          {
+            "id": "20e1b97f-04cf-4f0e-a6a7-ce2f7b9301e5",
+            "label": "USB Out 1",
+            "direction": "output",
+            "signalType": "usb",
+            "connectorType": "usb-c"
+          },
+          {
+            "id": "4f7351a2-f652-46df-ba50-0761099198ea",
+            "label": "USB Out 2",
+            "direction": "output",
+            "signalType": "usb",
+            "connectorType": "usb-c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "421d4671-c6df-406b-ae46-36d9988f2bcd",
+      "type": "device",
+      "position": {
+        "x": 900,
+        "y": 1980
+      },
+      "data": {
+        "label": "Samsung QM90B Display 2",
+        "deviceType": "display",
+        "model": "Samsung QM90B Display 2",
+        "ports": [
+          {
+            "id": "e3fbfea2-1063-4c96-ad5c-4553a53aab88",
+            "label": "QM90B",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "cad05366-0bdb-47a4-8328-24149ab8f9b1",
+            "label": "S/N: QM90B-L  Front wall - dual display",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "00a2897b-0204-4782-a7b2-2a6b26ab6838",
+            "label": "Dante",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "fd5a5815-aab0-4035-bb21-a8dee121f5d2",
+            "label": "HDMI Out 1",
+            "direction": "output",
+            "signalType": "hdmi",
+            "connectorType": "hdmi"
+          },
+          {
+            "id": "70ec54c6-7493-4a35-a195-2c5b68236a93",
+            "label": "HDMI Out 2",
+            "direction": "output",
+            "signalType": "hdmi",
+            "connectorType": "hdmi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "53a9a09b-65ca-4108-bac4-0bd30cda1b8f",
+      "type": "device",
+      "position": {
+        "x": 1840,
+        "y": 2210
+      },
+      "data": {
+        "label": "Ceiling Speaker Zone 6",
+        "deviceType": "speaker",
+        "model": "Ceiling Speaker Zone 6",
+        "ports": [
+          {
+            "id": "ffa896f6-8510-43d6-9284-12faf536913e",
+            "label": "S/N: QSC-Z-01  N",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "05cb48af-3ad9-4bc6-b6f5-822a0be2f316",
+            "label": "Speaker In",
+            "direction": "input",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "60ed6c5a-6a96-47f4-a799-c9a160925703",
+      "type": "device",
+      "position": {
+        "x": 2560,
+        "y": 2210
+      },
+      "data": {
+        "label": "Ceiling Speaker Zone 8",
+        "deviceType": "speaker",
+        "model": "Ceiling Speaker Zone 8",
+        "ports": [
+          {
+            "id": "f22208ca-9297-4d41-95e5-032be837489d",
+            "label": "S/N: QSC-Z-01  N",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "e56b32af-6f2f-47a0-bac0-7407490038d8",
+            "label": "Speaker In",
+            "direction": "input",
+            "signalType": "speaker-level",
+            "connectorType": "speakon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "0642ccb0-5022-4a50-8325-f846dc9f430c",
+      "type": "device",
+      "position": {
+        "x": 40,
+        "y": 310
+      },
+      "data": {
+        "label": "Cisco Ceiling Mic 1",
+        "deviceType": "microphone",
+        "model": "Cisco Ceiling Mic 1",
+        "ports": [
+          {
+            "id": "1ccb5b3f-f8e6-49a1-8a5c-000afc5e996d",
+            "label": "CS-MIC-CLNG-T",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "f2043b02-27d7-4f6d-a8b5-5c654e9d882d",
+            "label": "S/N: CLNG-MIC-01  Ceiling array center",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "4bc2104f-e3d9-4b8c-b45a-bfaef010537b",
+            "label": "Ethernet RJ45",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "103a8ba2-79e7-4962-80b3-5306d3d9d386",
+            "label": "Dante",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          }
+        ]
+      }
+    },
+    {
+      "id": "de3d59f7-d883-4215-b185-39e748282f9e",
+      "type": "device",
+      "position": {
+        "x": 720,
+        "y": 2388
+      },
+      "data": {
+        "label": "Cisco Catalyst 9300",
+        "deviceType": "network-switch",
+        "model": "Cisco Catalyst 9300",
+        "ports": [
+          {
+            "id": "b050b640-7c29-4c74-b310-8f43fc92fe89",
+            "label": "C9300-24P",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "0f807125-9767-4f28-8608-cb420c651dc4",
+            "label": "S/N: C9300-01  24-port PoE switch - rack unit 1  IP: 192.168.10.1",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "effa0809-5783-4af3-80bb-df690ec07ab0",
+            "label": "Ethernet RJ45 1",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "f6cff27d-1c09-4810-a5b5-71f10cd47c2c",
+            "label": "Ethernet RJ45 2",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "7900efc3-f435-40f6-ab71-b9f2ee3e21c4",
+            "label": "Ethernet RJ45 3",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "709a5c4e-9504-4dfe-a641-41004fb69800",
+            "label": "Ethernet RJ45 4",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "0564d8ff-2c91-4e3f-854d-67cc50f7c149",
+            "label": "Ethernet RJ45 5",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "2b329064-1c44-40ba-af20-7f8b175594d6",
+            "label": "Ethernet RJ45 6",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "cef6c24b-723a-40d8-9a31-1a2c1e4db3ec",
+            "label": "Ethernet RJ45 7",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "a875e4d4-6698-45ea-836d-520e6c3f1ccb",
+            "label": "Ethernet RJ45 8",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "c6a61195-a553-46b8-af56-a2687a7b0c0c",
+            "label": "Ethernet RJ45 9",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "ac7a7337-7e0c-4f90-8c3f-5fa9cdd66e49",
+            "label": "Ethernet RJ45 10",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "7a0c775e-3eb9-41b3-abe9-53a1e958b7ab",
+            "label": "Ethernet RJ45 11",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "de6f5bdc-9bbc-4e2f-a1be-3fab1f962d32",
+            "label": "Ethernet RJ45 12",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "f9ee11bd-8203-4af1-bbc3-80d3c91c69c0",
+            "label": "Ethernet RJ45 13",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "8a15b55f-e115-4994-bcdc-3cd3cde0756a",
+            "label": "Ethernet RJ45 14",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "ceee2b10-e4f9-40a9-82a5-ea92efe5381f",
+            "label": "Ethernet RJ45 15",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "d2e5e488-d5b3-47b2-ad61-da4b676a7b8b",
+            "label": "Ethernet RJ45 16",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "c218b31e-ccfa-4dca-a058-84f363b97a65",
+            "label": "Ethernet RJ45 17",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "c5d822a4-b65e-4686-8271-f47ecf61438f",
+            "label": "Ethernet RJ45 18",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "867d8539-96c2-4af0-9065-adc67cc110b1",
+            "label": "Ethernet RJ45 19",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "95529d9a-f158-428b-ae5d-97fe7221236a",
+            "label": "Ethernet RJ45 20",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "612ab7f4-24c1-4ad8-ac0d-eaec6cc4d900",
+            "label": "Ethernet RJ45 21",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "262bfff1-f981-49eb-bc58-0f27ad143d7b",
+            "label": "Ethernet RJ45 22",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "9cbf51eb-f501-4de2-b78c-9345d43efa7f",
+            "label": "Ethernet RJ45 23",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "2878ea83-53b9-49c2-a3b8-4a3ab78ff5e5",
+            "label": "Ethernet RJ45 24",
+            "direction": "bidirectional",
+            "signalType": "ethernet",
+            "connectorType": "rj45"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bf8876ed-2213-4760-b673-b2480a98e5f4",
+      "type": "device",
+      "position": {
+        "x": 900,
+        "y": 1130
+      },
+      "data": {
+        "label": "Dante Audio Network",
+        "deviceType": "audio-interface",
+        "model": "Dante Audio Network",
+        "ports": [
+          {
+            "id": "6e0be687-aa8e-4edf-9782-45c946db9f77",
+            "label": "S/N: DANTE-NET-01  N",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "154eb3d7-942a-4e27-b23f-155525701ba0",
+            "label": "Dante 1",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "a64c3636-44d1-4702-81fc-690eae8deb14",
+            "label": "Dante 2",
+            "direction": "bidirectional",
+            "signalType": "dante",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "77f57dad-5cc8-47f7-9076-79fe5a61481c",
+            "label": "NDI 1",
+            "direction": "bidirectional",
+            "signalType": "ndi",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "174043a3-5aaf-44fe-a4f2-c0a520db56cd",
+            "label": "NDI 2",
+            "direction": "bidirectional",
+            "signalType": "ndi",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "9675ec89-e4d3-4695-85df-cb2dc93a3fc5",
+            "label": "NDI 3",
+            "direction": "bidirectional",
+            "signalType": "ndi",
+            "connectorType": "rj45"
+          },
+          {
+            "id": "23b029ed-2096-4ec6-bf48-fc14e26a3cb2",
+            "label": "NDI 4",
+            "direction": "bidirectional",
+            "signalType": "ndi",
+            "connectorType": "rj45"
+          }
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "05e447cb-ebff-4b7f-8d6a-50c0e82340fd",
+      "source": "bf8876ed-2213-4760-b673-b2480a98e5f4",
+      "target": "0d2f5033-0047-4796-be40-7fc4eaa558f7",
+      "type": "connection",
+      "data": {
+        "signalType": "dante",
+        "label": "Dante"
+      },
+      "sourceHandle": "154eb3d7-942a-4e27-b23f-155525701ba0",
+      "targetHandle": "ebb9fae7-3afc-4899-8576-7923d58ede42"
+    },
+    {
+      "id": "46c235c6-8962-44aa-b200-d1d5d1538d5d",
+      "source": "0d2f5033-0047-4796-be40-7fc4eaa558f7",
+      "target": "950e86f1-2717-418d-99b6-08772219525c",
+      "type": "connection",
+      "data": {
+        "signalType": "dante",
+        "label": "Dante"
+      },
+      "sourceHandle": "f3c26eed-aac7-4127-8167-6c9896e8b88c",
+      "targetHandle": "dc0ccd52-490d-43b3-b13b-68c10ebab76a"
+    },
+    {
+      "id": "f507713a-39ea-49d4-8868-5fbd5b1f93e8",
+      "source": "17515686-8e7b-4dc3-9700-de86eb399bd0",
+      "target": "0d2f5033-0047-4796-be40-7fc4eaa558f7",
+      "type": "connection",
+      "data": {
+        "signalType": "dante",
+        "label": "Dante"
+      },
+      "sourceHandle": "2e354501-70b6-4c5a-8d73-41fedc1e6435",
+      "targetHandle": "dd6c1fbe-acf6-4c72-81f3-0cf6ef0f50d3"
+    },
+    {
+      "id": "33e7b573-c399-4868-b11b-f35c21b69b78",
+      "source": "950e86f1-2717-418d-99b6-08772219525c",
+      "target": "e87fb7d3-1de3-4972-bff7-38b40648e0c5",
+      "type": "connection",
+      "data": {
+        "signalType": "speaker-level",
+        "label": "Speaker"
+      },
+      "sourceHandle": "d632242b-eaa9-4188-97c5-5d3fd5cc0016",
+      "targetHandle": "65ec7ba1-28be-4e01-a9b1-4e7ab250f10f"
+    },
+    {
+      "id": "331bdcd0-c790-43e5-8891-1863b02716dd",
+      "source": "950e86f1-2717-418d-99b6-08772219525c",
+      "target": "936fa2f0-aee1-4780-ad37-1f1f6d8ddd76",
+      "type": "connection",
+      "data": {
+        "signalType": "speaker-level",
+        "label": "Speaker"
+      },
+      "sourceHandle": "75c030f7-14ef-4e86-9ba4-8decb3f38b8f",
+      "targetHandle": "3e876293-aefd-493d-a341-067495b9b91c"
+    },
+    {
+      "id": "22a2a31d-5b9a-4258-9b44-8dff735ff4b7",
+      "source": "950e86f1-2717-418d-99b6-08772219525c",
+      "target": "24f1b5a9-e24f-4d98-9044-0ed0dd35b99d",
+      "type": "connection",
+      "data": {
+        "signalType": "speaker-level",
+        "label": "Speaker"
+      },
+      "sourceHandle": "6fc482c7-72f9-4580-9bd7-3c37affa708f",
+      "targetHandle": "453031e7-9788-4a18-91a0-1fad1520eb4e"
+    },
+    {
+      "id": "2f2364c2-3f81-44aa-a31c-57707e0a0175",
+      "source": "950e86f1-2717-418d-99b6-08772219525c",
+      "target": "712e432c-4b36-44e8-8d95-c2643cd03960",
+      "type": "connection",
+      "data": {
+        "signalType": "speaker-level",
+        "label": "Speaker"
+      },
+      "sourceHandle": "f84a4842-a942-4062-b3fe-314c20ed911d",
+      "targetHandle": "64e26b0a-fe2f-4cb4-99cf-195d773303d5"
+    },
+    {
+      "id": "9add4b1a-b152-44fc-af68-4361bf74fcbe",
+      "source": "950e86f1-2717-418d-99b6-08772219525c",
+      "target": "6fc4be07-2bd6-4375-9626-882b7bdf1d2c",
+      "type": "connection",
+      "data": {
+        "signalType": "speaker-level",
+        "label": "Speaker"
+      },
+      "sourceHandle": "29ba9ad7-0267-4635-bf69-f2b3344d9b0f",
+      "targetHandle": "341c518c-70fe-4046-a5b2-4b3adc3321c5"
+    },
+    {
+      "id": "2b4b9c8a-c924-4763-a81b-1d060473a25f",
+      "source": "950e86f1-2717-418d-99b6-08772219525c",
+      "target": "53a9a09b-65ca-4108-bac4-0bd30cda1b8f",
+      "type": "connection",
+      "data": {
+        "signalType": "speaker-level",
+        "label": "Speaker"
+      },
+      "sourceHandle": "0e969788-f546-4f74-8ab0-0977c7aa503e",
+      "targetHandle": "05cb48af-3ad9-4bc6-b6f5-822a0be2f316"
+    },
+    {
+      "id": "765511c6-e936-4c28-8b9d-25808710b9a0",
+      "source": "950e86f1-2717-418d-99b6-08772219525c",
+      "target": "ec1e361e-fa51-49ac-b817-83019615bed4",
+      "type": "connection",
+      "data": {
+        "signalType": "speaker-level",
+        "label": "Speaker"
+      },
+      "sourceHandle": "3e06da52-bb2b-4ad5-a4e0-32c85ea93d3a",
+      "targetHandle": "8aeb2db7-b847-4c40-b97d-06a46c610dbc"
+    },
+    {
+      "id": "299cb8bf-08b6-4431-af16-8cfe9674d055",
+      "source": "950e86f1-2717-418d-99b6-08772219525c",
+      "target": "60ed6c5a-6a96-47f4-a799-c9a160925703",
+      "type": "connection",
+      "data": {
+        "signalType": "speaker-level",
+        "label": "Speaker"
+      },
+      "sourceHandle": "8a2815d4-5fd0-462c-93f3-02a593a0e9a4",
+      "targetHandle": "e56b32af-6f2f-47a0-bac0-7407490038d8"
+    },
+    {
+      "id": "b110304b-7b9a-4581-8861-cbef0fcd5d06",
+      "source": "62dea810-75e3-4627-835a-cf667b750b76",
+      "target": "de3d59f7-d883-4215-b185-39e748282f9e",
+      "type": "connection",
+      "data": {
+        "signalType": "ethernet",
+        "label": "Ethernet"
+      },
+      "sourceHandle": "b3bf70a8-72ca-4694-8051-e87e2bebb460",
+      "targetHandle": "effa0809-5783-4af3-80bb-df690ec07ab0"
+    },
+    {
+      "id": "9169a3f0-b56e-4faa-b5e0-ebcfc2e4720d",
+      "source": "c0676151-4ccc-417b-b9aa-615ec5ba0426",
+      "target": "de3d59f7-d883-4215-b185-39e748282f9e",
+      "type": "connection",
+      "data": {
+        "signalType": "ethernet",
+        "label": "Ethernet"
+      },
+      "sourceHandle": "594044f8-a7b3-4ebc-9dd0-d8cbe564059e",
+      "targetHandle": "f6cff27d-1c09-4810-a5b5-71f10cd47c2c"
+    },
+    {
+      "id": "faee096b-1cb9-4024-9292-08f5ff25360f",
+      "source": "753055e1-dc18-40a3-b282-1521c86734ba",
+      "target": "de3d59f7-d883-4215-b185-39e748282f9e",
+      "type": "connection",
+      "data": {
+        "signalType": "ethernet",
+        "label": "Ethernet"
+      },
+      "sourceHandle": "cd054e52-2b49-493c-918a-b20f7985226e",
+      "targetHandle": "7a0c775e-3eb9-41b3-abe9-53a1e958b7ab"
+    },
+    {
+      "id": "62c460f2-042a-4066-9a83-4a0c199ac588",
+      "source": "0642ccb0-5022-4a50-8325-f846dc9f430c",
+      "target": "de3d59f7-d883-4215-b185-39e748282f9e",
+      "type": "connection",
+      "data": {
+        "signalType": "ethernet",
+        "label": "Ethernet"
+      },
+      "sourceHandle": "4bc2104f-e3d9-4b8c-b45a-bfaef010537b",
+      "targetHandle": "de6f5bdc-9bbc-4e2f-a1be-3fab1f962d32"
+    },
+    {
+      "id": "e6e2fadd-037c-4ac1-9143-efb84c02be70",
+      "source": "bf23a522-17f9-4fd5-8591-5e24d55d99b1",
+      "target": "de3d59f7-d883-4215-b185-39e748282f9e",
+      "type": "connection",
+      "data": {
+        "signalType": "ethernet",
+        "label": "Ethernet"
+      },
+      "sourceHandle": "7f40cf13-ab8b-4c7c-9f8e-345a1588610c",
+      "targetHandle": "f9ee11bd-8203-4af1-bbc3-80d3c91c69c0"
+    },
+    {
+      "id": "951f7a07-4cd4-458f-be8e-1c620e55cf50",
+      "source": "17515686-8e7b-4dc3-9700-de86eb399bd0",
+      "target": "de3d59f7-d883-4215-b185-39e748282f9e",
+      "type": "connection",
+      "data": {
+        "signalType": "ethernet",
+        "label": "Ethernet"
+      },
+      "sourceHandle": "f874baf4-e263-4862-8c7a-f055a0a4273a",
+      "targetHandle": "8a15b55f-e115-4994-bcdc-3cd3cde0756a"
+    },
+    {
+      "id": "74d28cbc-ec5e-41f0-ba62-32822413e9ae",
+      "source": "0d2f5033-0047-4796-be40-7fc4eaa558f7",
+      "target": "de3d59f7-d883-4215-b185-39e748282f9e",
+      "type": "connection",
+      "data": {
+        "signalType": "ethernet",
+        "label": "Ethernet"
+      },
+      "sourceHandle": "87c73e09-ea33-40e9-8f2d-4f22f044bdb8",
+      "targetHandle": "ceee2b10-e4f9-40a9-82a5-ea92efe5381f"
+    },
+    {
+      "id": "6209a3a9-be11-469d-ba0b-3e9b94830cd9",
+      "source": "950e86f1-2717-418d-99b6-08772219525c",
+      "target": "de3d59f7-d883-4215-b185-39e748282f9e",
+      "type": "connection",
+      "data": {
+        "signalType": "ethernet",
+        "label": "Ethernet"
+      },
+      "sourceHandle": "fad1f1f7-0d24-4151-a431-551054d5ff72",
+      "targetHandle": "d2e5e488-d5b3-47b2-ad61-da4b676a7b8b"
+    }
+  ],
+  "customTemplates": [],
+  "cableNamingScheme": "type-prefix",
+  "showCableIdLabels": true,
+  "showLineJumps": true,
+  "autoRoute": true,
+  "titleBlock": {
+    "showName": "Template Test",
+    "venue": "",
+    "designer": "",
+    "engineer": "",
+    "date": "2026-06-16",
+    "drawingTitle": "Template Test Signal Flow",
+    "company": "",
+    "revision": "A",
+    "logo": "",
+    "customFields": []
+  }
+}
