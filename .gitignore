@@ -26,6 +26,9 @@ output/*_xstatus_diff.json
 !output/Boardroom_Pro.drawio
 !output/Template_Test.drawio
 
+# Backend runtime state (JSON store + generated room artifacts)
+data/
+
 # Test fixtures
 test_xstatus.xml
 

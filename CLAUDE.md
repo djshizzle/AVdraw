@@ -355,6 +355,22 @@ the user wants a *new* feature rather than improvement of an existing one.
 | P3 xStatus Diff     | ✅ DONE | src/xstatus_diff.py         | Imports xstatus.py — direct + Webex + file     |
 | P4 DXF Export       | ✅ DONE | src/drawio_to_dxf.py        | Note: from drawio, NOT easyschematic — simpler |
 | P5 AvaI webhook     | ✅ DONE | src/avai_webhook.py         | FastAPI: /generate /validate /diff /health     |
+| App backend         | ✅ DONE | backend/                    | FastAPI app + single-room core loop (see below)|
+
+**App backend (new):** `backend/` is a service layer over `src/` driven by the
+design handoff (`design/AV Schematic Builder - Wireframes (standalone).html`).
+Domain model Project ▸ Room ▸ Device ▸ Port + CableRun (`backend/domain.py`),
+JSON-file store (`backend/store.py`), and the **single-room core loop**
+(`backend/pipeline.py`): devices/BOM → validate_bom → build_drawio →
+validate_drawio → parse_drawio → build_schematic → cable schedule. Domain +
+store + pipeline are stdlib-only (local-first); FastAPI is optional transport
+(`backend/main.py`, graceful no-op if not installed). Run the loop without web
+deps: `python3 -m backend.pipeline --bom templates/sample_bom.csv --name X`.
+API: `pip3 install -r backend/requirements.txt && python3 -m backend.main`.
+Endpoints: projects/rooms CRUD, `/builds/parse-bom` (proposal),
+`/builds/run` (one-shot), `/projects/{id}/rooms/{rid}/build` (persisted).
+Stubbed for follow-up: AI "describe the room" proposal, catalog browsing,
+DXF/PDF export endpoints, xStatus enrichment. See `backend/README.md`.
 
 **Validation contract (auto-wired):** `bom_to_drawio.py` now runs both
 validators automatically. Use `--no-validate` to skip, `--strict` to promote

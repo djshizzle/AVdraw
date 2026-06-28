@@ -1,0 +1,4 @@
+# Backend transport layer. The core loop (backend.pipeline) needs none of these.
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
