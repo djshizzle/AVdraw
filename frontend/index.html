@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AV Schematic Builder — demo</title>
+<link rel="icon" href="data:," />
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --line:#262b36; --txt:#e6e9ef;
+    --muted:#9aa3b2; --accent:#3b82f6; --ok:#22c55e; --warn:#f59e0b; --err:#ef4444;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:14px/1.5 ui-sans-serif,system-ui,Segoe UI,Roboto,sans-serif;
+       background:var(--bg);color:var(--txt)}
+  header{padding:14px 20px;border-bottom:1px solid var(--line);display:flex;
+         align-items:center;gap:12px}
+  header h1{font-size:16px;margin:0;font-weight:600}
+  header .tag{font-size:11px;color:var(--muted);border:1px solid var(--line);
+              padding:2px 8px;border-radius:999px}
+  header .right{margin-left:auto;font-size:12px;color:var(--muted)}
+  main{display:grid;grid-template-columns:300px 1fr;gap:0;height:calc(100vh - 53px)}
+  .sidebar{border-right:1px solid var(--line);padding:16px;overflow:auto}
+  .content{padding:20px;overflow:auto}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);
+     margin:0 0 10px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+        padding:14px;margin-bottom:14px}
+  button{background:var(--accent);color:#fff;border:0;border-radius:8px;
+         padding:8px 14px;font-weight:600;cursor:pointer}
+  button.ghost{background:transparent;border:1px solid var(--line);color:var(--txt)}
+  button:disabled{opacity:.5;cursor:default}
+  input,textarea,select{background:#0c0e13;color:var(--txt);border:1px solid var(--line);
+        border-radius:8px;padding:8px;width:100%;font:inherit}
+  textarea{min-height:150px;font-family:ui-monospace,Menlo,monospace;font-size:12px}
+  label{display:block;font-size:12px;color:var(--muted);margin:10px 0 4px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase}
+  .pill{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line)}
+  .pill.ok{color:var(--ok);border-color:#1d3b29}
+  .pill.warn{color:var(--warn);border-color:#3b2f12}
+  .pill.err{color:var(--err);border-color:#3b1d1d}
+  .row{display:flex;gap:8px;align-items:center}
+  .muted{color:var(--muted)}
+  .proj{padding:8px;border:1px solid var(--line);border-radius:8px;margin-bottom:8px;
+        cursor:pointer}
+  .proj:hover{border-color:var(--accent)}
+  .proj .name{font-weight:600}
+  .proj .meta{font-size:12px;color:var(--muted)}
+  .stat{display:inline-block;background:#0c0e13;border:1px solid var(--line);
+        border-radius:8px;padding:8px 12px;margin:0 8px 8px 0;min-width:84px}
+  .stat .n{font-size:20px;font-weight:700}
+  .stat .l{font-size:11px;color:var(--muted)}
+  .sig{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;
+       vertical-align:middle}
+  .hidden{display:none}
+  #toast{position:fixed;bottom:16px;right:16px;background:var(--panel);
+         border:1px solid var(--line);border-radius:8px;padding:10px 14px;max-width:360px}
+</style>
+</head>
+<body>
+<header>
+  <h1>AV Schematic Builder</h1>
+  <span class="tag">demo UI · core loop</span>
+  <span class="right" id="apihealth">checking API…</span>
+</header>
+
+<main>
+  <aside class="sidebar">
+    <h2>Projects</h2>
+    <div class="row" style="margin-bottom:10px">
+      <input id="newProjName" placeholder="New project name" />
+      <button id="newProjBtn" class="ghost">+</button>
+    </div>
+    <div id="projList"></div>
+  </aside>
+
+  <section class="content">
+    <!-- New build / BOM paste -->
+    <div class="card">
+      <h2>New build — paste a BOM</h2>
+      <div class="row">
+        <div style="flex:1">
+          <label>Room name</label>
+          <input id="roomName" value="Boardroom" />
+        </div>
+        <div style="width:200px">
+          <label>Target project</label>
+          <select id="targetProj"><option value="">— stateless run —</option></select>
+        </div>
+      </div>
+      <label>BOM CSV</label>
+      <textarea id="bom"></textarea>
+      <div class="row" style="margin-top:10px">
+        <button id="proposeBtn" class="ghost">1 · Parse BOM (proposal)</button>
+        <button id="runBtn">2 · Build schematic ▸</button>
+        <span id="busy" class="muted hidden">working…</span>
+      </div>
+    </div>
+
+    <!-- Validation -->
+    <div id="valCard" class="card hidden">
+      <h2>Validation</h2>
+      <div id="valBody"></div>
+    </div>
+
+    <!-- Counts -->
+    <div id="statsCard" class="card hidden">
+      <h2>Build result</h2>
+      <div id="stats"></div>
+    </div>
+
+    <!-- Devices -->
+    <div id="devCard" class="card hidden">
+      <h2>Devices (proposal)</h2>
+      <table><thead><tr><th>Name</th><th>Type</th><th>Model</th><th>Qty</th>
+        <th>Confidence</th></tr></thead><tbody id="devBody"></tbody></table>
+    </div>
+
+    <!-- Cable schedule -->
+    <div id="cableCard" class="card hidden">
+      <h2>Cable schedule</h2>
+      <table><thead><tr><th>ID</th><th>From</th><th>To</th><th>Signal</th>
+        <th>Len</th></tr></thead><tbody id="cableBody"></tbody></table>
+    </div>
+  </section>
+</main>
+<div id="toast" class="hidden"></div>
+
+<script>
+const API = location.origin;                 // served same-origin by the backend
+const SIGNAL_COLORS = {hdmi:"#d6b656",sdi:"#6d8764",displayport:"#0070c0",
+  usb:"#0070c0",ethernet:"#006EAF",dante:"#7030a0",ndi:"#e36c09",avb:"#833c00",
+  "speaker-level":"#ff0000","analog-audio":"#ff6600",rf:"#808080",fiber:"#00b0f0",
+  hdbaset:"#70ad47",rs422:"#ffc000",gpio:"#ffc000"};
+
+const $ = s => document.querySelector(s);
+const show = (el,on=true)=>$(el).classList.toggle("hidden",!on);
+function toast(msg,kind){const t=$("#toast");t.textContent=msg;t.className="";
+  t.style.borderColor = kind==="err"?"var(--err)":"var(--line)";
+  setTimeout(()=>t.classList.add("hidden"),3500);}
+async function api(path,opts){
+  const r = await fetch(API+path,{headers:{"Content-Type":"application/json"},...opts});
+  if(!r.ok){let d;try{d=await r.json()}catch{d={detail:r.statusText}}
+    throw new Error(typeof d.detail==="string"?d.detail:JSON.stringify(d.detail));}
+  return r.status===204?null:r.json();
+}
+
+const SAMPLE = `Name,Type,Model,Serial,Quantity,Room,Notes
+Cisco Webex Codec Pro,Codec,CS-CODEC-PRO,,1,,Main room codec
+Cisco PTZ 4K Camera,Camera,CTS-CAM-P60-K9,,2,,Ceiling mounted
+Samsung QM90B Display,Display,QM90B,,2,,Front displays
+Cisco Ceiling Mic,Microphone,CS-MIC-CLNG-T,,2,,Ceiling array
+Lightware MX2 8x8,Switcher,MX2-8x8-HDMI20,,1,,Matrix switcher`;
+
+// ── Health ──────────────────────────────────────────────────────────────
+(async()=>{
+  try{const h=await api("/health");
+    $("#apihealth").textContent = `API ${h.status} · v${h.version}`;
+  }catch(e){$("#apihealth").textContent="API unreachable"; $("#apihealth").style.color="var(--err)";}
+})();
+
+// ── Projects ────────────────────────────────────────────────────────────
+async function loadProjects(){
+  const {projects}=await api("/projects");
+  const sel=$("#targetProj"); const keep=sel.value;
+  sel.innerHTML='<option value="">— stateless run —</option>';
+  $("#projList").innerHTML = projects.length?"":'<div class="muted">No projects yet.</div>';
+  for(const p of projects){
+    const d=document.createElement("div");d.className="proj";
+    d.innerHTML=`<div class="name">${p.name}</div>
+      <div class="meta">${p.status} · ${p.roomCount} rooms · ${p.deviceCount} devices</div>`;
+    $("#projList").appendChild(d);
+    const o=document.createElement("option");o.value=p.id;o.textContent=p.name;sel.appendChild(o);
+  }
+  sel.value=keep;
+}
+$("#newProjBtn").onclick=async()=>{
+  const name=$("#newProjName").value.trim(); if(!name)return;
+  try{await api("/projects",{method:"POST",body:JSON.stringify({name})});
+    $("#newProjName").value="";await loadProjects();toast("Project created");}
+  catch(e){toast(e.message,"err");}
+};
+
+// ── Render helpers ──────────────────────────────────────────────────────
+function renderValidation(v){
+  show("#valCard",true);
+  const block=(title,r)=>{
+    const cls=r.ok?"ok":(r.errors.length?"err":"warn");
+    const items=[...r.errors,...r.warnings].slice(0,6)
+      .map(x=>`<li class="muted">${x}</li>`).join("");
+    return `<div style="margin-bottom:8px"><span class="pill ${cls}">${title}: ${r.ok?"ok":"issues"}</span>
+      <span class="muted"> ${r.errors.length} err · ${r.warnings.length} warn</span>
+      ${items?`<ul style="margin:6px 0">${items}</ul>`:""}</div>`;
+  };
+  $("#valBody").innerHTML = block("BOM",v.bom)+ (v.drawio?block("draw.io",v.drawio):"");
+}
+function renderDevices(devs){
+  show("#devCard",true);
+  $("#devBody").innerHTML = devs.map(d=>{
+    const c=d.confidence==="unknown"?"warn":"ok";
+    return `<tr><td>${d.name}</td><td>${d.type||'<span class="muted">?</span>'}</td>
+      <td class="muted">${d.model||""}</td><td>${d.quantity}</td>
+      <td><span class="pill ${c}">${d.confidence}</span></td></tr>`;}).join("");
+}
+function renderResult(res){
+  show("#statsCard",true);
+  const c=res.counts;
+  $("#stats").innerHTML=`
+    <div class="stat"><div class="n">${c.devices}</div><div class="l">devices</div></div>
+    <div class="stat"><div class="n">${c.nodes}</div><div class="l">nodes</div></div>
+    <div class="stat"><div class="n">${c.edges}</div><div class="l">edges</div></div>
+    <div class="stat"><div class="n">${c.cables}</div><div class="l">cables</div></div>
+    <div class="muted" style="margin-top:6px">draw.io → ${res.drawioPath}</div>`;
+  renderValidation(res.validation);
+  renderDevices(res.devices);
+  show("#cableCard",true);
+  $("#cableBody").innerHTML=res.cableSchedule.map(r=>{
+    const col=SIGNAL_COLORS[r.signalType]||"#888";
+    return `<tr><td class="muted">${r.id.replace('cbl-','')}</td><td>${r.fromRef}</td>
+      <td>${r.toRef}</td><td><span class="sig" style="background:${col}"></span>${r.signalType}</td>
+      <td class="muted">${r.length||"—"}</td></tr>`;}).join("");
+}
+
+// ── Actions ─────────────────────────────────────────────────────────────
+function setBusy(on){show("#busy",on);$("#runBtn").disabled=on;$("#proposeBtn").disabled=on;}
+
+$("#proposeBtn").onclick=async()=>{
+  setBusy(true);
+  try{
+    const r=await api("/builds/parse-bom",{method:"POST",
+      body:JSON.stringify({csv:$("#bom").value,name:$("#roomName").value})});
+    renderValidation({bom:r.validation});
+    renderDevices(r.devices);
+    show("#statsCard",false);show("#cableCard",false);
+    toast(`Parsed ${r.devices.length} devices`);
+  }catch(e){toast(e.message,"err");}finally{setBusy(false);}
+};
+
+$("#runBtn").onclick=async()=>{
+  setBusy(true);
+  const name=$("#roomName").value, csv=$("#bom").value, pid=$("#targetProj").value;
+  try{
+    let res;
+    if(pid){
+      // persisted flow: parse → add room → set devices → build
+      const prop=await api("/builds/parse-bom",{method:"POST",body:JSON.stringify({csv,name})});
+      const room=await api(`/projects/${pid}/rooms`,{method:"POST",body:JSON.stringify({name})});
+      await api(`/projects/${pid}/rooms/${room.id}/devices`,{method:"PUT",
+        body:JSON.stringify({devices:prop.devices})});
+      res=await api(`/projects/${pid}/rooms/${room.id}/build`,{method:"POST",
+        body:JSON.stringify({strict:false})});
+      await loadProjects();
+      toast("Built + saved to project");
+    }else{
+      res=await api("/builds/run",{method:"POST",body:JSON.stringify({csv,name})});
+      toast("Build complete (stateless)");
+    }
+    renderResult(res);
+  }catch(e){toast(e.message,"err");}finally{setBusy(false);}
+};
+
+// init
+$("#bom").value=SAMPLE;
+loadProjects();
+</script>
+</body>
+</html>

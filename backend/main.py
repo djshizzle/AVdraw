@@ -66,8 +66,22 @@ def create_app():
     app.include_router(projects.router)
     app.include_router(builds.router)
 
+    # Optional demo UI: if a frontend/ dir exists, serve it at /app same-origin
+    # (no CORS needed). Replaced by the real build when one lands.
+    frontend_dir = config.REPO_ROOT / "frontend"
+    has_ui = (frontend_dir / "index.html").exists()
+    if has_ui:
+        from fastapi.staticfiles import StaticFiles
+
+        app.mount("/app", StaticFiles(directory=str(frontend_dir), html=True),
+                  name="app")
+
     @app.get("/")
-    def root() -> dict:
+    def root():
+        if has_ui:
+            from fastapi.responses import RedirectResponse
+
+            return RedirectResponse(url="/app/")
         return {
             "service": "av-schematic-builder-backend",
             "version": __version__,
