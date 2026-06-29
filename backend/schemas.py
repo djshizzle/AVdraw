@@ -60,3 +60,30 @@ class BuildRoomRequest(BaseModel):
     """Run the core loop on a stored room."""
 
     strict: bool = False
+
+
+class UpdateProjectRequest(BaseModel):
+    name: Optional[str] = None
+    status: Optional[str] = None
+    client: Optional[str] = None
+
+
+class UpdateRoomRequest(BaseModel):
+    name: Optional[str] = None
+    status: Optional[str] = None
+    building: Optional[str] = None
+    titleBlock: Optional[dict[str, Any]] = None
+
+
+class DescribeRequest(BaseModel):
+    """AI 'describe the room' → proposed equipment."""
+
+    brief: str = Field(..., min_length=1)
+
+
+class ExportRequest(BaseModel):
+    """Stateless export: build from CSV then return the chosen format."""
+
+    csv: str = Field(..., min_length=1)
+    name: str = "Room"
+    format: str = Field("dxf", description="drawio | json | csv | dxf | pdf")

@@ -9,6 +9,8 @@ from ..schemas import (
     CreateProjectRequest,
     CreateRoomRequest,
     SetDevicesRequest,
+    UpdateProjectRequest,
+    UpdateRoomRequest,
 )
 from ..store import NotFoundError, get_store
 
@@ -40,6 +42,16 @@ def get_project(project_id: str) -> dict:
         raise HTTPException(status_code=404, detail=str(exc))
 
 
+@router.patch("/{project_id}")
+def update_project(project_id: str, body: UpdateProjectRequest) -> dict:
+    try:
+        return get_store().update_project(
+            project_id, name=body.name, status=body.status, client=body.client
+        ).to_dict()
+    except NotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+
+
 @router.delete("/{project_id}", status_code=204)
 def delete_project(project_id: str) -> None:
     try:
@@ -62,6 +74,17 @@ def add_room(project_id: str, body: CreateRoomRequest) -> dict:
 def get_room(project_id: str, room_id: str) -> dict:
     try:
         return get_store().get_room(project_id, room_id).to_dict()
+    except NotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+
+
+@router.patch("/{project_id}/rooms/{room_id}")
+def update_room(project_id: str, room_id: str, body: UpdateRoomRequest) -> dict:
+    try:
+        return get_store().update_room(
+            project_id, room_id, name=body.name, status=body.status,
+            building=body.building, titleBlock=body.titleBlock,
+        ).to_dict()
     except NotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc))
 

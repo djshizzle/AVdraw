@@ -76,6 +76,16 @@ class Store:
             self._save()
             return project
 
+    def update_project(self, project_id: str, **fields) -> Project:
+        """Patch project name/status/client (only provided, non-None fields)."""
+        with self._lock:
+            p = self.get_project(project_id)
+            for k in ("name", "status", "client"):
+                if fields.get(k) is not None:
+                    setattr(p, k, fields[k])
+            self._save()
+            return p
+
     def delete_project(self, project_id: str) -> None:
         with self._lock:
             if project_id not in self._projects:
@@ -112,6 +122,20 @@ class Store:
             if len(project.rooms) == before:
                 raise NotFoundError(f"room {room_id!r} not found")
             self._save()
+
+    def update_room(self, project_id: str, room_id: str, **fields) -> Room:
+        """Patch room name/status/building and titleBlock fields."""
+        from .domain import TitleBlock
+        with self._lock:
+            room = self.get_room(project_id, room_id)
+            for k in ("name", "status", "building"):
+                if fields.get(k) is not None:
+                    setattr(room, k, fields[k])
+            tb = fields.get("titleBlock")
+            if tb is not None:
+                room.titleBlock = TitleBlock.from_dict({**room.titleBlock.to_dict(), **tb})
+            self._save()
+            return room
 
     def replace_room_devices(
         self, project_id: str, room_id: str, devices: list[Device]

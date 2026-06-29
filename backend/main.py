@@ -34,7 +34,7 @@ def create_app():
     if not _FASTAPI_AVAILABLE:
         return None
 
-    from .routers import builds, health, projects
+    from .routers import builds, catalog, health, projects
 
     config.ensure_dirs()
 
@@ -65,6 +65,7 @@ def create_app():
     app.include_router(health.router)
     app.include_router(projects.router)
     app.include_router(builds.router)
+    app.include_router(catalog.router)
 
     # Optional demo UI: if a frontend/ dir exists, serve it at /app same-origin
     # (no CORS needed). Replaced by the real build when one lands.

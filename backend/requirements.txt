@@ -2,3 +2,10 @@
 fastapi>=0.110
 uvicorn[standard]>=0.29
 pydantic>=2.6
+
+# Optional export formats — endpoints degrade gracefully (HTTP 501) if absent.
+ezdxf>=1.1          # DXF / AutoCAD export
+reportlab>=4.0      # PDF export
+
+# Optional: AI "describe the room" (also needs ANTHROPIC_API_KEY).
+# anthropic>=0.40
