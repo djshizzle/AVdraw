@@ -73,9 +73,15 @@ python3 -m backend.main --port 8000          # or: uvicorn backend.main:app --re
 | GET    | `/projects/{id}/rooms/{rid}`               | room detail                      |
 | DELETE | `/projects/{id}/rooms/{rid}`               | delete room                      |
 | PUT    | `/projects/{id}/rooms/{rid}/devices`       | set devices (accept proposal)    |
+| PATCH  | `/projects/{id}`                           | rename / status / client         |
+| PATCH  | `/projects/{id}/rooms/{rid}`               | rename / status / title block    |
 | POST   | `/projects/{id}/rooms/{rid}/build`         | **run core loop, persist**       |
+| GET    | `/projects/{id}/rooms/{rid}/export/{fmt}`  | download drawio/json/csv/dxf/pdf |
 | POST   | `/builds/parse-bom`                         | parse pasted BOM → proposal      |
+| POST   | `/builds/describe`                          | AI "describe the room" → proposal|
 | POST   | `/builds/run`                               | one-shot core loop from CSV      |
+| POST   | `/builds/export`                            | one-shot build → file (any fmt)  |
+| GET    | `/catalog`                                  | product library (from template)  |
 
 ## Configuration (env vars)
 
@@ -86,13 +92,22 @@ python3 -m backend.main --port 8000          # or: uvicorn backend.main:app --re
 | `AVDRAW_API_KEY`     | *(unset → open)*                 | requires `X-API-Key` header |
 | `AVDRAW_CORS_ORIGINS`| `localhost:5173,localhost:3000`  | comma-separated             |
 
+## Frontend
+
+A no-build web app lives in `frontend/` (served at `/app`, same-origin) and
+implements the full design-handoff workflow: Projects → New build (describe /
+paste BOM / catalog) → Proposal (editable equipment) → Schematic (signal-flow
+lanes + inspector) → Cable schedule → Export. See `frontend/` for the sketch
+design system extracted from the handoff.
+
 ## Scope / next steps
 
-This is the **skeleton + single-room core loop**. Deliberately stubbed for a
-follow-up:
-- AI proposal for the "describe the room" input mode (currently BOM-only; the
-  proposal endpoint parses a pasted BOM). Hook point: `builds.parse_bom`.
-- Catalog / product-library browsing and "duplicate a past build".
-- DXF / PDF export endpoints (logic exists in `src/drawio_to_dxf.py`).
+Implemented: catalog, AI describe (Claude + heuristic), DXF/PDF/drawio/json/csv
+export, project/room edit, device/port editing, file upload.
+
+Deliberately left for a follow-up:
+- "Duplicate a past build" template flow.
+- Freeform canvas drag-to-reposition + manual rewiring (current canvas is the
+  auto-generated signal-flow layout — edits happen at the device level + rebuild).
 - xStatus live enrichment (`src/xstatus.py`) on the build endpoints.
 - Auth beyond the single shared API key; swap the JSON store for a real DB.

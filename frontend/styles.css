@@ -210,6 +210,37 @@ tr:hover td { background: var(--paper-3); }
 .muted { color: var(--muted); }
 .empty { color: var(--muted-2); font-family: 'Caveat', cursive; font-size: 18px; padding: 20px 0; }
 
+/* ── Segmented control (input doors) ────────────────────────────── */
+.seg { display: inline-flex; border: 2px solid var(--ink); border-radius: var(--wob-sm);
+  overflow: hidden; margin-bottom: 14px; }
+.seg button { border: none; background: var(--paper-2); color: var(--muted);
+  padding: 7px 16px; font-family: 'Kalam', cursive; font-weight: 700; font-size: 13px;
+  cursor: pointer; border-right: 2px solid var(--ink); }
+.seg button:last-child { border-right: none; }
+.seg button.on { background: var(--accent); color: #fff; }
+
+/* ── Modal ──────────────────────────────────────────────────────── */
+.modal-backdrop { position: fixed; inset: 0; background: rgba(31,31,31,0.35);
+  display: flex; align-items: center; justify-content: center; z-index: 60; }
+.modal { background: var(--paper-2); border: 2.5px solid var(--ink);
+  border-radius: var(--wob); box-shadow: 8px 10px 0 rgba(31,31,31,0.18);
+  padding: 20px 22px; width: 640px; max-width: 92vw; max-height: 86vh; overflow: auto; }
+.modal h2 { margin: 0 0 12px; font-family: 'Caveat', cursive; font-size: 24px; }
+.modal .close { float: right; cursor: pointer; font-size: 20px; color: var(--muted); }
+.field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
+.field-grid.ports { grid-template-columns: repeat(3, 1fr); gap: 8px 12px; }
+.catalog-item { display: flex; align-items: center; gap: 10px; padding: 9px 10px;
+  border: 2px solid var(--line); border-radius: var(--wob-sm); margin-bottom: 8px; cursor: pointer; }
+.catalog-item:hover { border-color: var(--accent); background: var(--paper-3); }
+.catalog-item .ci-name { font-weight: 700; }
+.catalog-item .ci-meta { font-size: 12px; color: var(--muted); }
+.catalog-item .ci-add { margin-left: auto; }
+.cat-head { font-family: 'Caveat', cursive; font-size: 18px; color: var(--muted);
+  margin: 14px 0 6px; }
+td input.cell, td select.cell { border: 1.5px solid var(--line); border-radius: 5px;
+  background: var(--paper-2); padding: 3px 6px; font-family: 'Kalam', cursive; font-size: 12px; width: 100%; }
+td input.cell.qty { width: 52px; }
+
 /* accent picker swatches */
 .accent-pick { display: flex; gap: 6px; align-items: center; }
 .swatch { width: 18px; height: 18px; border-radius: 5px; border: 2px solid var(--ink); cursor: pointer; }

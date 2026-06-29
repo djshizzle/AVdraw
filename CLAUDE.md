@@ -367,10 +367,18 @@ store + pipeline are stdlib-only (local-first); FastAPI is optional transport
 (`backend/main.py`, graceful no-op if not installed). Run the loop without web
 deps: `python3 -m backend.pipeline --bom templates/sample_bom.csv --name X`.
 API: `pip3 install -r backend/requirements.txt && python3 -m backend.main`.
-Endpoints: projects/rooms CRUD, `/builds/parse-bom` (proposal),
-`/builds/run` (one-shot), `/projects/{id}/rooms/{rid}/build` (persisted).
-Stubbed for follow-up: AI "describe the room" proposal, catalog browsing,
-DXF/PDF export endpoints, xStatus enrichment. See `backend/README.md`.
+Endpoints: projects/rooms CRUD + PATCH, `/builds/parse-bom` (proposal),
+`/builds/describe` (AI/heuristic), `/builds/run` (one-shot),
+`/projects/{id}/rooms/{rid}/build` (persisted), `/catalog`, and exports
+(`/builds/export`, `/projects/{id}/rooms/{rid}/export/{fmt}`:
+drawio/json/csv/dxf/pdf). Extra modules: `catalog.py` (library from BOM
+template), `exports.py` (DXF via src/drawio_to_dxf, PDF via reportlab — both
+fail soft to HTTP 501 if optional deps absent), `ai.py` (Claude + keyword
+fallback). A no-build web app in `frontend/` (served at `/app`) implements the
+full workflow (Projects → New build → Proposal → Schematic → Cables → Export)
+in the handoff's hand-drawn sketch design system. Still stubbed: "duplicate a
+past build", freeform canvas drag/rewire (edits are device-level + rebuild),
+xStatus enrichment. See `backend/README.md`.
 
 **Validation contract (auto-wired):** `bom_to_drawio.py` now runs both
 validators automatically. Use `--no-validate` to skip, `--strict` to promote
